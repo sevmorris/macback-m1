@@ -27,7 +27,7 @@ Run `mackup backup`
 
 # Steps to set up a new macOS machine
 
-1) Run [Strap](https://macos-strap.herokuapp.com/) using either of the following methods:
+1) Run [Strap](https://macos-strap.herokuapp.com/) using either [from a browser](https://macos-strap.herokuapp.com/) or with the following commands:
 
 ```
 git clone https://github.com/MikeMcQuaid/strap
@@ -35,7 +35,7 @@ cd strap
 bash bin/strap.sh
 ```
 
-Or go to `macos-strap.herokuapp.com`
+(Strap installs Homebrew)
 
 2) Install Dropbox and wait until the Mackup folder syncs.
 3) Install Mackup via Homebrew and run `mackup restore`
