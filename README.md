@@ -1,14 +1,23 @@
 # Steps to back up current macOS machine
 
 Run `brew bundle dump --force` to create a Brewfile.
+<br>
 --force overwrites an existing Brewfile.
+<br>
 It overwrites the file in Dropbox if it's backed up there with Mackup.
 <br>
-Create a dir: `~/.mackup`
+Create a dir:
 <br>
+
+```
+cd ~
+mkdir .mackup && cd .mackup
+```
+
 Create a file in that dir: `my-files.cfg`
 <br>
-Add the following to the file:
+Add to the file:
+
 ```
 [application]
 name = My personal synced files and dirs
