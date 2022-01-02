@@ -1,6 +1,8 @@
 # Steps to back up current macOS machine
 
-1) Run `brew bundle dump --force` to create a Homebrew Brewfile.
+This assumes you already have [Homebrew](https://brew.sh/), Dropbox and [Mackup](https://github.com/lra/mackup) installed.
+
+1) Run `brew bundle dump --force` to create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand).
 - `--force` overwrites an existing Brewfile, and if it's already backed up with Mackup it will overwrite the Dropbox file.
 2) Create a dir in ~ :
 `mkdir .mackup && cd .mackup`
