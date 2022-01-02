@@ -275,7 +275,7 @@ done
 }
 
 while true; do
-    read -p "Close System Preferences if open. Do you want to change some default macOS settings? " yn
+    read -p "${yellow}Close System Preferences if open.${reset} Do you want to change some default macOS settings? " yn
     case $yn in
         [Yy]* ) osdefaults; break;;
         [Nn]* ) break;;

@@ -3,13 +3,6 @@ set +e
 
 clear
 
-## Colors
-red=$(tput setaf 1)
-green=$(tput setaf 2)
-yellow=$(tput setaf 3)
-blue=$(tput setaf 4)
-reset=$(tput sgr0)
-
 nuke() {
   clear
   echo "Dropping a ${yellow}nuke${reset} on the ${blue}Dock!${reset}"
