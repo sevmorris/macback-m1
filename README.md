@@ -9,8 +9,9 @@ cd ~
 mkdir .mackup && cd .mackup
 ```
 
-3) Create a file: `my-files.cfg`
-- Name it whatever you want, and add to following the file:
+3) Create a file and add to following text to the file:
+
+`touch my-files.cfg`
 
 ```
 [application]
