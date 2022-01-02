@@ -86,10 +86,10 @@ echo /usr/local/bin/bash >> /etc/shells
 
 2) Change shell
 
-    M1 Macs
+    M1 Macs<br>
 `chsh -s /opt/homebrew/bin/bash`
 
-    Intel Macs
+    Intel Macs<br>
 `chsh -s /usr/local/bin/bash`
 
 
