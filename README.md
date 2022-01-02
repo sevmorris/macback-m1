@@ -38,7 +38,7 @@ bash bin/strap.sh
 (Strap installs Homebrew)
 
 2) Install Dropbox and wait until the Mackup folder syncs.
-3) Install Mackup via Homebrew and run the restore:
+3) Install Mackup via Homebrew and restore backed up files:
 
 ```
 brew install mackup
