@@ -9,8 +9,8 @@ cd ~
 mkdir .mackup && cd .mackup
 ```
 
-3) Create a file in that dir: `my-files.cfg`
-- Add to following the file:
+3) Create a file: `my-files.cfg`
+- Name it whatever you want, and add to following the file:
 
 ```
 [application]
