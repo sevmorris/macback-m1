@@ -68,7 +68,7 @@ mackup restore
 
 ## Switch to the Homebrew's newer version of Bash:
 
-1) Add to /etc/shells:
+1) Add path to /etc/shells:
 
 ```
 # M1 Macs
