@@ -1,4 +1,5 @@
-# To set up a new macOS machine
+# Steps to set up a new macOS machine
+
 
 1) Run strap using either of the following methods:
 
