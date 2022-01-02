@@ -1,8 +1,15 @@
 # Steps to back up current macOS machine
 
-This assumes you already have Dropbox, [Homebrew](https://brew.sh/), and [Mackup](https://github.com/lra/mackup) installed.
+**Prerequisites**
+- Dropbox
+- [Homebrew](https://brew.sh/)
+- [Mackup](https://github.com/lra/mackup)
+- [mas](https://github.com/mas-cli/mas) (Mac App Store command line interface)
 
-1) Run `brew bundle dump --force` to create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand).<br>
+1) Create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) to back up everything installed via Homebrew.
+
+- Create a Brewfile
+`brew bundle dump --force` <br>
 The --force flag overwrites an existing Brewfile. If the file is already backed up with Mackup it will overwrite the Dropbox file instead.
 
 2) Create a config file to add files not officially supported by Mackup.
