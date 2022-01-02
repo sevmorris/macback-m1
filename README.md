@@ -2,7 +2,7 @@
 
 1) Run `brew bundle dump --force` to create a Homebrew Brewfile.
 - `--force` overwrites an existing Brewfile, and if it's already backed up with Mackup it will overwrite the Dropbox file.
-2) Create a dir in ~:
+2) Create a dir in ~ :
 `mkdir .mackup && cd .mackup`
 
 3) Create a file:
