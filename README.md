@@ -79,7 +79,7 @@ echo /usr/local/bin/bash >> /etc/shells
 `chsh -s /usr/local/bin/bash`
 
 
-# Run scripts to tweak some Mac default and remove default Dock icons (if a new OS install)
+# Tweak some Mac defaults and remove Dock icons (if a new OS install)
 
 1) Clone this repo and execute the install script:
 
