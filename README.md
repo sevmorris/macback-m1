@@ -38,17 +38,22 @@ bash bin/strap.sh
 (Strap installs Homebrew)
 
 2) Install Dropbox and wait until the Mackup folder syncs.
-3) Install Mackup via Homebrew and run `mackup restore`
-4) Run `brew bundle install`
-5) Run `brew update && brew cu -a`
+3) Install Mackup via Homebrew and run the restore:
 
-If you want your current system configuration to match your Brewfile:
+```
+brew install mackup
+mackup restore
+```
 
-`brew bundle --force cleanup`
+4) Install all Homebrew apps from the Brewfile:
+ `brew bundle install`
 
-# Switch to the newer Homebrew version of Bash:
+5) Clean up:
+`brew update && brew cu -a`
 
-1) Add Homebrew's Bash to /etc/shells:
+# Switch to the Homebrew's newer version of Bash:
+
+1) Add to /etc/shells:
 
 - M1 Macs
 
@@ -71,3 +76,5 @@ echo /usr/local/bin/bash >> /etc/shells
 
 - Intel Macs
 `chsh -s /usr/local/bin/bash`
+
+Restart.
