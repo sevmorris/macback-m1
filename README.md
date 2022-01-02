@@ -97,8 +97,8 @@ chsh -s /usr/local/bin/bash
 
 ```
 git clone https://github.com/sevmorris/macback.git ~/Downloads/macback && cd ~/Downloads/macback
-chmod 755 tweaks
-./tweaks
+chmod 755 tweaks.sh
+./tweaks.sh
 ```
 
 2) That's it! Feel free to delete the folder:
