@@ -90,7 +90,9 @@ echo /usr/local/bin/bash >> /etc/shells
 ```
 chsh -s /opt/homebrew/bin/bash
 ```
-    <br>Intel Macs<br>    
+
+    \Intel Macs<br>
+        
 ```
 chsh -s /usr/local/bin/bash
 ```
