@@ -2,13 +2,14 @@
 
 My method of backing up my current machine configuration and redeploying it on a new Mac or new macOS install.
 
+## Back up current macOS machine
+
 ## Prerequisites
 - Dropbox
 - [Homebrew](https://brew.sh/)
 - [Mackup](https://github.com/lra/mackup)
 - [mas](https://github.com/mas-cli/mas) (Mac App Store command line interface)
 
-## Back up current macOS machine
 1) Create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) to back up everything installed via Homebrew.
 
 - Create a Brewfile
