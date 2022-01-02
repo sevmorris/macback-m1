@@ -3,14 +3,9 @@
 set -e
 
 # Execute some scripts
-. dotbin/macdefaults.sh
-. dotbin/docknuke.sh
+. scripts/macdefaults.sh
+. scripts/docknuke.sh
 
-###############################################################################
-# FRIENDLY REMINDER TO REBOOT SOON                                            #
-###############################################################################
-
-echo
 echo "Finished!"
 echo
 sleep 2
@@ -22,7 +17,7 @@ while true; do
     read -p "Do you want to reboot now? " yn
     case $yn in
         [Yy]* ) sudo reboot; break;;
-        [Nn]* ) sleep 1; source $aliases $profile $prompt $exports $bashrc $vimrc; pipes.sh -p4 -t2; break;;
+        [Nn]* ) sleep 1; source $bashrc; pipes.sh -p4 -t2; break;;
         * ) echo "Try again.";
     esac
 done
