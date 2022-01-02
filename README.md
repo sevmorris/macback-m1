@@ -87,10 +87,14 @@ echo /usr/local/bin/bash >> /etc/shells
 2) Change shell
 
     M1 Macs<br>
-`chsh -s /opt/homebrew/bin/bash`
+```
+chsh -s /opt/homebrew/bin/bash
+```
 
-    Intel Macs<br>
-`chsh -s /usr/local/bin/bash`
+    Intel Macs<br>    
+```
+chsh -s /usr/local/bin/bash
+```
 
 
 ## Tweak some Mac defaults and remove Dock icons (if a new OS install)
