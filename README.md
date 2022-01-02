@@ -1,5 +1,7 @@
 # macback
 
+My method of backing up my current machine configuration and redeploying it on a new Mac or new macOS install.
+
 ## Prerequisites
 - Dropbox
 - [Homebrew](https://brew.sh/)
