@@ -3,9 +3,7 @@
 1) Run `brew bundle dump --force` to create a Homebrew Brewfile.
 <br><br>
 `--force` overwrites an existing Brewfile, and if it's already backed up with Mackup it will overwrite the Dropbox file.
-<br><br>
 2) Create a dir:
-<br>
 
 ```
 cd ~
@@ -13,7 +11,6 @@ mkdir .mackup && cd .mackup
 ```
 
 3) Create a file in that dir: `my-files.cfg`
-<br>
 Add to following the file:
 
 ```
