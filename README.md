@@ -70,14 +70,14 @@ mackup restore
 
 1) Add to /etc/shells:
 
-- M1 Macs
+    M1 Macs
 
 ```
 sudo -i
 echo /opt/homebrew/bin/bash >> /etc/shells
 ```
 
-- Intel Macs
+    Intel Macs
 
 ```
 sudo -i
@@ -86,10 +86,10 @@ echo /usr/local/bin/bash >> /etc/shells
 
 2) Change shell
 
-- M1 Macs
+    M1 Macs
 `chsh -s /opt/homebrew/bin/bash`
 
-- Intel Macs
+    Intel Macs
 `chsh -s /usr/local/bin/bash`
 
 
