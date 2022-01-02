@@ -93,7 +93,7 @@ chsh -s /usr/local/bin/bash
 
 ## Tweak some Mac defaults and remove Dock icons (useful if a new OS install)
 
-1) Clone this repo and execute the tweak.sh script:
+1) Clone this repo and execute the tweaks.sh script:
 
 ```
 git clone https://github.com/sevmorris/macback.git ~/Downloads/macback && cd ~Downloads/macback
