@@ -3,7 +3,7 @@
 This assumes you already have Dropbox, [Homebrew](https://brew.sh/), and [Mackup](https://github.com/lra/mackup) installed.
 
 1) Run `brew bundle dump --force` to create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand).
-- The `--force` flag overwrites an existing Brewfile. It will overwrite the Dropbox file if it's already backed up.
+- The `--force` flag overwrites an existing Brewfile. If the file is already backed up with Mackup it will overwrite the Dropbox file instead.
 
 2) Create a dir in ~ :
 `mkdir .mackup && cd .mackup`
