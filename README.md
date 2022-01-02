@@ -29,7 +29,7 @@ Run `mackup backup`
 ```
 git clone https://github.com/MikeMcQuaid/strap
 cd strap
-bash bin/strap.sh # or bash bin/strap.sh --debug for more debugging output
+bash bin/strap.sh
 ```
 
 Or go to `macos-strap.herokuapp.com`
