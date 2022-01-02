@@ -1,7 +1,7 @@
 # Steps to set up a new macOS machine
 
 
-1) Run strap using either of the following methods:
+1) Run [Strap](https://macos-strap.herokuapp.com/) using either of the following methods:
 
 
 ```
