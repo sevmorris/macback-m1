@@ -27,7 +27,7 @@ Run `mackup backup`
 
 # Steps to set up a new macOS machine
 
-1) Run [Strap](https://macos-strap.herokuapp.com/) using either [from a browser](https://macos-strap.herokuapp.com/) or with the following commands:
+1) Run [Strap](https://macos-strap.herokuapp.com/) either [from a browser](https://macos-strap.herokuapp.com/) or with the following commands:
 
 ```
 git clone https://github.com/MikeMcQuaid/strap
