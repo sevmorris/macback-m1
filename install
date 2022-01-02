@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Execute some scripts
+. dotbin/macdefaults.sh
+. dotbin/docknuke.sh
+
+###############################################################################
+# FRIENDLY REMINDER TO REBOOT SOON                                            #
+###############################################################################
+
+echo
+echo "Finished!"
+echo
+sleep 2
+echo "You must reboot soon!" | cowsay | lolcat
+sleep 2
+clear
+
+while true; do
+    read -p "Do you want to reboot now? " yn
+    case $yn in
+        [Yy]* ) sudo reboot; break;;
+        [Nn]* ) sleep 1; source $aliases $profile $prompt $exports $bashrc $vimrc; pipes.sh -p4 -t2; break;;
+        * ) echo "Try again.";
+    esac
+done

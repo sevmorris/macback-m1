@@ -77,4 +77,8 @@ echo /usr/local/bin/bash >> /etc/shells
 - Intel Macs
 `chsh -s /usr/local/bin/bash`
 
+///////////////////////////////////////////////////////////////////
+
+Download and execute the Dock nuker and Mac defaults scripts...
+
 Restart.
