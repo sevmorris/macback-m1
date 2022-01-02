@@ -43,14 +43,24 @@ If you want your current system configuration to match your Brewfile:
 
 `brew bundle --force cleanup`
 
-# Change to the brewed Bash:
+# Switch to the newer Homebrew version of Bash:
 
-1) Add Homebrew's Bash to /etc/shells:
+1a) M1 Macs - Add Homebrew's Bash to /etc/shells:
 
 ```
 sudo -i
 echo /opt/homebrew/bin/bash >> /etc/shells
 ```
 
-2) Change shell:
+1b) Intel Macs - Add Homebrew's Bash to /etc/shells:
+
+```
+sudo -i
+echo /usr/local/bin/bash >> /etc/shells
+```
+
+2a) M1 Macs - Change shell:
 `chsh -s /opt/homebrew/bin/bash`
+
+2b) Intel Macs -
+`chsh -s /usr/local/bin/bash`
