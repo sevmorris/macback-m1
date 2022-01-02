@@ -5,13 +5,15 @@ This assumes you already have Dropbox, [Homebrew](https://brew.sh/), and [Mackup
 1) Run `brew bundle dump --force` to create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand).<br>
 The --force flag overwrites an existing Brewfile. If the file is already backed up with Mackup it will overwrite the Dropbox file instead.
 
-2) Create a dir in ~ :
-`mkdir .mackup && cd .mackup`
+2) Create a config file to add files not officially supported by Mackup.
 
-3) Create a file:
+- Create a directory:
+`cd ~ && mkdir .mackup && cd .mackup`<br>
+
+- Create a config file:
 `touch my-files.cfg`
 
-Add to following text to the file:
+Edit the file and add the following text:
 
 ```
 [application]
@@ -22,7 +24,7 @@ Brewfile
 .bash_prompt
 .hushlogin
 ```
-(Include anything else you'd like to backup below Brewfile.)
+(Files not backed up by Mackup go below [configuration_files])
 
 Run `mackup backup`
 
