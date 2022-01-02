@@ -96,7 +96,7 @@ chsh -s /usr/local/bin/bash
 1) Clone this repo and execute the tweaks.sh script:
 
 ```
-git clone https://github.com/sevmorris/macback.git ~/Downloads/macback && cd ~Downloads/macback
+git clone https://github.com/sevmorris/macback.git ~/Downloads/macback && cd ~/Downloads/macback
 chmod 755 tweaks
 ./tweaks
 ```
