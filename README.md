@@ -20,6 +20,7 @@ name = My personal synced files and dirs
 [configuration_files]
 Brewfile
 .bash_prompt
+.hushlogin
 ```
 (Include anything else you'd like to backup below Brewfile.)
 
