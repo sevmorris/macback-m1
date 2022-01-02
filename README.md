@@ -1,6 +1,6 @@
 # Steps to back up current macOS machine
 
-**Prerequisites**
+*Prerequisites*
 - Dropbox
 - [Homebrew](https://brew.sh/)
 - [Mackup](https://github.com/lra/mackup)
