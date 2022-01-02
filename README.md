@@ -1,4 +1,4 @@
-# Steps to back up current macOS machine
+# macback
 
 ## Prerequisites
 - Dropbox
@@ -6,6 +6,7 @@
 - [Mackup](https://github.com/lra/mackup)
 - [mas](https://github.com/mas-cli/mas) (Mac App Store command line interface)
 
+## Back up current macOS machine
 1) Create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) to back up everything installed via Homebrew.
 
 - Create a Brewfile
@@ -36,7 +37,7 @@ Brewfile
 Run `mackup backup`
 
 
-# Steps to set up a new macOS machine
+## Set up a new macOS machine
 
 1) Run [Strap](https://macos-strap.herokuapp.com/) either [from a browser](https://macos-strap.herokuapp.com/) or with the following commands:
 
@@ -62,7 +63,7 @@ mackup restore
 5) Clean up:
 `brew update && brew cu -a`
 
-# Switch to the Homebrew's newer version of Bash:
+## Switch to the Homebrew's newer version of Bash:
 
 1) Add to /etc/shells:
 
@@ -89,7 +90,7 @@ echo /usr/local/bin/bash >> /etc/shells
 `chsh -s /usr/local/bin/bash`
 
 
-# Tweak some Mac defaults and remove Dock icons (if a new OS install)
+## Tweak some Mac defaults and remove Dock icons (if a new OS install)
 
 1) Clone this repo and execute the install script:
 
