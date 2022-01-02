@@ -78,8 +78,20 @@ echo /usr/local/bin/bash >> /etc/shells
 - Intel Macs
 `chsh -s /usr/local/bin/bash`
 
-///////////////////////////////////////////////////////////////////
 
-Download and execute the Dock nuker and Mac defaults scripts...
+# Run scripts to tweak some Mac default and remove default Dock icons (if a new OS install)
 
-Restart.
+1) Clone this repo and execute the install script:
+
+```
+git clone https://github.com/sevmorris/macback.git ~/Downloads/macback && cd ~Downloads/macback
+chmod 755 tweaks
+./tweaks
+```
+
+2) That's it! Feel free to delete the folder:
+
+```
+cd ~
+sudo rm -r ~/Downloads/macback
+```
