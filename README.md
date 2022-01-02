@@ -42,3 +42,15 @@ Or go to `macos-strap.herokuapp.com`
 If you want your current system configuration to match your Brewfile:
 
 `brew bundle --force cleanup`
+
+# Change to the brewed Bash:
+
+1) Add Homebrew's Bash to /etc/shells:
+
+```
+sudo -i
+echo /opt/homebrew/bin/bash >> /etc/shells
+```
+
+2) Change shell:
+`chsh -s /opt/homebrew/bin/bash`
