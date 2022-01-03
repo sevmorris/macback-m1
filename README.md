@@ -13,7 +13,7 @@ My method of backing up my current machine configuration and redeploying it on a
 1) Create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) to back up everything installed via Homebrew.
 
 `brew bundle dump --force` <br>
-The --force flag overwrites an existing Brewfile. If the file is already backed up with Mackup it will overwrite the Dropbox file instead.
+        The --force flag overwrites an existing Brewfile. If the file is already backed up with Mackup it will overwrite the Dropbox file instead.
 
 2) Create a config file to add files not officially supported by Mackup.
 
