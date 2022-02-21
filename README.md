@@ -256,9 +256,8 @@ chsh -s /opt/homebrew/bin/bash
 > installed with Homebrew and the Mac App Store.<br>
 
 > Bundle is convenient for backup up a master list, but I thinks it's overkill
-> for reinstalling apps. I maintain a curated Brewfile (included in this repo)
-> that excludes casks and Mac App Store apps, as well as everything installed
-> via [macgnu](https://github.com/shinokada/macgnu).
+> for reinstalling apps. I maintain a curated Brewfile that excludes casks and
+> Mac App Store apps, as well as everything installed via [macgnu](https://github.com/shinokada/macgnu).
 
 <br>
 
