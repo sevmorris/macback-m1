@@ -27,7 +27,6 @@ brew "binutils"                           # GNU binary tools for native developm
 brew "coreutils"                          # GNU File, Shell, and Text utilities
 brew "emacs", restart_service: true, link: false
 brew "cask"                               # Emacs dependency management
-brew "cheat"                              # Create and view interactive cheat sheets for *nix commands
 brew "cmake"                              # Cross-platform make
 brew "cowsay"                             # Configurable talking characters in ASCII art
 brew "curl"                               # Get a file from an HTTP, HTTPS or FTP server

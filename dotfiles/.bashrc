@@ -1,4 +1,7 @@
 
+# for non-interactive sessions stop execution here -- https://serverfault.com/a/805532/67528
+[[ $- != *i* ]] && return
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth

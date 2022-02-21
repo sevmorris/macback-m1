@@ -30,7 +30,10 @@ alias cleands="fd -H '^\.DS_Store$' -tf -X rm"
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
 # Clean up Homebrew
-alias cleanbrew="brew -v update && brew -v upgrade && brew -v cleanup --prune=2 && brew doctor && brew -v upgrade --greedy"
+alias cleanbrew="brew -v update && brew -v upgrade && brew -v cleanup --prune=0 && brew doctor && brew -v upgrade --greedy"
+
+# Run brew-cask-upgrade and force it to update everything
+alias brewup="brew cu --all --force"
 
 # Update, upgrade all and cleanup
 alias upgrade="brew update && brew upgrade && brew cu --all --yes --cleanup && mas upgrade && brew cleanup"
@@ -45,6 +48,9 @@ alias rm="trash "
 # EVERYTHING ELSE
 #************************************************************************************#
 
+# Use micro instead of nano
+alias nano="micro"
+
 # Easier dotfile editing
 alias bashrc="nano ~/.bashrc && c && . ~/.bashrc"
 alias aliases="nano ~/.aliases && c && . ~/.aliases"
@@ -57,7 +63,7 @@ alias path='echo -e ${PATH//:/\\n}'
 
 alias mon="gtop"
 
-# Run fd instead of find
+# RUn fd instead of find
 alias find="fd "
 
 # a quick way to get out of current directory
@@ -66,6 +72,12 @@ alias ~='cd ~'
 
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
+
+# ssh into the RasPi
+alias pi="ssh pi"
+
+# ssh into Kali Linux
+alias kali="ssh sev@192.168.4.174"
 
 # Copy a shrug to the clipboard
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
@@ -85,14 +97,8 @@ alias scan="lynis audit system"
 # Back up dotfiles and preferences with mackup
 alias dots="mackup -f backup"
 
-# Back up preferences with macprefs
-alias prefs="sudo macprefs backup"
-
 # Run duf instead of du
 alias du="duf --sort filesystem"
-
-# Run brew-cask-upgrade and force it to update everything
-alias brewup="brew cu --all --force"
 
 # brew uninstall
 alias brun="brew uninstall -v "
@@ -105,11 +111,11 @@ alias cat="clear && bat "
 # edit a file using nano
 alias e="nano "
 
-# Back up dotfiles and preferences with Mackup AND preferences with macprefs
-alias backup="mackup -f backup && sudo macprefs backup"
-
 # Replace man with tldr
 alias man="tldr "
 
 # Open Brewfile in nano
 alias bredit="nano ~/Brewfile"
+
+# Backup preferences
+alias prefs="sudo rsync -av /Library/Preferences/ backups/RootPrefs && rsync -av /Users/sev/Library/Preferences/ backups/HomePrefs"

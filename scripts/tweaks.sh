@@ -20,7 +20,8 @@ bashrc=$DOTS/.bashrc
 # Remove Dock icons
 . scripts/docknuke.sh
 
-cp -f $aliases $prompt .bashrc Brewfile $HOME
+mv -f $aliases $prompt .bashrc Brewfile $HOME
+ln -s ~/.aliases .bashrc Brewfile $DOTS
 
 ## Add to .nanorc for M1 Macs
 if [ $(arch) = "arm64" ]; then
