@@ -256,7 +256,7 @@ chsh -s /opt/homebrew/bin/bash
 > installed with Homebrew and the Mac App Store.<br>
 
 > Bundle is convenient for backup up a master list, but I thinks it's overkill
-> for reinstalling apps. I maintain a curated Brewfile that includes the essentials.
+> for reinstalling apps. I maintain a curated Brewfile that includes my essentials.
 
 <br>
 
