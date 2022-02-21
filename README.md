@@ -112,7 +112,7 @@ bash bin/strap.sh
 </details>
 
 ---
-#### Mackup, mas, macgnu & Brewfile
+#### Mackup, macgnu & Brewfile
 
 _For backing up dotfiles & (some) preferences and installing apps with Homebrew._
 
@@ -158,22 +158,6 @@ engine = file_system
 path = backups
 directory = mackup
 ```
-
-<br>
-</details>
-
-<details>
-  <summary>Install mas (Mac App Store Command Line Interface)</summary>
-
----
-
-```
-brew install mas
-```
-
-<br>
-
-:point_right:  Make sure you're logged into the Mac App Store.
 
 <br>
 </details>
