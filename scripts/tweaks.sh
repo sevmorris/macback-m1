@@ -13,6 +13,7 @@ DOTS=$HOME/macback/dotfiles
 aliases=$DOTS/.aliases
 prompt=$DOTS/.bash_prompt
 bashrc=$DOTS/.bashrc
+brew=$DOTS/Brewfile
 
 # Customize macOS defaults
 . scripts/macdefaults.sh
@@ -20,8 +21,12 @@ bashrc=$DOTS/.bashrc
 # Remove Dock icons
 . scripts/docknuke.sh
 
-mv -f $aliases $prompt .bashrc Brewfile $HOME
-ln -s ~/.aliases .bashrc Brewfile $DOTS
+mv -f $aliases $prompt $bashrc $brew $HOME
+
+ln -s ~/.aliases $DOTS
+ln -s ~/.bashrc $DOTS
+ln -s ~/.bash_prompt $DOTS
+ln -s ~/Brewfile $DOTS
 
 ## Add to .nanorc for M1 Macs
 if [ $(arch) = "arm64" ]; then
