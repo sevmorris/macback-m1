@@ -118,7 +118,7 @@ alias man="tldr "
 alias bredit="nano ~/Brewfile"
 
 # Backup preferences
-alias prefs="sudo rsync -av /Library/Preferences/ backups/RootPrefs && rsync -av /Users/sev/Library/Preferences/ backups/HomePrefs"
+alias prefs="rsync -av /Users/sev/Library/Preferences/ backups/HomePrefs"
 
 # Send backups directory to Dropbox
 alias backup="rsync -av ~/backups/ ~/Dropbox/Backup"
