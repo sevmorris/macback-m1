@@ -260,6 +260,8 @@ chsh -s /opt/homebrew/bin/bash
 
 <br>
 
+To create a "master list" Brewfile:
+
 ```
 brew bundle dump --force --describe
 ```
