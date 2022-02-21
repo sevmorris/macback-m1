@@ -22,9 +22,11 @@ Tweak some Mac defaults, add some dotfiles, and (optionally) remove Dock icons (
 <br>
 
 > :point_right: This will overwrite .aliases, .bashrc & .bash_prompt if they already exist.<br>
-> :point_right: You should review [macdefaults.sh](scripts/macdefaults.sh) and remove what you don't want.
+> :point_right: Review [macdefaults.sh](scripts/macdefaults.sh) and remove what you don't want.
 
 <br>
+
+Clone the repo and run the scripts:
 
 ```
 git clone https://github.com/sevmorris/macback && cd macback/scripts
