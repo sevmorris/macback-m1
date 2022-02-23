@@ -190,13 +190,13 @@ cd macgnu
 
 This will install everything listed in your Brewfile.
 
-```
-brew bundle install
-```
-
 > I include a curated [Brewfile](https://github.com/Homebrew/homebrew-bundle) in this repo
 > that excludes casks and Mac App Store apps, as well as everything already installed via
 > [macgnu](https://github.com/shinokada/macgnu).
+
+```
+brew bundle install
+```
 
 <br>
 
