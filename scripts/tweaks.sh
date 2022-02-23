@@ -15,7 +15,6 @@ aliases=$DOTS/.aliases
 prompt=$DOTS/.bash_prompt
 bashrc=$DOTS/.bashrc
 stropxe=$DOTS/.exports
-funcs=$DOTS/.functions
 brew=$MACBACK/Brewfile
 
 # Customize macOS defaults
@@ -25,4 +24,4 @@ brew=$MACBACK/Brewfile
 . docknuke.sh
 
 #Copy dotfiles to ~/
-cp -f $aliases $prompt $bashrc $stropxe $funcs $brew $HOME
+cp -f $aliases $prompt $bashrc $stropxe $brew $HOME
