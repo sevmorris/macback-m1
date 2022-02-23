@@ -16,10 +16,10 @@ bashrc=$DOTS/.bashrc
 brew=$DOTS/Brewfile
 
 # Customize macOS defaults
-. scripts/macdefaults.sh
+. macdefaults.sh
 
 # Remove Dock icons
-. scripts/docknuke.sh
+. docknuke.sh
 
 cp -f $aliases $prompt $bashrc $brew $HOME
 
