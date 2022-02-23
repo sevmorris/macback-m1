@@ -9,11 +9,12 @@ yellow=$(tput setaf 3)
 blue=$(tput setaf 4)
 reset=$(tput sgr0)
 
-DOTS=$HOME/macback/dotfiles
+MACBACK=$HOME/macback
+DOTS=$MACBACK/dotfiles
 aliases=$DOTS/.aliases
 prompt=$DOTS/.bash_prompt
 bashrc=$DOTS/.bashrc
-brew=$DOTS/Brewfile
+brew=$MACBACK/Brewfile
 
 # Customize macOS defaults
 . macdefaults.sh
