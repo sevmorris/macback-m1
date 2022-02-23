@@ -45,10 +45,13 @@ alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo
 alias rm="trash "
 
 # Update dotfiles in ~/ if modified in macback
-alias dots="./dotfiles_update.sh"
+alias dots=". ~/.dotsup"
 
 # Back up dotfiles and preferences with mackup
 alias mackup="mackup -f backup"
+
+# Backup preferences locally then remotely
+alias backup="rsync -av /Users/sev/Library/Preferences/ backups/HomePrefs && rsync -av ~/backups/ ~/Dropbox/Backup"
 
 #************************************************************************************#
 # EVERYTHING ELSE
@@ -119,6 +122,3 @@ alias e="nano "
 
 # Replace man with tldr
 alias man="tldr "
-
-# Backup preferences locally then remotely
-alias backup="rsync -av /Users/sev/Library/Preferences/ backups/HomePrefs && rsync -av ~/backups/ ~/Dropbox/Backup"
