@@ -15,6 +15,7 @@ aliases=$DOTS/.aliases
 prompt=$DOTS/.bash_prompt
 bashrc=$DOTS/.bashrc
 stropxe=$DOTS/.exports
+funcs=$DOTS/.functions
 brew=$MACBACK/Brewfile
 
 # Customize macOS defaults
