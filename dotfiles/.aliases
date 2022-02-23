@@ -45,13 +45,13 @@ alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo
 alias rm="trash "
 
 # Update dotfiles in ~/ if modified in macback
-alias dots=". ~/.dotsup"
+alias dots=". $HOME/.dotsup"
 
 # Back up dotfiles and preferences with mackup
 alias mackup="mackup -f backup"
 
 # Backup preferences locally then remotely
-alias backup="rsync -av /Users/sev/Library/Preferences/ backups/HomePrefs && rsync -av ~/backups/ ~/Dropbox/Backup"
+alias backup="rsync -av $HOME/Library/Preferences/ $HOME/backups/HomePrefs && rsync -av $HOME/backups/ $HOME/Dropbox/Backup"
 
 #************************************************************************************#
 # EVERYTHING ELSE
@@ -61,11 +61,11 @@ alias backup="rsync -av /Users/sev/Library/Preferences/ backups/HomePrefs && rsy
 alias nano="micro"
 
 # Easier dotfile editing
-alias bashrc="nano ~/.bashrc && c && . ~/.bashrc"
-alias aliases="nano ~/.aliases && c && . ~/.aliases"
+alias bashrc="nano $HOME/.bashrc && c && . $HOME/.bashrc"
+alias aliases="nano $HOME/.aliases && c && . $HOME/.aliases"
 
 # Open Brewfile in nano
-alias brewfile="nano ~/Brewfile"
+alias brewfile="nano $HOME/Brewfile"
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
@@ -82,14 +82,8 @@ alias find="fd "
 alias ..='cd ..'
 alias ~='cd ~'
 
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-
-# ssh into the RasPi
-alias pi="ssh pi"
-
-# ssh into Kali Linux
-alias kali="ssh sev@192.168.4.174"
+alias dl="cd $HOME/Downloads"
+alias dt="cd $HOME/Desktop"
 
 # Copy a shrug to the clipboard
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
