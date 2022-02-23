@@ -31,7 +31,7 @@ Clone the repo and run the scripts:
 ```
 git clone https://github.com/sevmorris/macback.git && cd macback/scripts
 chmod 755 tweaks.sh
-./tweaks.sh
+./tweaks.sh && cd ~
 ```
 
 ---
