@@ -44,6 +44,9 @@ alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo
 # Send files and folders to Trash instead of deleting
 alias rm="trash "
 
+# Update dotfiles in ~/ if modified in macback
+alias dots="./dotfiles_update.sh"
+
 #************************************************************************************#
 # EVERYTHING ELSE
 #************************************************************************************#
