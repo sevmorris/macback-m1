@@ -195,6 +195,7 @@ This will install everything listed in your Brewfile.
 > [macgnu](https://github.com/shinokada/macgnu).
 
 ```
+cd ~
 brew bundle install
 ```
 
