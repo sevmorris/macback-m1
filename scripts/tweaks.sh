@@ -25,4 +25,4 @@ brew=$MACBACK/Brewfile
 . docknuke.sh
 
 #Copy dotfiles to ~/
-cp -f $aliases $prompt $bashrc $stropxe $brew $HOME
+cp -f $aliases $prompt $bashrc $stropxe $funcs $brew $HOME
