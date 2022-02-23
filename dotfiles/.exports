@@ -3,6 +3,9 @@
 # Make vim the default editor.
 export EDITOR='vim';
 
+export PAGER="most"
+export CLICOLOR=1
+
 # Enable persistent REPL history for `node`.
 export NODE_REPL_HISTORY=~/.node_history;
 # Allow 32³ entries; the default is 1000.
@@ -35,3 +38,9 @@ export GPG_TTY=$(tty);
 
 # Hide the “default interactive shell is now zsh” warning on macOS.
 export BASH_SILENCE_DEPRECATION_WARNING=1;
+
+if [[ "$(uname -m)" == "arm64" ]]; then
+  export PATH="/opt/homebrew/bin:${PATH}"
+fi
+
+export PATH=$HOME/.local/share/bin:$PATH
