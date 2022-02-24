@@ -44,3 +44,48 @@ if [[ "$(uname -m)" == "arm64" ]]; then
 fi
 
 export PATH=$HOME/.local/share/bin:$PATH
+
+# exports from macgnu (https://github.com/shinokada/macgnu)
+# most programs
+export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
+
+# coreutils
+export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="$(brew --prefix)/opt/coreutils/libexec/gnuman:$MANPATH"
+
+# make
+export PATH="$(brew --prefix)/opt/make/libexec/gnubin:$PATH"
+export MANPATH="$(brew --prefix)/opt/make/libexec/gnuman:$MANPATH"
+
+# m4
+export PATH="$(brew --prefix)/opt/m4/bin:$PATH"
+
+# flex
+export PATH="$(brew --prefix)/opt/flex/bin:$PATH"
+export LDFLAGS="-L$(brew --prefix)/opt/flex/lib"
+export CPPFLAGS="-I$(brew --prefix)/opt/flex/include"
+
+# bison
+export PATH="$(brew --prefix)/opt/bison/bin:$PATH"
+export LDFLAGS="-L$(brew --prefix)/opt/bison/lib"
+
+# ed
+export PATH="$(brew --prefix)/opt/ed/libexec/gnubin:$PATH"
+
+# findutils
+export PATH="$(brew --prefix)/opt/findutils/libexec/gnubin:$PATH"
+
+# gnu-indent
+export PATH="$(brew --prefix)/opt/gnu-indent/libexec/gnubin:$PATH"
+
+# gnu-sed
+export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+
+# gnu-tar
+export PATH="$(brew --prefix)/opt/gnu-tar/libexec/gnubin:$PATH"
+
+# gnu-which
+export PATH="$(brew --prefix)/opt/gnu-which/libexec/gnubin:$PATH"
+
+# grep
+export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"

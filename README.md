@@ -112,7 +112,7 @@ bash bin/strap.sh
 </details>
 
 ---
-#### Mackup, macgnu & Brewfile
+#### Mackup & Brewfile
 
 _For backing up dotfiles & (some) preferences and installing apps with Homebrew._
 
@@ -160,28 +160,6 @@ directory = mackup
 ```
 
 <br>
-</details>
-
-<details>
-  <summary>Install GNU apps with macgnu</summary>
-
----
-What [macgnu](https://github.com/shinokada/macgnu) does:
-
-- installs missing GNU programs
-- updates outdated GNU programs
-- replaces pre-installed BSD programs with their preferred GNU implementations
-
-<br>
-
-```
-git clone https://github.com/shinokada/macgnu.git
-cd macgnu
-./macgnu install
-```
-
-<br>
-
 </details>
 <details>
   <summary>Install apps with Homebrew</summary>
@@ -270,8 +248,6 @@ mackup backup
 
 <br>
 
-> Consider creating a GitHub repo or cloud storage location to store and track backups (working on adding
-> instructions here).
 
 ---
 #### Cleanup
@@ -293,8 +269,7 @@ Please reboot soon. Like _really_ soon.
 ---
 #### Thank you to the following for the handful of incredibly useful preexisting tools
 
-[Laurent Raufaste](https://github.com/lra)<br>
-[Shinichi Okada](https://github.com/shinokada)<br>
+[Laurent Raufaste](https://github.com/lra)<br>]
 [Mike McQuaid](https://github.com/MikeMcQuaid)<br>
 
 Obligatory shoutout to [mathiasbynens](https://github.com/mathiasbynens/dotfiles/blob/main/.macos)
