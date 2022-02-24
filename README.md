@@ -108,8 +108,6 @@ bash bin/strap.sh
 
 </details>
 
-You can also run Strap from a browser.
-
 
 ---
 #### Mackup & Brewfile
