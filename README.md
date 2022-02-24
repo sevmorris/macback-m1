@@ -124,10 +124,7 @@ _For backing up dotfiles & (some) preferences._
 
 <br>
 
-<details>
-  <summary>Create backup folders</summary>
-
----
+Create backup folder for Mackup
 
 ```
 mkdir ~/backups && mkdir ~/backups/mackup
@@ -135,12 +132,7 @@ mkdir ~/backups && mkdir ~/backups/mackup
 
 <br>
 
-</details>
-
-<details>
-  <summary>Install & configure Mackup</summary>
-
----
+Install & configure Mackup
 
 ```
 brew install mackup
@@ -172,8 +164,6 @@ Run Mackup backup
 ```
 mackup backup
 ```
-
-</details>
 
 <br>
 
