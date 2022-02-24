@@ -1,6 +1,6 @@
 # macback
 
-My methods of configuring, deploying and redeploying macOS using a couple of preexisting tools and a few of my own scripts.
+My methods of configuring, deploying and redeploying macOS using a couple of preexisting tools ([Strap](https://github.com/MikeMcQuaid) && [Mackup](https://github.com/lra)) and a few of my own scripts.
 
 ## Tasks
 
@@ -381,6 +381,6 @@ Please reboot soon. Like _really_ soon.
 #### Thank you to the following for the handful of incredibly useful preexisting tools
 
 [Mike McQuaid](https://github.com/MikeMcQuaid) for Strap.<br>
-[Laurent Raufaste](https://github.com/lra) for Mackup.<br> 
+[Laurent Raufaste](https://github.com/lra) for Mackup.<br>
 
 Obligatory shoutout to [mathiasbynens](https://github.com/mathiasbynens/dotfiles/blob/main/.macos)
