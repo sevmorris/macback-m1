@@ -70,7 +70,7 @@ Run [Strap](https://github.com/MikeMcQuaid/strap) *(maybe)*.
 
 <br>
 
-If this seems like more than you're comfortable with:
+If this seems like more than you want to do:
 
 <details>
   <summary>I *do not* want to run Strap</summary>
