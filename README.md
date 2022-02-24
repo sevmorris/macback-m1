@@ -124,14 +124,6 @@ Alternatively, you can run [Strap in a browser](https://macos-strap.herokuapp.co
 
 <br>
 
-Create backup folder for Mackup
-
-```
-mkdir ~/backups && mkdir ~/backups/mackup
-```
-
-<br>
-
 Install & configure Mackup
 
 ```
@@ -155,6 +147,14 @@ Add the following text and save:
 engine = file_system
 path = backups
 directory = mackup
+```
+
+<br>
+
+Create backup folder for Mackup
+
+```
+mkdir ~/backups && mkdir ~/backups/mackup
 ```
 
 <br>
