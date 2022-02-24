@@ -186,8 +186,88 @@ cleanbrew
 
 </details>
 
+---
+#### Switch to new Bash
+
+##### Intel Macs
+
+```
+sudo -i
+echo /usr/local/bin/bash >> /etc/shells
+exit
+chsh -s /usr/local/bin/bash
+```
+
+##### M1 Macs
+
+```
+sudo -i
+echo /opt/homebrew/bin/bash >> /etc/shells
+exit
+chsh -s /opt/homebrew/bin/bash
+```
+
+<br>
+
+> :point_right: **Restart** the terminal or open a new tab for the change to take effect.
+
+---
+#### Back up your Mac
+
+> :pushpin: You _can_ create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using
+> [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand). This indexes everything
+> installed with Homebrew and the Mac App Store.<br>
+
+> Bundle is convenient for backup up a master list, but I thinks it's overkill
+> for reinstalling apps. I maintain a curated Brewfile that includes my essentials.
+
+<br>
+
+To create a "master list" Brewfile:
+
+```
+brew bundle dump --force --describe
+```
+
+> `--force` overwrites an existing Brewfile.<br>
+> `--describe` adds a brief description for each entry.
+
+<br>
+
+Run Mackup backup
+
+> Review "Bootstrap your Mac" above for installing and configuring Mackup.
+
+<br>
+
+```
+mackup backup
+```
+
+<br>
+
+
+---
+#### Cleanup
+
+<br>
+
+Delete the repo folder:
+
+```
+rm -r $HOME/macback
+```
+
+---
+#### Finish
+
+Please reboot soon. Like _really_ soon.
+
+---
+#### Aliases
+
 <details>
-  <summary>Partial list of aliases (not in any particular order)</summary>
+  <summary>Partial list of aliases included</summary>
 
 
 ##### Replace default commands
@@ -296,84 +376,6 @@ cleanbrew
 `brewfile`
 
 </details>
-
----
-#### Switch to new Bash
-
-##### Intel Macs
-
-```
-sudo -i
-echo /usr/local/bin/bash >> /etc/shells
-exit
-chsh -s /usr/local/bin/bash
-```
-
-##### M1 Macs
-
-```
-sudo -i
-echo /opt/homebrew/bin/bash >> /etc/shells
-exit
-chsh -s /opt/homebrew/bin/bash
-```
-
-<br>
-
-> :point_right: **Restart** the terminal or open a new tab for the change to take effect.
-
----
-#### Back up your Mac
-
-> :pushpin: You _can_ create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using
-> [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand). This indexes everything
-> installed with Homebrew and the Mac App Store.<br>
-
-> Bundle is convenient for backup up a master list, but I thinks it's overkill
-> for reinstalling apps. I maintain a curated Brewfile that includes my essentials.
-
-<br>
-
-To create a "master list" Brewfile:
-
-```
-brew bundle dump --force --describe
-```
-
-> `--force` overwrites an existing Brewfile.<br>
-> `--describe` adds a brief description for each entry.
-
-<br>
-
-Run Mackup backup
-
-> Review "Bootstrap your Mac" above for installing and configuring Mackup.
-
-<br>
-
-```
-mackup backup
-```
-
-<br>
-
-
----
-#### Cleanup
-
-<br>
-
-Delete the repo folder:
-
-```
-rm -r $HOME/macback
-```
-
----
-#### Finish
-
-Please reboot soon. Like _really_ soon.
-
 
 ---
 #### Thank you to the following for the handful of incredibly useful preexisting tools
