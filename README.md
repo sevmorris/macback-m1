@@ -42,8 +42,6 @@ Run [Strap](https://github.com/MikeMcQuaid/strap) *(maybe)*.
 
 <br>
 
-> :point_down: Strap does a lot of stuff.
-
 <details>
   <summary>What Strap does</summary>
 
@@ -69,8 +67,6 @@ Run [Strap](https://github.com/MikeMcQuaid/strap) *(maybe)*.
 </details>
 
 <br>
-
-If this seems like more than you want to do:
 
 <details>
   <summary>I *do not* want to run Strap</summary>
@@ -110,6 +106,9 @@ bash bin/strap.sh
 ```
 
 </details>
+
+You can also run Strap from a browser.
+
 
 ---
 #### Mackup & Brewfile
