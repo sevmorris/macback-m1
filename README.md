@@ -72,7 +72,7 @@ Run [Strap](https://github.com/MikeMcQuaid/strap) *(maybe)*.
 <br>
 
 <details>
-  <summary>I *do not* want to run Strap</summary>
+  <summary>If you *do not* want to run Strap</summary>
 
 ---
 Install [Homebrew](https://brew.sh/):
@@ -95,10 +95,8 @@ xcode-select --install
 
 <br>
 
-Otherwise:
-
 <details>
-  <summary>I *do* want to run Strap</summary>
+  <summary>If you *do* want to run Strap</summary>
 
 ---
 
