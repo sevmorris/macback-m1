@@ -259,11 +259,6 @@ rm -r $HOME/macback
 ```
 
 ---
-#### Finish
-
-Please reboot soon. Like _really_ soon.
-
----
 #### Aliases
 
 <details>
@@ -376,6 +371,11 @@ Please reboot soon. Like _really_ soon.
 `brewfile`
 
 </details>
+
+---
+#### Finish
+
+Please reboot soon. Like _really_ soon.
 
 ---
 #### Thank you to the following for the handful of incredibly useful preexisting tools
