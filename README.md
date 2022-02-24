@@ -34,9 +34,7 @@ chmod 755 tweaks.sh
 ./tweaks.sh && cd ~
 ```
 
----
-#### Bootstrap
-
+<br>
 
 Run [Strap](https://github.com/MikeMcQuaid/strap) *(maybe)*.
 
