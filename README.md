@@ -36,6 +36,7 @@ chmod 755 tweaks.sh
 
 <br>
 
+---
 Run [Strap](https://github.com/MikeMcQuaid/strap) *(maybe)*.
 
 >A script to bootstrap a minimal macOS development system. This does not assume you're doing Ruby/Rails
