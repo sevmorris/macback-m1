@@ -165,7 +165,7 @@ mackup backup
 
 <br>
 
-> I have an alias to run the backup and rsync the local folder to a Dropbox folder.
+> I have an alias to run the backup and then rsync the local folder to a Dropbox folder.
 
 ---
 #### Brewfile
