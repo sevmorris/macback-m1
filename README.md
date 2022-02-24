@@ -120,7 +120,7 @@ Alternatively, you can run [Strap in a browser](https://macos-strap.herokuapp.co
 ---
 #### Install, configure and run Mackup
 
-_For backing up dotfiles & (some) preferences._
+> For backing up dotfiles & (some) preferences.
 
 <br>
 
