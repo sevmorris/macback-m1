@@ -15,7 +15,7 @@ My methods of configuring, deploying and redeploying macOS using a couple of pre
   ```
 
 ---
-#### Run custom script
+#### Run custom scripts
 
 Tweak some Mac defaults, add some dotfiles, and (optionally) remove Dock icons (useful for a new OS install).
 
