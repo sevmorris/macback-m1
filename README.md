@@ -189,14 +189,14 @@ cleanbrew
 <details>
   <summary>Partial list of aliases</summary>
 
-- /# List all & sort by modification date with most recent first and directories first
+- / # List all & sort by modification date with most recent first and directories first
 lm
 
-- /# List only visible files & folders
+- / # List only visible files & folders
 ll
 ld
 
-- /# List all files and folders
+- / # List all files and folders
 la
 
 # List only (and all) files
