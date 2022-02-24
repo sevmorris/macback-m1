@@ -189,105 +189,103 @@ cleanbrew
 <details>
   <summary>Partial list of aliases</summary>
 
-- / # List all & sort by modification date with most recent first and directories first
+- List all & sort by modification date with most recent first and directories first
 lm
 
-- / # List only visible files & folders
+- List only visible files & folders
 ll
 ld
 
-- / # List all files and folders
+- List all files and folders
 la
 
-# List only (and all) files
+- List only (and all) files
 lf
 files
 
-# List in tree form using exa
+- List in tree form using exa
 tree
 
-# Recursively delete `.DS_Store` files (wipes out Desktop layout)
+- Recursively delete `.DS_Store` files (wipes out Desktop layout)
 cleands
 
-# Flush Directory Service cache
+- Flush Directory Service cache
 flush
 
-# Clean up Homebrew
+- Clean up Homebrew
 cleanbrew
 
-# Run brew-cask-upgrade and force it to update everything
+- Run brew-cask-upgrade and force it to update everything
 Brewup
 
-# Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
+- Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
 update
 
-# Send files and folders to Trash instead of deleting
+- Send files and folders to Trash instead of deleting
 rm
 
-# Update dotfiles in ~/ if modified in macback
+- Update dotfiles in ~/ if modified in macback
 dots
 
-# Back up dotfiles and preferences with mackup
+- Back up dotfiles and preferences with mackup
 mackup
 
-# Backup preferences locally then remotely
+- Backup preferences locally then remotely
 backup
 
-# Use micro instead of nano
+- Use micro instead of nano
 nano
 
-# Open Brewfile in nano (micro)
+- Open Brewfile in nano (micro)
 brewfile
 
-# Reload the shell (i.e. invoke as a login shell)
+- Reload the shell (i.e. invoke as a login shell)
 reload
 
-# Print each PATH entry on a separate line
+- Print each PATH entry on a separate line
 path
 
-# Run gtop
+- Run gtop
 mon="gtop"
 
-# Use fd instead of find
+- Use fd instead of find
 find
 
-# a quick way to get out of current directory
+- a quick way to get out of current directory
 alias ..='cd ..'
 alias ~='cd ~'
 
-# cd to Desktop or Downloads
+- cd to Desktop or Downloads
 dl
 dt
 
-# Copy a shrug to the clipboard
+- Copy a shrug to the clipboard
 shrug
 
-# Clear the terminal
+- Clear the terminal
 c
 
-# Turn off the screen
+- Turn off the screen
 s
 
-# sudo
+- sudo
 please
 
-# Run a system audit using Lynis
+- Run a system audit using Lynis
 Scan
 audit
 
-# Use duf instead of du
+- Use duf instead of du
 du
 
-# brew uninstall <app name>
+- brew uninstall <app name>
 unbrew
 
-# Use bat instead of cat
+- Use bat instead of cat
 cat
 
-# Replace man with tldr
+- Replace man with tldr
 man
-
-
 
 </details>
 
