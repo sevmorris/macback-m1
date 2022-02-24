@@ -52,6 +52,7 @@ brew "gnu-tar"                            # GNU version of the tar archiving uti
 brew "gnu-which"                          # GNU implementation of which utility
 brew "gnupg", link: false                 # GNU Pretty Good Privacy (PGP) package
 brew "grep"                               # GNU grep, egrep and fgrep
+brew "gtop"								  # System monitoring dashboard for terminal
 brew "gzip"                               # Popular GNU data compression program
 brew "htop"                               # Improved top (interactive process viewer)
 brew "iftop"                              # Display an interface's bandwidth usage
