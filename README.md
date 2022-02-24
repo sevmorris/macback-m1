@@ -13,6 +13,8 @@ My methods of configuring, deploying and redeploying macOS using a couple of pre
   ```
   chsh -s /bin/bash && reset
   ```
+  
+<br>
 
 ---
 #### Run custom scripts
