@@ -295,14 +295,14 @@ rm -r $HOME/macback
 `lm`
 
 - List only visible files & folders<br>
-`ll`
+`ll`<br>
 `ld`
 
 - List all files and folders<br>
 `la`
 
 - List only (and all) files<br>
-`lf`
+`lf`<br>
 `files`
 
 - Print each PATH entry on a separate line<br>
@@ -357,14 +357,14 @@ rm -r $HOME/macback
 `mon`
 
 - cd to Desktop or Downloads<br>
-`dl`
+`dl`<br>
 `dt`
 
 - Copy a shrug to the clipboard<br>
 `shrug`
 
 - Run a system audit using Lynis<br>
-`scan`
+`scan`<br>
 `audit`
 
 - Open Brewfile in nano (micro)<br>
