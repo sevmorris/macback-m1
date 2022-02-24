@@ -13,7 +13,7 @@ My methods of configuring, deploying and redeploying macOS using a couple of pre
   ```
   chsh -s /bin/bash && reset
   ```
-  
+
 <br>
 
 ---
@@ -115,6 +115,7 @@ Alternatively, you can run [Strap in a browser](https://macos-strap.herokuapp.co
 
 </details>
 
+<br>
 
 ---
 #### Install, configure and run Mackup
