@@ -124,7 +124,7 @@ Alternatively, you can run [Strap in a browser](https://macos-strap.herokuapp.co
 
 <br>
 
-Install & configure Mackup
+Install Mackup:
 
 ```
 brew install mackup
@@ -132,13 +132,11 @@ brew install mackup
 
 <br>
 
-Create a .cfg file for Mackup:
+Create a config file for Mackup:
 
 ```
 nano ~/.mackup.cfg
 ```
-
-<br>
 
 Add the following text and save:
 
@@ -151,7 +149,7 @@ directory = mackup
 
 <br>
 
-Create backup folder for Mackup
+Create a backup folder for Mackup:
 
 ```
 mkdir ~/backups && mkdir ~/backups/mackup
@@ -159,13 +157,15 @@ mkdir ~/backups && mkdir ~/backups/mackup
 
 <br>
 
-Run Mackup backup
+Run Mackup backup:
 
 ```
 mackup backup
 ```
 
 <br>
+
+> I have an alias to run the backup and rsync the local folder to a Dropbox folder.
 
 ---
 #### Brewfile
