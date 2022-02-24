@@ -367,4 +367,4 @@ Please reboot soon. Like _really_ soon.
 [Mike McQuaid](https://github.com/MikeMcQuaid) for Strap.<br>
 [Laurent Raufaste](https://github.com/lra) for Mackup.<br>
 
-Obligatory shoutout to [mathiasbynens](https://github.com/mathiasbynens/dotfiles/blob/main/.macos)
+Obligatory shoutout to [mathiasbynens](https://github.com/mathiasbynens/dotfiles/blob/main/.macos) for the many `defaults`.
