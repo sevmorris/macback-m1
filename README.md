@@ -204,7 +204,7 @@ cleanbrew
 ---
 #### Switch to new Bash
 
-> A newer version of Bash is installed via Homebrew. Time to swith to that.
+> A newer version of Bash is installed via Homebrew. Time to switch to that.
 
 
 ##### Intel Macs
