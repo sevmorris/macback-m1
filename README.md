@@ -1,6 +1,6 @@
 # macback
 
-My methods of configuring, deploying and redeploying macOS using a handful or preexisting tools and a couple of my own scripts.
+My methods of configuring, deploying and redeploying macOS using a couple of preexisting tools and a few of my own scripts.
 
 ## Tasks
 
@@ -185,6 +185,110 @@ cleanbrew
 ```
 
 </details>
+
+<details>
+  <summary>List of (some of the) aliases</summary>
+
+- # List all & sort by modification date with most recent first and directories first
+lm
+
+- # List only visible files & folders
+ll
+ld
+
+- # List all files and folders
+la
+
+# List only (and all) files
+lf
+files
+
+# List in tree form using exa
+tree
+
+# Recursively delete `.DS_Store` files (wipes out Desktop layout)
+cleands
+
+# Flush Directory Service cache
+flush
+
+# Clean up Homebrew
+cleanbrew
+
+# Run brew-cask-upgrade and force it to update everything
+Brewup
+
+# Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
+update
+
+# Send files and folders to Trash instead of deleting
+rm
+
+# Update dotfiles in ~/ if modified in macback
+dots
+
+# Back up dotfiles and preferences with mackup
+mackup
+
+# Backup preferences locally then remotely
+backup
+
+# Use micro instead of nano
+nano
+
+# Open Brewfile in nano (micro)
+brewfile
+
+# Reload the shell (i.e. invoke as a login shell)
+reload
+
+# Print each PATH entry on a separate line
+path
+
+# Run gtop
+mon="gtop"
+
+# Use fd instead of find
+find
+
+# a quick way to get out of current directory
+alias ..='cd ..'
+alias ~='cd ~'
+
+# cd to Desktop or Downloads
+dl
+dt
+
+# Copy a shrug to the clipboard
+shrug
+
+# Clear the terminal
+c
+
+# Turn off the screen
+s
+
+# sudo
+please
+
+# Run a system audit using Lynis
+Scan
+audit
+
+# Use duf instead of du
+du
+
+# brew uninstall <app name>
+unbrew
+
+# Use bat instead of cat
+cat
+
+# Replace man with tldr
+man
+
+
+
 </details>
 
 ---
@@ -268,7 +372,7 @@ Please reboot soon. Like _really_ soon.
 ---
 #### Thank you to the following for the handful of incredibly useful preexisting tools
 
-[Laurent Raufaste](https://github.com/lra)<br>]
-[Mike McQuaid](https://github.com/MikeMcQuaid)<br>
+[Mike McQuaid](https://github.com/MikeMcQuaid)<br> for Strap.
+[Laurent Raufaste](https://github.com/lra)<br> for Mackup.
 
 Obligatory shoutout to [mathiasbynens](https://github.com/mathiasbynens/dotfiles/blob/main/.macos)

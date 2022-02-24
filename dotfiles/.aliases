@@ -73,15 +73,17 @@ alias reload="exec $SHELL -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
+# Run gtop
 alias mon="gtop"
 
-# RUn fd instead of find
+# Use fd instead of find
 alias find="fd "
 
-# a quick way to get out of current directory
+# A quick way to get out of current directory
 alias ..='cd ..'
 alias ~='cd ~'
 
+# cd to Desktop or Downloads
 alias dl="cd $HOME/Downloads"
 alias dt="cd $HOME/Desktop"
 
@@ -99,6 +101,7 @@ alias please="sudo "
 
 # Run a system audit
 alias scan="lynis audit system"
+alias audit="lynis audit system"
 
 # Run duf instead of du
 alias du="duf --sort filesystem"
