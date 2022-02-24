@@ -116,9 +116,9 @@ Alternatively, you can run [Strap in a browser](https://macos-strap.herokuapp.co
 
 
 ---
-#### Mackup & Brewfile
+#### Install, configure and run Mackup
 
-_For backing up dotfiles & (some) preferences and installing apps with Homebrew._
+_For backing up dotfiles & (some) preferences._
 
 <br>
 
@@ -164,16 +164,35 @@ directory = mackup
 ```
 
 <br>
+
+Run Mackup backup
+
+```
+mackup backup
+```
+
 </details>
-<details>
-  <summary>Install apps with Homebrew</summary>
 
 ---
+#### Brewfile
 
-This will install everything listed in your Brewfile.
+You can create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) to index everything installed with Homebrew and the Mac App Store.
 
-> I include a curated [Brewfile](https://github.com/Homebrew/homebrew-bundle) in this repo
-> that excludes casks and Mac App Store apps.
+<br>
+
+To create a "master list" Brewfile:
+
+```
+brew bundle dump --force --describe
+```
+
+> `--force` overwrites an existing Brewfile.<br>
+> `--describe` adds a brief description for each entry.
+
+---
+To install via the Brewfile:
+
+> This will install everything listed in the Brewfile. You should probably have a look and remove anything you don't want to install now, or move my curated Brewfile to ~/ instead.
 
 ```
 cd ~
@@ -187,8 +206,6 @@ Clean up (using one of the new aliases):
 ```
 cleanbrew
 ```
-
-</details>
 
 ---
 #### Switch to new Bash
@@ -215,40 +232,6 @@ chsh -s /opt/homebrew/bin/bash
 
 > :point_right: **Restart** the terminal or open a new tab for the change to take effect.
 
----
-#### Back up your Mac
-
-> :pushpin: You _can_ create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using
-> [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand). This indexes everything
-> installed with Homebrew and the Mac App Store.<br>
-
-> Bundle is convenient for backup up a master list, but I thinks it's overkill
-> for reinstalling apps. I maintain a curated Brewfile that includes my essentials.
-
-<br>
-
-To create a "master list" Brewfile:
-
-```
-brew bundle dump --force --describe
-```
-
-> `--force` overwrites an existing Brewfile.<br>
-> `--describe` adds a brief description for each entry.
-
-<br>
-
-Run Mackup backup
-
-> Review "Bootstrap your Mac" above for installing and configuring Mackup.
-
-<br>
-
-```
-mackup backup
-```
-
-<br>
 
 
 ---
