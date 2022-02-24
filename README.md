@@ -169,8 +169,7 @@ directory = mackup
 This will install everything listed in your Brewfile.
 
 > I include a curated [Brewfile](https://github.com/Homebrew/homebrew-bundle) in this repo
-> that excludes casks and Mac App Store apps, as well as everything already installed via
-> [macgnu](https://github.com/shinokada/macgnu).
+> that excludes casks and Mac App Store apps.
 
 ```
 cd ~
