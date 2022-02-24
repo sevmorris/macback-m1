@@ -175,6 +175,8 @@ mackup backup
 
 </details>
 
+<br>
+
 ---
 #### Brewfile
 
