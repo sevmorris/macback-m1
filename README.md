@@ -110,6 +110,8 @@ cd strap
 bash bin/strap.sh
 ```
 
+Alternatively, you can run [Strap in a browser](https://macos-strap.herokuapp.com/).
+
 </details>
 
 
