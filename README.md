@@ -187,105 +187,113 @@ cleanbrew
 </details>
 
 <details>
-  <summary>Partial list of aliases</summary>
+  <summary>Partial list of aliases (not in any particular order)</summary>
 
-- List all & sort by modification date with most recent first and directories first `lm`
 
+##### Replace default commands
+
+- List in tree form using exa<br>
+`tree`
+
+- Send files and folders to Trash instead of deleting<br>
+`rm`
+
+- Use micro instead of nano<br>
+`nano`
+
+- Use fd instead of find<br>
+`find`
+
+- Use duf instead of du<br>
+`du`
+
+- Use bat instead of cat<br>
+`cat`
+
+- Replace man with tldr<br>
+`man`
+
+
+##### Listing
+
+- List all & sort by modification date with most recent first and directories first<br>
+`lm`
 
 - List only visible files & folders<br>
 `ll`
 `ld`
 
-- List all files and folders
-la
+- List all files and folders<br>
+`la`
 
-- List only (and all) files
-lf
-files
+- List only (and all) files<br>
+`lf`
+`files`
 
-- List in tree form using exa
-tree
+- Print each PATH entry on a separate line<br>
+`path`
 
-- Recursively delete `.DS_Store` files (wipes out Desktop layout)
-cleands
 
-- Flush Directory Service cache
-flush
+##### Clean up and update
 
-- Clean up Homebrew
-cleanbrew
+- Recursively delete `.DS_Store` files (wipes out Desktop layout)<br>
+`cleands`
 
-- Run brew-cask-upgrade and force it to update everything
-Brewup
+- Flush Directory Service cache<br>
+`flush`
 
-- Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
-update
+- Clean up Homebrew<br>
+`cleanbrew`
 
-- Send files and folders to Trash instead of deleting
-rm
+- Run brew-cask-upgrade and force it to update everything<br>
+`Brewup`
 
-- Update dotfiles in ~/ if modified in macback
-dots
+- Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages<br>
+`update`
 
-- Back up dotfiles and preferences with mackup
-mackup
+- Back up dotfiles and preferences with mackup<br>
+`mackup`
 
-- Backup preferences locally then remotely
-backup
+- Backup preferences locally then remotely<br>
+`backup`
 
-- Use micro instead of nano
-nano
+- Update dotfiles in ~/ if modified in macback<br>
+`dots`
 
-- Open Brewfile in nano (micro)
-brewfile
+- brew uninstall <app name><br>
+`unbrew`
 
-- Reload the shell (i.e. invoke as a login shell)
-reload
 
-- Print each PATH entry on a separate line
-path
+##### Everything else
 
-- Run gtop
-mon="gtop"
+- Clear the terminal<br>
+`c`
 
-- Use fd instead of find
-find
+- Turn off the screen<br>
+`s`
 
-- a quick way to get out of current directory
-alias ..='cd ..'
-alias ~='cd ~'
+- sudo<br>
+`please`
 
-- cd to Desktop or Downloads
-dl
-dt
+- Reload the shell (i.e. invoke as a login shell)<br>
+`reload`
 
-- Copy a shrug to the clipboard
-shrug
+- Run gtop<br>
+`mon`
 
-- Clear the terminal
-c
+- cd to Desktop or Downloads<br>
+`dl`
+`dt`
 
-- Turn off the screen
-s
+- Copy a shrug to the clipboard<br>
+`shrug`
 
-- sudo
-please
+- Run a system audit using Lynis<br>
+`scan`
+`audit`
 
-- Run a system audit using Lynis
-Scan
-audit
-
-- Use duf instead of du
-du
-
-- brew uninstall <app name>
-unbrew
-
-- Use bat instead of cat
-cat
-
-- Replace man with tldr
-man
+- Open Brewfile in nano (micro)<br>
+`brewfile`
 
 </details>
 
