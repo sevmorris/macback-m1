@@ -1,121 +1,99 @@
-#************************************************************************************#
-# LS VARIATIONS USING EXA & FLS
-#************************************************************************************#
 
-# List all & sort by modification date with most recent first and directories first
+################################################################################
+# LS VARIATIONS
+################################################################################
+
+# lm                                List all & sort by modification date with most recent first and directories first
+# ll, ld                            List only visible files & folders
+# la                                List all files and folders
+# lf                                List only (and all) files
+# trees                             List in tree form using exa
+
+################################################################################
+# CLEANUP/UPDATE
+################################################################################
+
+# out                               Empty the Trash on all mounted volumes and the main HDD
+#                                   Clear Apple’s System Logs to improve shell startup speed
+#                                   Clear download history from quarantine. https://mths.be/bum
+# cleands                           Recursively delete `.DS_Store` files
+# flush                             Flush Directory Service cache
+# cleanbrew                         Homebrew | Maintenance routines
+# brewup                            Homebrew | Run brew-cask-upgrade and force it to update everything
+# upgrade                           Homebrew & mas | update, upgrade all and cleanup
+# update                            Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
+# brun, unbrew                      Homebrew | uninstall
+# rm                                Send files and folders to Trash instead of deleting
+# dots                              Update ~/ dotfiles if modified in macback
+# mackup                            Back up dotfiles and preferences with mackup
+# backup                            Backup preferences locally then remotely
+
+################################################################################
+# EVERYTHING ELSE
+################################################################################
+
+# nono                              Use micro instead of nano
+# bashrc, aliases, brewfile         Open .bashrc/.aliases/Brewfile in micro
+# reload                            Reload the shell (i.e. invoke as a login shell)
+# path                              Print each PATH entry on a separate line
+# mon                               Run gtop system monitor
+# findit                            Use fd instead of find
+# dt, dl                            cd to Desktop/Downloads
+# shrug                             Copy a shrug to the clipboard
+# c                                 Clear & reload the terminal
+# s                                 Turn off the screen
+# please                            sudo
+# scan, audit                       Run a system audit using Lynis
+# du                                Run duf instead of du
+# cat                               Use bat instead of cat
+# man                               Replace man with tldr
+# ifactive                          Show active network interfaces
+
+
+
+################################################################################
+# aliases
+################################################################################
+
 alias lm="exa -a --header --group --long --git --sort=mod --reverse --group-directories-first"
-
-# List only visible files & folders
 alias ll="exa --header --group --long --git --group-directories-first"
 alias ld="exa --header --group --long --git --group-directories-first"
-
-# List all files and folders
 alias la="exa -a --header --group --long --git --group-directories-first"
-
-# List only (and all) files
 alias lf="fls f -a1 --color=always"
 alias files="fls f -a1 --color=always"
-
-# List in tree form
 alias tree="exa --tree --level=2 --header --group --long --git --icons ."
-
-#************************************************************************************#
-# CLEANUP/UPDATE
-#************************************************************************************#
-
-# Recursively delete `.DS_Store` files
+alias out="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 alias cleands="fd -H '^\.DS_Store$' -tf -X rm"
-
-# Flush Directory Service cache
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
-
-# Clean up Homebrew
+alias ="dscacheutil -flushcache && killall -HUP mDNSResponder"
 alias cleanbrew="brew -v update && brew -v upgrade && brew -v cleanup --prune=0 && brew doctor && brew -v upgrade --greedy"
-
-# Run brew-cask-upgrade and force it to update everything
 alias brewup="brew cu --all --force"
-
-# Update, upgrade all and cleanup
 alias upgrade="brew update && brew upgrade && brew cu --all --yes --cleanup && mas upgrade && brew cleanup"
-
-# Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
-
-# Send files and folders to Trash instead of deleting
+alias brun="brew uninstall -v "
+alias unbrew="brew uninstall -v "
 alias rm="trash "
-
-# Update dotfiles in ~/ if modified in macback
-alias dots=". $HOME/.dotsup"
-
-# Back up dotfiles and preferences with mackup
+alias dots="rsync -auv ~/macback/dotfiles/ ~/"
 alias mackup="mackup -f backup"
-
-# Backup preferences locally then remotely
 alias backup="rsync -av $HOME/Library/Preferences/ $HOME/backups/HomePrefs && rsync -av $HOME/backups/ $HOME/Dropbox/Backup"
-
-#************************************************************************************#
-# EVERYTHING ELSE
-#************************************************************************************#
-
-# Use micro instead of nano
-alias nano="micro"
-
-# Easier dotfile editing
-alias bashrc="nano $HOME/.bashrc && c && . $HOME/.bashrc"
-alias aliases="nano $HOME/.aliases && c && . $HOME/.aliases"
-
-# Open Brewfile in nano
-alias brewfile="nano $HOME/Brewfile"
-
-# Reload the shell (i.e. invoke as a login shell)
+alias nono="micro"
+alias bashrc="micro $HOME/.bashrc && c && . $HOME/.bashrc"
+alias aliases="micro $HOME/.aliases && c && . $HOME/.aliases"
+alias brewfile="micro $HOME/Brewfile"
 alias reload="exec $SHELL -l"
-
-# Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
-
-# Run gtop
 alias mon="gtop"
-
-# Use fd instead of find
 alias find="fd "
-
-# A quick way to get out of current directory
 alias ..='cd ..'
 alias ~='cd ~'
-
-# cd to Desktop or Downloads
 alias dl="cd $HOME/Downloads"
 alias dt="cd $HOME/Desktop"
-
-# Copy a shrug to the clipboard
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
-
-# Clear the terminal
 alias c="clear && reload"
-
-# turn off the screen
 alias s="pmset displaysleepnow"
-
-# sudo
 alias please="sudo "
-
-# Run a system audit
 alias scan="lynis audit system"
 alias audit="lynis audit system"
-
-# Run duf instead of du
 alias du="duf --sort filesystem"
-
-# brew uninstall
-alias brun="brew uninstall -v "
-alias werb="brew uninstall -v "
-alias unbrew="brew uninstall -v "
-
-# Use bat instead of cat
 alias cat="clear && bat "
-
-# edit a file using nano
-alias e="nano "
-
-# Replace man with tldr
 alias man="tldr "
+alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
