@@ -7,7 +7,7 @@
 # ll, ld                            List only visible files & folders
 # la                                List all files and folders
 # lf                                List only (and all) files
-# trees                             List in tree form using exa
+# trees                             List in tree form using exa (calls a function located in .bashrc)
 
 ################################################################################
 # CLEANUP/UPDATE
@@ -38,13 +38,13 @@
 # path                              Print each PATH entry on a separate line
 # mon                               Run gtop system monitor
 # findit                            Use fd instead of find
+# size <target file or dir>         Find size of file or directory (calls a function located in .bashrc)
 # dt, dl                            cd to Desktop/Downloads
 # shrug                             Copy a shrug to the clipboard
 # c                                 Clear & reload the terminal
 # s                                 Turn off the screen
 # please                            sudo
 # scan, audit                       Run a system audit using Lynis
-# du                                Run duf instead of du
 # cat                               Use bat instead of cat
 # man                               Replace man with tldr
 # ifactive                          Show active network interfaces
@@ -86,7 +86,8 @@ alias brewfile="micro $HOME/Brewfile"
 alias reload="exec $SHELL -l"
 alias path='echo -e ${PATH//:/\\n}'
 alias mon="gtop"
-alias find="fd "
+alias findit="fd "
+alias size="fs "
 alias ..='cd ..'
 alias ~='cd ~'
 alias dl="cd $HOME/Downloads"
@@ -97,7 +98,6 @@ alias s="pmset displaysleepnow"
 alias please="sudo "
 alias scan="lynis audit system"
 alias audit="lynis audit system"
-alias du="duf --sort filesystem"
 alias cat="clear && bat "
 alias man="tldr "
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"

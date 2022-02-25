@@ -1,12 +1,12 @@
 
-# Load prompt
-. ~/.bash_prompt
-# Load aliases
-. ~/.aliases
-# Load macgnu
-. ~/.macgnu
-# Load exports
-. ~/.exports
+
+for file in ~/.{bash_prompt,exports,aliases,}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell;
 
 # pushit :: Push to Github from current directory
 function pushit() {
@@ -32,6 +32,20 @@ function at() {
 # small enough for one screen.
 function tre() {
     tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
+}
+
+# Determine size of a file or total size of a directory
+function fs() {
+    if du -b /dev/null > /dev/null 2>&1; then
+        local arg=-sbh;
+    else
+        local arg=-sh;
+    fi
+    if [[ -n "$@" ]]; then
+        du $arg -- "$@";
+    else
+        du $arg .[^.]* *;
+    fi;
 }
 
 # for non-interactive sessions stop execution here -- https://serverfault.com/a/805532/67528

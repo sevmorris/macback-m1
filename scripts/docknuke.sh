@@ -13,7 +13,6 @@ nuke() {
 confirm() {
   clear
 while true; do
-    espeak "Think about what you are about to do!"
     read -p "${yellow}==>${reset} Are you ${red}SURE${reset} you want to ${red}REMOVE ALL${reset} Dock icons? ${yellow}<==${reset} " yn
     case $yn in
         [Yy]* ) nuke; break;;
