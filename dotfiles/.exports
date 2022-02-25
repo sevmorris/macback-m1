@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Make vim the default editor.
-export EDITOR='vim';
+export EDITOR='nano';
 
 export PAGER="most"
 export CLICOLOR=1
