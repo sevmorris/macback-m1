@@ -1,6 +1,6 @@
 # macback
 
-My methods of configuring, deploying and redeploying macOS using a couple of preexisting tools ([Strap](https://github.com/MikeMcQuaid) & [Mackup](https://github.com/lra)) and a few of my own scripts.
+My methods of configuring, deploying and redeploying macOS (on an M1 Mac) using a couple of preexisting tools ([Strap](https://github.com/MikeMcQuaid) & [Mackup](https://github.com/lra)) and a few of my own scripts.
 
 ## Tasks
 
