@@ -20,6 +20,7 @@ brew "automake"                           # Tool for generating GNU Standards-co
 
 brew "bash"                               # Bourne-Again SHell, a UNIX command interpreter (macOS's version of Bash is old)
 brew "bash-completion@2"                  # Programmable completion for Bash 4.2+
+brew "bat"                                # Clone of cat with syntax highlighting and Git integration
 brew "binutils"                           # GNU binary tools for native development
 
 brew "cask"                               # Emacs dependency management
