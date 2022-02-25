@@ -23,7 +23,7 @@
 # upgrade                           Homebrew & mas | update, upgrade all and cleanup
 # update                            Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
 # brun, unbrew                      Homebrew | uninstall
-# rm                                Send files and folders to Trash instead of deleting
+# rm                                Replace rm with trash to send files to Trash
 # dots                              Update ~/ dotfiles if modified in macback
 # mackup                            Back up dotfiles and preferences with mackup
 # backup                            Backup preferences locally then remotely
@@ -48,6 +48,8 @@
 # cat                               Use bat instead of cat
 # man                               Replace man with tldr
 # ifactive                          Show active network interfaces
+# mount                             Make mount command output easier to read
+
 
 
 
@@ -62,19 +64,21 @@ alias la="exa -a --header --group --long --git --group-directories-first"
 alias lf="fls f -a1 --color=always"
 alias files="fls f -a1 --color=always"
 alias tree="exa --tree --level=2 --header --group --long --git --icons ."
+
 alias out="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 alias cleands="fd -H '^\.DS_Store$' -tf -X rm"
-alias ="dscacheutil -flushcache && killall -HUP mDNSResponder"
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 alias cleanbrew="brew -v update && brew -v upgrade && brew -v cleanup --prune=0 && brew doctor && brew -v upgrade --greedy"
 alias brewup="brew cu --all --force"
 alias upgrade="brew update && brew upgrade && brew cu --all --yes --cleanup && mas upgrade && brew cleanup"
 alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
-alias rm="trash "
-alias dots="rsync -auv ~/macback/dotfiles/ ~/"
+alias rm='trash '
+alias dots="rsync -auv ~/macback/dotfiles/ ~/ && reload"
 alias mackup="mackup -f backup"
 alias backup="rsync -av $HOME/Library/Preferences/ $HOME/backups/HomePrefs && rsync -av $HOME/backups/ $HOME/Dropbox/Backup"
+
 alias nono="micro"
 alias bashrc="micro $HOME/.bashrc && c && . $HOME/.bashrc"
 alias aliases="micro $HOME/.aliases && c && . $HOME/.aliases"
@@ -97,3 +101,4 @@ alias du="duf --sort filesystem"
 alias cat="clear && bat "
 alias man="tldr "
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
+alias mount='mount |column -t'
