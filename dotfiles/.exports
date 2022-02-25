@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Make vim the default editor.
-export EDITOR='nano';
+export EDITOR='vim';
 
 export PAGER="most"
 export CLICOLOR=1
@@ -19,6 +19,7 @@ export PYTHONIOENCODING='UTF-8';
 # Increase Bash history size. Allow 32³ entries; the default is 500.
 export HISTSIZE='32768';
 export HISTFILESIZE="${HISTSIZE}";
+
 # Omit duplicates and commands that begin with a space from history.
 export HISTCONTROL='ignoreboth';
 
@@ -39,13 +40,10 @@ export GPG_TTY=$(tty);
 # Hide the “default interactive shell is now zsh” warning on macOS.
 export BASH_SILENCE_DEPRECATION_WARNING=1;
 
-if [[ "$(uname -m)" == "arm64" ]]; then
-  export PATH="/opt/homebrew/bin:${PATH}"
-fi
+export PATH="/opt/homebrew/sbin:$PATH"
+export PATH="/opt/homebrew/bin:${PATH}"
 
 export PATH=$HOME/.local/share/bin:$PATH
-
-# exports from macgnu (https://github.com/shinokada/macgnu)
 
 # most programs
 export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"

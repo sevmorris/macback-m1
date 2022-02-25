@@ -1,5 +1,6 @@
 
 
+# Source dotfiles
 for file in ~/.{bash_prompt,exports,aliases,}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
@@ -50,5 +51,3 @@ function fs() {
 
 # for non-interactive sessions stop execution here -- https://serverfault.com/a/805532/67528
 [[ $- != *i* ]] && return
-
-neofetch

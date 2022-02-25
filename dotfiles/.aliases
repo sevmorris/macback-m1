@@ -41,7 +41,7 @@
 # size <target file or dir>         Find size of file or directory (calls a function located in .bashrc)
 # dt, dl                            cd to Desktop/Downloads
 # shrug                             Copy a shrug to the clipboard
-# c                                 Clear & reload the terminal
+# c                                 Clear & source .bashrc
 # s                                 Turn off the screen
 # please                            sudo
 # scan, audit                       Run a system audit using Lynis
@@ -93,7 +93,7 @@ alias ~='cd ~'
 alias dl="cd $HOME/Downloads"
 alias dt="cd $HOME/Desktop"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
-alias c="clear && reload"
+alias c="clear && source .bashrc"
 alias s="pmset displaysleepnow"
 alias please="sudo "
 alias scan="lynis audit system"
