@@ -27,7 +27,7 @@ brew=$MACBACK/Brewfile
 mv -f $aliases $prompt $bashrc $excludes $brew $HOME
 
 # Symlink these since I edit them in the repo
-ln -sf $HOME/.bashrc $DOTS
-ln -sf $HOME/.aliases $DOTS
-ln -sf $HOME/excludes-file.txt $DOTS
-ln -sf $HOME/Brewfile $MACKBACK
+ln -sf $aliases $HOME
+ln -sf $bashrc $HOME
+ln -sf $excludes $HOME
+ln -sf $brew $HOME
