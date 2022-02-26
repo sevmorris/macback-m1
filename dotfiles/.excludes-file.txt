@@ -1,0 +1,25 @@
+
+# A list of files/directories to exclude when backing up using rsync.
+
+.DS_Store
+.bash_sessions
+.bash_history
+.CFUserTextEncoding
+.Trash
+Trash
+Desktop
+Documents
+dotphiles
+Downloads
+Dropbox
+Library
+macback
+Movies
+Music
+Parallels
+Pictures
+Public
+strap
+TeX
+Classified
+
