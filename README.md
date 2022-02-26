@@ -201,7 +201,7 @@ rm -r $HOME/macback
 
 - Some of my dotfiles are live in ~/dotfiles and Github. Locally they're symlinked in ~/.<br>
 - The .aliases file has an alias (`backup`) for backing up user preferences and some dotfiles (excluding the ones in ~/dotfiles. It rsyncs to a Dropbox folder, which you would need to create before running. Refer to the alias for dir names.<br>
-- There's a file in ~/ (`excludes-file.txt`) that lists anything that doesn't need to (or shouldn't) be included.
+- There's a file (~/excludes-file.txt) that lists anything that doesn't need to (or shouldn't) be included.
 I've barely started figuring that out, so the list will grow.
 
 ---
