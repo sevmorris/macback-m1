@@ -1,0 +1,103 @@
+
+################################################################################
+# LS VARIATIONS
+################################################################################
+
+# lm                                List all & sort by modification date with most recent first and directories first
+# ll, ld                            List only visible files & folders
+# la                                List all files and folders
+# lf                                List only (and all) files
+# trees                             List in tree form using exa (calls a function located in .bashrc)
+
+################################################################################
+# CLEANUP/UPDATE
+################################################################################
+
+# out                               Empty the Trash on all mounted volumes and the main HDD
+#                                   Clear Apple’s System Logs to improve shell startup speed
+#                                   Clear download history from quarantine. https://mths.be/bum
+# cleands                           Recursively delete `.DS_Store` files
+# flush                             Flush Directory Service cache
+# cleanbrew                         Homebrew | Maintenance routines
+# brewup                            Homebrew | Run brew-cask-upgrade and force it to update everything
+# upgrade                           Homebrew & mas | update, upgrade all and cleanup
+# update                            Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
+# brun, unbrew                      Homebrew | uninstall
+# rm                                Replace rm with trash to send files to Trash
+# dots                              Update ~/ dotfiles if modified in macback
+# backup                            Backup dotfiles and ~/Library/Preferences to Dropbox
+
+################################################################################
+# EVERYTHING ELSE
+################################################################################
+
+# nono                              Use micro instead of nano
+# bashrc, aliases, brewfile         Open .bashrc/.aliases/Brewfile in micro
+# reload                            Reload the shell (i.e. invoke as a login shell)
+# path                              Print each PATH entry on a separate line
+# mon                               Run gtop system monitor
+# findit                            Use fd instead of find
+# size <target file or dir>         Find size of file or directory (calls a function located in .bashrc)
+# dt, dl                            cd to Desktop/Downloads
+# shrug                             Copy a shrug to the clipboard
+# c                                 Clear & source .bashrc
+# s                                 Turn off the screen
+# please                            sudo
+# scan, audit                       Run a system audit using Lynis
+# cat                               Use bat instead of cat
+# man                               Replace man with tldr
+# ifactive                          Show active network interfaces
+# mount                             Make mount command output easier to read
+
+
+
+
+################################################################################
+# aliases
+################################################################################
+
+alias lm="exa -a --header --group --long --git --sort=mod --reverse --group-directories-first"
+alias ll="exa --header --group --long --git --group-directories-first"
+alias ld="exa --header --group --long --git --group-directories-first"
+alias la="exa -a --header --group --long --git --group-directories-first"
+alias lf="fls f -a1 --color=always"
+alias files="fls f -a1 --color=always"
+alias tree="exa --tree --level=2 --header --group --long --git --icons ."
+
+alias out="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+alias cleands="fd -H '^\.DS_Store$' -tf -X rm"
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+alias cleanbrew="brew -v update && brew -v upgrade && brew -v cleanup --prune=0 && brew doctor && brew -v upgrade --greedy"
+alias brewup="brew cu --all --force"
+alias upgrade="brew update && brew upgrade && brew cu --all --yes --cleanup && mas upgrade && brew cleanup"
+alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
+alias brun="brew uninstall -v "
+alias unbrew="brew uninstall -v "
+alias rm='trash '
+alias dots="rsync -auvP ~/macback/dotfiles/ ~/ && reload"
+alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
+
+
+alias nono="micro"
+alias bashrc="micro ~/.bashrc && c && . ~/.bashrc"
+alias aliases="micro ~/.aliases && c && . ~/.aliases"
+alias brewfile="micro ~/Brewfile"
+alias reload="exec $SHELL -l"
+alias path='echo -e ${PATH//:/\\n}'
+alias mon="gtop"
+alias findit="fd "
+alias size="fs "
+alias ..='cd ..'
+alias ~='cd ~'
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
+alias c="clear && source ~/.bashrc"
+alias s="pmset displaysleepnow"
+alias please="sudo "
+alias scan="lynis audit system"
+alias audit="lynis audit system"
+alias cat="clear && bat "
+alias man="tldr "
+alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
+alias mount='mount |column -t'
