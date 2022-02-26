@@ -205,6 +205,8 @@ I've barely started figuring that out, so the list will grow.
 Please reboot soon. Like _really_ soon.
 
 ---
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
 #### Thanks
 
 [Mike McQuaid](https://github.com/MikeMcQuaid) for Strap.<br>
