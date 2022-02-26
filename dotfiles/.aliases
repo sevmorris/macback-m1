@@ -38,6 +38,7 @@
 # dots                              Push ~/dotfiles to gh
 # mb                                Push ~/macback to gh
 # br                                Push ~/homebrew-brewfile to gh
+# all                               Push all three above to gh
 # backup                            Backup dotfiles and ~/Library/Preferences to Dropbox
 
 ################################################################################
@@ -96,6 +97,7 @@ alias rm='trash '
 alias dots="cd ~/dotfiles && pushit && cd ~"
 alias mb="cd ~/macback && pushit && cd ~"
 alias br="cd ~/homebrew-brewfile && pushit && cd ~"
+alias all="cd ~/macback && pushit &&cd ~/dotfiles && cd ~/homebrew-brewfile && pushit && cd ~"
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
 alias nono="micro"
