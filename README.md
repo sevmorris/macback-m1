@@ -9,6 +9,13 @@ My methods of configuring, deploying and redeploying macOS (on an M1 Mac).
 
 ## Tasks
 
+- Switch to Bash
+- Run [Strap](https://github.com/MikeMcQuaid/strap)
+- Run some scripts
+- Create a Brewfile
+- Use a Brewfile
+- Switch to new Bash
+
 #### Switch to Bash
 
   macOS comes with [zsh](https://support.apple.com/en-us/HT208050) as the default shell, but I use Bash:
@@ -22,7 +29,7 @@ My methods of configuring, deploying and redeploying macOS (on an M1 Mac).
 <br>
 
 ---
-Run [Strap](https://github.com/MikeMcQuaid/strap) *(maybe)*.
+Run Strap *(maybe)*.
 
 >A script to bootstrap a minimal macOS development system. This does not assume you're doing Ruby/Rails
 > web development but installs the minimal set of software every macOS developer will want.
@@ -123,7 +130,7 @@ chmod 755 tweaks.sh
 <br>
 
 ---
-#### Brewfile
+#### Create a Brewfile
 
 You can create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) to index everything installed with Homebrew and the Mac App Store.
 
@@ -137,6 +144,11 @@ brew bundle dump --force --describe
 
 > `--force` overwrites an existing Brewfile.<br>
 > `--describe` adds a brief description for each entry.
+
+---
+#### Use a Brewfile
+
+_If_ you have a Github repo with your Brewfile and you run Strap then Strap should use that repo to install apps.
 
 ---
 To install via the Brewfile:
