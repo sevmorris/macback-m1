@@ -195,7 +195,7 @@ rm -r $HOME/macback
 #### Notes
 
 The .aliases file has an alias (`backup`) for backing up user preferences and some dotfiles. It rsyncs to a Dropbox folder, which you would need to create first.
-There's a file in ~/ (`excludes-file.txt`) that lists anything that shouldn't (or doesn't need to be) be included.
+There's a file in ~/ (`excludes-file.txt`) that lists anything that doesn't need to be (or shouldn't) be included.
 I've barely started figuring that out, so the list will grow.
 
 
