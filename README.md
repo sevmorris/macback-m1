@@ -17,28 +17,6 @@ My methods of configuring, deploying and redeploying macOS (on an M1 Mac).
 <br>
 
 ---
-#### Run some scripts
-
-Tweak some Mac defaults, add some dotfiles, and (optionally) remove Dock icons (useful for a new OS install).
-
-<br>
-
-> :point_right: This will overwrite .aliases, .bashrc & .bash_prompt if they already exist.<br>
-> :point_right: Review [macdefaults.sh](scripts/macdefaults.sh) and remove what you don't want.
-
-<br>
-
-Clone the repo and run the scripts:
-
-```
-git clone https://github.com/sevmorris/macback.git && cd macback/scripts
-chmod 755 tweaks.sh
-./tweaks.sh && cd ~
-```
-
-<br>
-
----
 Run [Strap](https://github.com/MikeMcQuaid/strap) *(maybe)*.
 
 >A script to bootstrap a minimal macOS development system. This does not assume you're doing Ruby/Rails
@@ -118,6 +96,28 @@ Alternatively, you can run [Strap in a browser](https://macos-strap.herokuapp.co
 <br>
 
 ---
+#### Run some scripts
+
+Tweak some Mac defaults, add some dotfiles, and (optionally) remove Dock icons (useful for a new OS install).
+
+<br>
+
+> :point_right: This will overwrite .aliases, .bashrc & .bash_prompt if they already exist.<br>
+> :point_right: Review [macdefaults.sh](scripts/macdefaults.sh) and remove what you don't want.
+
+<br>
+
+Clone the repo and run the scripts:
+
+```
+git clone https://github.com/sevmorris/macback.git && cd macback/scripts
+chmod 755 tweaks.sh
+./tweaks.sh && cd ~
+```
+
+<br>
+
+---
 #### Brewfile
 
 You can create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) to index everything installed with Homebrew and the Mac App Store.
@@ -192,7 +192,15 @@ rm -r $HOME/macback
 ```
 
 ---
-#### Finish
+#### Notes
+
+The .aliases file has an alias (`backup`) for backing up user preferences and some dotfiles. It rsyncs to a Dropbox folder, which you would need to create first.
+There's a file in ~/ (`excludes-file.txt`) that lists anything that shouldn't (or doesn't need to be) be included.
+I've barely started figuring that out, so the list will grow.
+
+
+---
+#### Finished
 
 Please reboot soon. Like _really_ soon.
 
