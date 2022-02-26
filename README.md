@@ -202,7 +202,7 @@ rm -r $HOME/macback
 - Some of my dotfiles (.aliases, .bashrc, etc) live in ~/dotfiles and a Github repo. Locally they're symlinked in ~/.<br>
 - My Brewfile lives in ~/homebrew-brewfile  and a Guthub repo.<br>
 - If you run Strap it should pull from both the dotfiles and Brewfile repos.
-- There's and alias (`backup`) for backing up user preferences and some dotfiles (excluding the ones in ~/dotfiles. It rsyncs to a Dropbox folder, which you would need to create before running. Refer to the alias for dir names.<br>
+- There's an alias (`backup`) for backing up user preferences and some dotfiles (excluding the ones in ~/dotfiles. It rsyncs to a Dropbox folder, which you would need to create before running. Refer to the alias for dir names.<br>
 - There's a file (~/excludes-file.txt) that lists anything that doesn't need to (or shouldn't) be included.
 I've barely started figuring that out, so the list will grow.
 
