@@ -16,6 +16,7 @@ My methods of configuring, deploying and redeploying macOS (on an M1 Mac).
 - Use a Brewfile
 - Switch to new Bash
 
+---
 #### Switch to Bash
 
   macOS comes with [zsh](https://support.apple.com/en-us/HT208050) as the default shell, but I use Bash:
