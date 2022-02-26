@@ -1,6 +1,6 @@
 # macback
 
-My methods of configuring, deploying and redeploying macOS (on an M1 Mac) using a couple of preexisting tools ([Strap](https://github.com/MikeMcQuaid) & [Mackup](https://github.com/lra)) and a few of my own scripts.
+My methods of configuring, deploying and redeploying macOS (on an M1 Mac).
 
 ## Tasks
 
@@ -17,7 +17,7 @@ My methods of configuring, deploying and redeploying macOS (on an M1 Mac) using 
 <br>
 
 ---
-#### Run custom scripts
+#### Run some scripts
 
 Tweak some Mac defaults, add some dotfiles, and (optionally) remove Dock icons (useful for a new OS install).
 
@@ -118,56 +118,6 @@ Alternatively, you can run [Strap in a browser](https://macos-strap.herokuapp.co
 <br>
 
 ---
-#### Install, configure and run Mackup
-
-> For backing up dotfiles & (some) preferences.
-
-<br>
-
-Install Mackup:
-
-```
-brew install mackup
-```
-
-<br>
-
-Create a config file for Mackup:
-
-```
-nano ~/.mackup.cfg
-```
-
-Add the following text and save:
-
-```
-[storage]
-engine = file_system
-path = backups
-directory = mackup
-```
-
-<br>
-
-Create a backup folder for Mackup:
-
-```
-mkdir ~/backups && mkdir ~/backups/mackup
-```
-
-<br>
-
-Run Mackup backup:
-
-```
-mackup backup
-```
-
-<br>
-
-> I have an alias to run the backup and then rsync the local folder to a Dropbox folder.
-
----
 #### Brewfile
 
 You can create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) to index everything installed with Homebrew and the Mac App Store.
@@ -230,7 +180,6 @@ chsh -s /opt/homebrew/bin/bash
 > :point_right: **Restart** the terminal or open a new tab for the change to take effect.
 
 
-
 ---
 #### Cleanup
 
@@ -243,128 +192,13 @@ rm -r $HOME/macback
 ```
 
 ---
-#### Aliases
-
-<details>
-  <summary>Partial list of aliases included</summary>
-
-
-##### Replace default commands
-
-- List in tree form using exa<br>
-`tree`
-
-- Send files and folders to Trash instead of deleting<br>
-`rm`
-
-- Use micro instead of nano<br>
-`nano`
-
-- Use fd instead of find<br>
-`find`
-
-- Use duf instead of du<br>
-`du`
-
-- Use bat instead of cat<br>
-`cat`
-
-- Replace man with tldr<br>
-`man`
-
-
-##### Listing
-
-- List all & sort by modification date with most recent first and directories first<br>
-`lm`
-
-- List only visible files & folders<br>
-`ll`<br>
-`ld`
-
-- List all files and folders<br>
-`la`
-
-- List only (and all) files<br>
-`lf`<br>
-`files`
-
-- Print each PATH entry on a separate line<br>
-`path`
-
-
-##### Clean up and update
-
-- Recursively delete `.DS_Store` files (wipes out Desktop layout)<br>
-`cleands`
-
-- Flush Directory Service cache<br>
-`flush`
-
-- Clean up Homebrew<br>
-`cleanbrew`
-
-- Run brew-cask-upgrade and force it to update everything<br>
-`Brewup`
-
-- Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages<br>
-`update`
-
-- Back up dotfiles and preferences with mackup<br>
-`mackup`
-
-- Backup preferences locally then remotely<br>
-`backup`
-
-- Update dotfiles in ~/ if modified in macback<br>
-`dots`
-
-- brew uninstall <app name><br>
-`unbrew`
-
-
-##### Everything else
-
-- Clear the terminal<br>
-`c`
-
-- Turn off the screen<br>
-`s`
-
-- sudo<br>
-`please`
-
-- Reload the shell (i.e. invoke as a login shell)<br>
-`reload`
-
-- Run gtop<br>
-`mon`
-
-- cd to Desktop or Downloads<br>
-`dl`<br>
-`dt`
-
-- Copy a shrug to the clipboard<br>
-`shrug`
-
-- Run a system audit using Lynis<br>
-`scan`<br>
-`audit`
-
-- Open Brewfile in nano (micro)<br>
-`brewfile`
-
-</details>
-
----
 #### Finish
 
 Please reboot soon. Like _really_ soon.
 
 ---
-#### Thank you to the following for the handful of incredibly useful preexisting tools
+#### Thanks
 
 [Mike McQuaid](https://github.com/MikeMcQuaid) for Strap.<br>
-[Laurent Raufaste](https://github.com/lra) for Mackup.<br>
 
 Obligatory shoutout to [mathiasbynens](https://github.com/mathiasbynens/dotfiles/blob/main/.macos) for the many `defaults`.
