@@ -11,6 +11,16 @@
 # path                              Print each PATH entry on a separate line
 
 ################################################################################
+# NAVIGATION
+################################################################################
+
+# ..                                cd back/up a directory
+# ~                                 cd to ~
+# dt, dl                            cd to Desktop/Downloads
+# d                                 cd into ~/dotfiles
+# m                                 cd into macback
+
+################################################################################
 # CLEANUP/UPDATE
 ################################################################################
 
@@ -40,7 +50,6 @@
 # mon                               Run gtop system monitor
 # findit                            Use fd instead of find
 # size <target file or dir>         Find size of file or directory (calls a function located in .bashrc)
-# dt, dl                            cd to Desktop/Downloads
 # shrug                             Copy a shrug to the clipboard
 # c                                 Clear & source .bashrc
 # s                                 Turn off the screen
@@ -50,12 +59,11 @@
 # man                               Replace man with tldr
 # ifactive                          Show active network interfaces
 # mount                             Make mount command output easier to read
-# d                                 cd into ~/dotfiles
-# m                                 cd into macback
+
 
 
 ################################################################################
-# aliases
+# ALIASES
 ################################################################################
 
 alias lm="exa -a --header --group --long --git --sort=mod --reverse --group-directories-first"
@@ -66,6 +74,13 @@ alias lf="fls f -a1 --color=always"
 alias files="fls f -a1 --color=always"
 alias trees="exa --tree --level=2 --header --group --long --git --icons ."
 alias path='echo -e ${PATH//:/\\n}'
+
+alias ..='cd ..'
+alias ~='cd ~'
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias d="cd ~/dotfiles"
+alias m="cd ~/macback"
 
 alias ex="micro ~/.excludes-file.txt"
 alias out="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
@@ -83,7 +98,6 @@ alias mb="cd ~/macback && pushit && cd ~"
 alias br="cd ~/homebrew-brewfile && pushit && cd ~"
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
-
 alias nono="micro"
 alias bashrc="micro ~/dotfiles/.bashrc && c && . ~/.bashrc"
 alias aliases="micro ~/dotfiles/.aliases && c && . ~/.aliases"
@@ -93,10 +107,6 @@ alias reload="exec $SHELL -l"
 alias mon="gtop"
 alias findit="fd "
 alias size="fs "
-alias ..='cd ..'
-alias ~='cd ~'
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear && source ~/.bashrc"
 alias s="pmset displaysleepnow"
@@ -107,5 +117,3 @@ alias cat="clear && bat "
 alias man="tldr "
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 alias mount='mount |column -t'
-alias d="cd ~/dotfiles"
-alias m="cd ~/macback"
