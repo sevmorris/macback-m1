@@ -27,7 +27,6 @@
 # dots                              cd into ~/dotfiles and preemptively push to gh
 # mb                                cd into ~/macback and preemptively push to gh
 # br                                cd into ~/homebrew-brewfile and preemptively push to gh
-# ex                                Open ~/.excludes-file.txt in micro
 # backup                            Backup dotfiles and ~/Library/Preferences to Dropbox
 
 ################################################################################
@@ -35,7 +34,7 @@
 ################################################################################
 
 # nono                              Use micro instead of nano
-# bashrc, aliases, brewfile         Open .bashrc/.aliases/Brewfile in micro
+# bashrc, aliases, ex               Open .bashrc/.aliases/.excludes-file.txt in micro
 # reload                            Reload the shell (i.e. invoke as a login shell)
 # path                              Print each PATH entry on a separate line
 # mon                               Run gtop system monitor
@@ -80,13 +79,13 @@ alias rm='trash '
 alias dots="cd ~/dotfiles && pushit"
 alias mb="cd ~/macback && pushit"
 alias br="cd ~/homebrew-brewfile && pushit"
-
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
 
 alias nono="micro"
 alias bashrc="micro ~/.bashrc && c && . ~/.bashrc"
 alias aliases="micro ~/.aliases && c && . ~/.aliases"
+alias ex=".excludes-file.txt"
 alias brewfile="micro ~/Brewfile"
 alias reload="exec $SHELL -l"
 alias path='echo -e ${PATH//:/\\n}'
