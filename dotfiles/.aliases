@@ -24,9 +24,9 @@
 # update                            Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
 # brun, unbrew                      Homebrew | uninstall
 # rm                                Replace rm with trash to send files to Trash
-# dots                              cd into ~/dotfiles and preemptively push to gh
-# mb                                cd into ~/macback and preemptively push to gh
-# br                                cd into ~/homebrew-brewfile and preemptively push to gh
+# dots                              Push ~/dotfiles to gh
+# mb                                Push ~/macback to gh
+# br                                Push ~/homebrew-brewfile to gh
 # backup                            Backup dotfiles and ~/Library/Preferences to Dropbox
 
 ################################################################################
@@ -76,9 +76,9 @@ alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
 alias rm='trash '
-alias dots="cd ~/dotfiles && pushit"
-alias mb="cd ~/macback && pushit"
-alias br="cd ~/homebrew-brewfile && pushit"
+alias dots="cd ~/dotfiles && pushit && cd ~"
+alias mb="cd ~/macback && pushit && cd ~"
+alias br="cd ~/homebrew-brewfile && pushit && cd ~"
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
 
