@@ -25,9 +25,3 @@ brew=$MACBACK/Brewfile
 
 # Move dotfiles to ~/
 mv -f $aliases $prompt $bashrc $excludes $brew $HOME
-
-# Symlink these since I edit them in the repo
-ln -sfv $aliases $HOME
-ln -sfv $bashrc $HOME
-ln -sfv $excludes $HOME
-ln -sfv $brew $HOME
