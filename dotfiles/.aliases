@@ -25,8 +25,7 @@
 # brun, unbrew                      Homebrew | uninstall
 # rm                                Replace rm with trash to send files to Trash
 # dots                              Update ~/ dotfiles if modified in macback
-# mackup                            Back up dotfiles and preferences with mackup
-# backup                            Backup preferences locally then remotely
+# backup                            Backup dotfiles and user Preferences to Dropbox
 
 ################################################################################
 # EVERYTHING ELSE
@@ -75,14 +74,14 @@ alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
 alias rm='trash '
-alias dots="rsync -auv ~/macback/dotfiles/ ~/ && reload"
-alias mackup="mackup -f backup"
-alias backup="rsync -av $HOME/Library/Preferences/ $HOME/backups/HomePrefs && rsync -av $HOME/backups/ $HOME/Dropbox/Backup"
+alias dots="rsync -auvP ~/macback/dotfiles/ ~/ && reload"
+alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
+
 
 alias nono="micro"
-alias bashrc="micro $HOME/.bashrc && c && . $HOME/.bashrc"
-alias aliases="micro $HOME/.aliases && c && . $HOME/.aliases"
-alias brewfile="micro $HOME/Brewfile"
+alias bashrc="micro ~/.bashrc && c && . ~/.bashrc"
+alias aliases="micro ~/.aliases && c && . ~/.aliases"
+alias brewfile="micro ~/Brewfile"
 alias reload="exec $SHELL -l"
 alias path='echo -e ${PATH//:/\\n}'
 alias mon="gtop"
@@ -90,10 +89,10 @@ alias findit="fd "
 alias size="fs "
 alias ..='cd ..'
 alias ~='cd ~'
-alias dl="cd $HOME/Downloads"
-alias dt="cd $HOME/Desktop"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
-alias c="clear && source $HOME/.bashrc"
+alias c="clear && source ~/.bashrc"
 alias s="pmset displaysleepnow"
 alias please="sudo "
 alias scan="lynis audit system"
