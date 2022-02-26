@@ -27,6 +27,7 @@
 # dots                              cd into ~/dotfiles and preemptively push to gh
 # mb                                cd into ~/macback and preemptively push to gh
 # br                                cd into ~/homebrew-brewfile and preemptively push to gh
+# ex                                Open ~/.excludes-file.txt in micro
 # backup                            Backup dotfiles and ~/Library/Preferences to Dropbox
 
 ################################################################################
@@ -65,7 +66,7 @@ alias la="exa -a --header --group --long --git --group-directories-first"
 alias lf="fls f -a1 --color=always"
 alias files="fls f -a1 --color=always"
 alias tree="exa --tree --level=2 --header --group --long --git --icons ."
-
+alias ex="micro ~/.excludes-file.txt"
 alias out="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 alias cleands="fd -H '^\.DS_Store$' -tf -X rm"
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
@@ -79,6 +80,7 @@ alias rm='trash '
 alias dots="cd ~/dotfiles && pushit"
 alias mb="cd ~/macback && pushit"
 alias br="cd ~/homebrew-brewfile && pushit"
+
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
 
