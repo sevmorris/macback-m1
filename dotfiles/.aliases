@@ -28,7 +28,6 @@
 #                                   Clear Apple’s System Logs to improve shell startup speed
 #                                   Clear download history from quarantine. https://mths.be/bum
 # cleands                           Recursively delete `.DS_Store` files
-# flush                             Flush Directory Service cache
 # cleanbrew                         Homebrew | Maintenance routines
 # brewup                            Homebrew | Run brew-cask-upgrade and force it to update everything
 # upgrade                           Homebrew & mas | update, upgrade all and cleanup
@@ -36,6 +35,7 @@
 # brun, unbrew                      Homebrew | uninstall
 # rm                                Replace rm with trash to send files to Trash
 # dots                              Push ~/dotfiles to gh
+# a2b							 	Copy & overwrite dotfile's .aliases > macback's .aliases
 # mb                                Push ~/macback to gh
 # br                                Push ~/homebrew-brewfile to gh
 # all                               Push all three above to gh
@@ -86,7 +86,6 @@ alias m="cd ~/macback"
 alias ex="micro ~/.excludes-file.txt"
 alias out="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 alias cleands="fd -H '^\.DS_Store$' -tf -X rm"
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 alias cleanbrew="brew -v update && brew -v upgrade && brew -v cleanup --prune=0 && brew doctor && brew -v upgrade --greedy"
 alias brewup="brew cu --all --force"
 alias upgrade="brew update && brew upgrade && brew cu --all --yes --cleanup && mas upgrade && brew cleanup"
@@ -94,10 +93,11 @@ alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
 alias rm='trash '
+alias a2b="cp -f ~/dotfiles/.aliases ~/macback/dotfiles"
 alias dots="cd ~/dotfiles && pushit && cd ~"
 alias mb="cd ~/macback && pushit && cd ~"
 alias br="cd ~/homebrew-brewfile && pushit && cd ~"
-alias all="cd ~/macback && pushit &&cd ~/dotfiles && cd ~/homebrew-brewfile && pushit && cd ~"
+alias all="cp -f ~/dotfiles/.aliases ~/macback/dotfiles && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~/homebrew-brewfile && pushit && cd ~"
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
 alias nono="micro"
