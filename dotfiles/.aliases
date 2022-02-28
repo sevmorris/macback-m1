@@ -27,10 +27,7 @@
 # out                               Empty the Trash on all mounted volumes and the main HDD
 #                                   Clear Apple’s System Logs to improve shell startup speed
 #                                   Clear download history from quarantine. https://mths.be/bum
-# cleands                           Recursively delete `.DS_Store` files
-# cleanbrew                         Homebrew | Maintenance routines
-# brewup                            Homebrew | Run brew-cask-upgrade and force it to update everything
-# upgrade                           Homebrew & mas | update, upgrade all and cleanup
+# brewup                            Homebrew | Update, upgrade, cleanup...
 # update                            Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
 # brun, unbrew                      Homebrew | uninstall
 # rm                                Replace rm with trash to send files to Trash
@@ -85,10 +82,7 @@ alias m="cd ~/macback"
 
 alias ex="micro ~/.excludes-file.txt"
 alias out="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
-alias cleands="fd -H '^\.DS_Store$' -tf -X rm"
-alias cleanbrew="brew -v update && brew -v upgrade && brew -v cleanup --prune=0 && brew doctor && brew -v upgrade --greedy"
-alias brewup="brew cu --all --force"
-alias upgrade="brew update && brew upgrade && brew cu --all --yes --cleanup && mas upgrade && brew cleanup"
+alias brewup="brew -v update && brew -v upgrade &&  brew cu --all --yes --cleanup --force && brew -v cleanup --prune=0 && brew doctor && brew -v upgrade --greedy"
 alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
