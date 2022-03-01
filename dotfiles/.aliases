@@ -39,7 +39,7 @@
 # EVERYTHING ELSE
 ################################################################################
 
-# nono                              Use micro instead of nano
+# no                                Use micro instead of nano
 # bashrc, aliases, ex               Open .bashrc/.aliases/.excludes-file.txt in micro
 # reload                            Reload the shell (i.e. invoke as a login shell)
 # mon                               Run gtop system monitor
@@ -88,7 +88,7 @@ alias aliasync="rsync -rtuv ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && r
 alias pushem="cp -f ~/dotfiles/.aliases ~/macback/dotfiles && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~/homebrew-brewfile && pushit && cd ~"
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
-alias nono="micro"
+alias no="micro"
 alias bashrc="micro ~/dotfiles/.bashrc && c && . ~/.bashrc"
 alias aliases="micro ~/dotfiles/.aliases && c && . ~/.aliases"
 alias ex="micro ~/.excludes-file.txt"
