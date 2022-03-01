@@ -32,7 +32,6 @@ brew "diffutils"                          # File comparison utilities
 brew "docutils"                           # Text processing system for reStructuredText
 brew "duf"                                # Disk Usage/Free Utility - a better 'df' alternative
 
-brew "ed"                                 # Classic UNIX line editor
 brew "emacs", restart_service: true, link: false
 brew "exa"                                # Modern replacement for 'ls'
 
@@ -45,8 +44,8 @@ brew "futhark"                            # Data-parallel functional programming
 brew "gawk"                               # GNU awk utility
 brew "gh"                                 # GitHub command-line tool
 brew "git-extras"                         # Small git utilities
-brew "gitmoji"
-brew "glances"                            # Utility to provide quick look previews for files that aren't natively supported                          # Interactive command-line tool for using emoji in commit messages
+brew "gitmoji"                            # Interactive command-line tool for using emoji in commit messages
+brew "glances"                            # Utility to provide quick look previews for files that aren't natively supported
 brew "glib"                               # Core application library for C
 brew "gobject-introspection"              # Generate introspection data for GObject libraries
 brew "gnu-indent"                         # C code prettifier
@@ -55,7 +54,7 @@ brew "gnu-sed"                            # GNU implementation of the famous str
 brew "gnu-tar"                            # GNU version of the tar archiving utility
 brew "gnu-which"                          # GNU implementation of which utility
 brew "grep"                               # GNU grep, egrep and fgrep
-brew "gtop"								  # System monitoring dashboard for terminal
+brew "gtop"								                # System monitoring dashboard for terminal
 brew "gzip"                               # Popular GNU data compression program
 
 brew "harfbuzz"                           # OpenType text shaping engine
