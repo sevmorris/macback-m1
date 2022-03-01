@@ -40,7 +40,7 @@
 # EVERYTHING ELSE
 ################################################################################
 
-# no                                Use micro instead of nano
+# open                              Open file to edit in micro
 # bashrc, aliases, ex               Open .bashrc/.aliases/.excludes-file.txt in micro
 # reload                            Reload the shell (i.e. invoke as a login shell)
 # mon                               Run gtop system monitor
@@ -90,7 +90,7 @@ alias syncbrew="rsync -rtuv --progress ~/homebrew-brewfile/Brewfile ~/macback/Br
 alias pushem="cp -f ~/dotfiles/.aliases ~/macback/dotfiles && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~/homebrew-brewfile && pushit && cd ~"
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
-alias no="micro"
+alias open="micro"
 alias bashrc="micro ~/dotfiles/.bashrc && c && . ~/.bashrc"
 alias aliases="micro ~/dotfiles/.aliases && c && . ~/.aliases"
 alias ex="micro ~/.excludes-file.txt"
