@@ -60,6 +60,7 @@ brew "gtop"								  # System monitoring dashboard for terminal
 brew "gzip"                               # Popular GNU data compression program
 
 brew "harfbuzz"                           # OpenType text shaping engine
+brew "howdoi"                             # Instant coding answers via the command-line
 brew "htop"                               # Improved top (interactive process viewer)
 
 brew "iftop"                              # Display an interface's bandwidth usage
@@ -96,7 +97,6 @@ brew "pipes-sh"                           # Animated pipes terminal screensaver
 brew "postgresql", restart_service: true  # Object-relational database system
 
 brew "redis", restart_service: true       # Persistent key-value database, with built-in net interface
-brew "ripgrep"                            # Search tool like grep and The Silver Searcher
 brew "rsync"                              # Utility that provides fast incremental file transfer
 
 brew "screen"                             # Terminal multiplexer with VT100/ANSI terminal emulation
@@ -110,6 +110,8 @@ brew "tmux"                               # Terminal multiplexer
 brew "tmux-xpanes"                        # Ultimate terminal divider powered by tmux
 brew "trash"                              # CLI tool that moves files or folder to the trash
 brew "tree"                               # Display directories as trees (with optional color/HTML output)
+
+brew "unison"                             # File synchronization tool for OSX
 
 brew "vim"                                # Vi 'workalike' with many additional features
 
