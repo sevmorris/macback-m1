@@ -17,8 +17,8 @@
 # ..                                cd back/up a directory
 # ~                                 cd to ~
 # dt, dl                            cd to Desktop/Downloads
-# d                                 cd into ~/dotfiles
-# m                                 cd into macback
+# dots                              cd into ~/dotfiles
+# mb                                cd into macback
 
 ################################################################################
 # CLEANUP/UPDATE
