@@ -31,7 +31,8 @@
 # update                            Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
 # brun, unbrew                      Homebrew | uninstall
 # rm                                Replace rm with trash to send files to Trash
-# aliasync							 	          Sync .aliases file between dotfiles & macback (since I edit it in both locations) then push both to gh
+# aliasync							 	          Sync .aliases file (using rsync) between dotfiles & macback (since I edit it in both locations) then push both to gh
+# aliason                           Sync .aliases file (using unison) between dotfiles & macback (since I edit it in both locations) then push both to gh
 # pushem                            Push any changes in ~/dotfile ~/macback and ~/homebrew-brewfile to gh
 # backup                            Backup dotfiles and ~/Library/Preferences to Dropbox
 
@@ -85,6 +86,7 @@ alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
 alias rm='trash '
 alias aliasync="rsync -rtuv ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~"
+alias aliason="unison ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~"
 alias pushem="cp -f ~/dotfiles/.aliases ~/macback/dotfiles && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~/homebrew-brewfile && pushit && cd ~"
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
