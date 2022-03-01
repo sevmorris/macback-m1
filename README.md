@@ -230,7 +230,7 @@ Get macOS Software Updates, and update installed Ruby gems, npm, and their insta
 <details>
   <summary>backup</summary>
 
-Backup dotfiles and ~/Library/Preferences, (not including files listed in .excludes-file.txt) to Dropbox
+Backup dotfiles and ~/Library/Preferences, (not including files listed in `.excludes-file.txt`) to Dropbox.
 
   </details>
 

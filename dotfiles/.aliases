@@ -70,8 +70,8 @@ alias ..='cd ..'
 alias ~='cd ~'
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias d="cd ~/dotfiles"
-alias m="cd ~/macback"
+alias dots="cd ~/dotfiles"
+alias mb="cd ~/macback"
 
 alias brewup="brew -v update && brew -v upgrade &&  brew cu --all --yes --cleanup --force && brew -v cleanup --prune=0 && brew doctor && brew -v upgrade --greedy"
 alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
