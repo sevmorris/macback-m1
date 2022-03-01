@@ -13,7 +13,6 @@ tap "homebrew/services"
 brew "ack"                                # Search tool like grep, but optimized for programmers
 brew "adwaita-icon-theme"                 # Icons for the GNOME project
 brew "aom"                                # Codec library for encoding and decoding AV1 video streams
-brew "aria2"                              # Download with resuming and segmented downloading (ex. 'aria2c http://example.org/mylinux.iso')
 brew "asciiquarium"                       # Aquarium animation in ASCII art
 brew "autoconf"                           # Automatic configure script builder
 brew "automake"                           # Tool for generating GNU Standards-compliant Makefiles
