@@ -28,7 +28,7 @@
 # update                            Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
 # brun, unbrew                      Homebrew | uninstall
 # rm                                Replace rm with trash to send files to Trash
-# syncem                            Sync & push both .aliases & Brewfile
+# sync                              Sync & push both .aliases & Brewfile
 # backup                            Backup dotfiles and ~/Library/Preferences to Dropbox
 
 ################################################################################
