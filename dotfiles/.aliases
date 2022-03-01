@@ -31,8 +31,8 @@
 # update                            Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
 # brun, unbrew                      Homebrew | uninstall
 # rm                                Replace rm with trash to send files to Trash
-# syncali							 	            Sync .aliases file (using rsync) between ~/dotfiles & ~/macback/dotfiles (since I edit it in both locations) then push both to gh
-# syncbrew                          Sync Brewfile file (using rsync) between ~/homebrewbrewfile & ~/macback then push both to gh
+# aliasync							 	          Sync .aliases file (using rsync) between ~/dotfiles & ~/macback/dotfiles (since I edit it in both locations) then push both to gh
+# brewsync                          Sync Brewfile file (using rsync) between ~/homebrewbrewfile & ~/macback then push both to gh
 # pushem                            Push any changes in ~/dotfile ~/macback and ~/homebrew-brewfile to gh
 # backup                            Backup dotfiles and ~/Library/Preferences to Dropbox
 
@@ -85,8 +85,8 @@ alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
 alias rm='trash '
-alias syncali="rsync -rtuv --progress ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~"
-alias syncbrew="rsync -rtuv --progress ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv --progress ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && cd ~/macback && pushit && cd ~/homebrew-brewfile && pushit && cd ~"
+alias aliasync="rsync -rtuv --progress ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~"
+alias brewsync="rsync -rtuv --progress ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv --progress ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && cd ~/macback && pushit && cd ~/homebrew-brewfile && pushit && cd ~"
 alias pushem="cp -f ~/dotfiles/.aliases ~/macback/dotfiles && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~/homebrew-brewfile && pushit && cd ~"
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
