@@ -32,7 +32,7 @@
 # brun, unbrew                      Homebrew | uninstall
 # rm                                Replace rm with trash to send files to Trash
 # dots                              Push ~/dotfiles to gh
-# a2b							 	Copy & overwrite dotfile's .aliases > macback's .aliases
+# aliasync							 	          Sync .aliases file between dotfiles & macback (since I edit it in both locations) then push both to gh
 # mb                                Push ~/macback to gh
 # br                                Push ~/homebrew-brewfile to gh
 # all                               Push all three above to gh
@@ -87,8 +87,8 @@ alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
 alias rm='trash '
-alias a2b="cp -f ~/dotfiles/.aliases ~/macback/dotfiles"
 alias dots="cd ~/dotfiles && pushit && cd ~"
+alias aliasync="rsync -rtuv ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~"
 alias mb="cd ~/macback && pushit && cd ~"
 alias br="cd ~/homebrew-brewfile && pushit && cd ~"
 alias all="cp -f ~/dotfiles/.aliases ~/macback/dotfiles && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~/homebrew-brewfile && pushit && cd ~"
