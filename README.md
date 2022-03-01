@@ -221,7 +221,7 @@ Get macOS Software Updates, and update installed Ruby gems, npm, and their insta
   </details>
 
 <details>
-  <summary>sync</summary>
+  <summary>syncup</summary>
 
   Sync (because they exist in two places) & push both `.aliases` & `Brewfile` to Github. These are the two files I modify most often.
 
