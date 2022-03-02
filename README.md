@@ -216,6 +216,7 @@ rm -r $HOME/macback
 
 <details>
   <summary>audit</summary>
+<br><br>
 
 Runs a system audit using security and system auditing tool [Lynis](https://cisofy.com/lynis/).
 
@@ -224,14 +225,20 @@ Runs a system audit using security and system auditing tool [Lynis](https://ciso
 
 <details>
   <summary>backup</summary>
+<br><br>
 
+<<<<<<< HEAD
 Backs up dotfiles and ~/Library/Preferences, (not including files listed in `.excludes-file.txt`) to Dropbox.
+=======
+Backs up dotfiles and ~/Library/Preferences, (not including files listed in `.excludes-file.txt`) to a Dropbox folder.
+>>>>>>> 45dbfe653af144e540e04a0bac6eaf5945d563c4
 
   </details>
 
 
 <details>
   <summary>brewup</summary>
+<br><br>
 
 Updates, upgrades & cleans up Homebrew.
 
@@ -240,6 +247,7 @@ Updates, upgrades & cleans up Homebrew.
 
 <details>
   <summary>cat</summary>
+<br><br>
 
 Opens a file with cat clone [bat](https://github.com/sharkdp/bat).
 
@@ -248,6 +256,7 @@ Opens a file with cat clone [bat](https://github.com/sharkdp/bat).
 
 <details>
   <summary>df</summary>
+<br><br>
 
 Gives an overview of the filesystem disk space usage using [Disk Usage/Free utility](https://github.com/muesli/duf) duf instead of df.
 
@@ -256,6 +265,7 @@ Gives an overview of the filesystem disk space usage using [Disk Usage/Free util
 
 <details>
   <summary>man</summary>
+<br><br>
 
 Replaces man with the simplified and community-driven [tldr](https://tldr.sh/).
 
@@ -264,14 +274,20 @@ Replaces man with the simplified and community-driven [tldr](https://tldr.sh/).
 
 <details>
   <summary>open</summary>
+<br><br>
 
+<<<<<<< HEAD
 Opens a file for editing in the text editor [micro](https://github.com/zyedidia/micro).  
+=======
+Opens file for editing in the text editor [micro](https://github.com/zyedidia/micro).  
+>>>>>>> 45dbfe653af144e540e04a0bac6eaf5945d563c4
 
   </details>
 
 
 <details>
   <summary>shrug</summary>
+<br><br>
 
 Copies ¯\_(ツ)_/¯ to the clipboard
 
@@ -280,14 +296,20 @@ Copies ¯\_(ツ)_/¯ to the clipboard
 
 <details>
   <summary>syncup</summary>
+<br><br>
 
+<<<<<<< HEAD
 I maintain two copies of `.aliases` and `Brewfile`. This syncs both versions & pushes to Github.
+=======
+I maintain two copies of `.aliases` and `Brewfile`. This syncs both versions & pushes them to Github.
+>>>>>>> 45dbfe653af144e540e04a0bac6eaf5945d563c4
 
   </details>
 
 
 <details>
   <summary>update</summary>
+<br><br>
 
 Gets macOS Software Updates, and updates installed Ruby gems, npm, and their installed packages.
 
