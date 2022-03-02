@@ -240,7 +240,7 @@ Updates, upgrades & cleans up Homebrew.
 <details>
   <summary>cat</summary>
 <br>
-Opens a file with cat clone bat<super>1</super>.
+Opens a file with cat clone bat <sup>1</sup>.
 
 </details>
 
