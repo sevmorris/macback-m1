@@ -80,12 +80,9 @@ alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
 alias rm='trash '
 alias synca="rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~/"
-alias syncb="rsynb -rtuv --progress ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv --progress ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && pushit && cd ~/"
+alias syncb="rsync -rtuv --progress ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv --progress ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && pushit && cd ~/"
 alias syncd="rsync -rtuv --progress ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/"
-
-
-
-
+alias syncall="rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && rsync -rtuv --progress ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv --progress ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && pushit && rsync -rtuv --progress ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/"
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
 alias open="micro"
