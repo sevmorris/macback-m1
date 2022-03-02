@@ -217,7 +217,7 @@ rm -r $HOME/macback
 <details>
   <summary>audit</summary>
 <br>
-Runs a system audit using security and system auditing tool [Lynis](https://cisofy.com/lynis/).
+Runs a system audit using security and system auditing tool Lynis.
 
 </details>
 
@@ -225,7 +225,7 @@ Runs a system audit using security and system auditing tool [Lynis](https://ciso
 <details>
   <summary>backup</summary>
 <br>
-Backs up dotfiles and ~/Library/Preferences, (not including files listed in `.excludes-file.txt`) to a Dropbox folder.
+Backs up dotfiles and ~/Library/Preferences, (not including files listed in .excludes-file.txt) to a Dropbox folder.
 
   </details>
 
@@ -241,7 +241,7 @@ Updates, upgrades & cleans up Homebrew.
 <details>
   <summary>cat</summary>
 <br>
-Opens a file with cat clone [bat](https://github.com/sharkdp/bat).
+Opens a file with cat clone bat.
 
 </details>
 
@@ -249,7 +249,7 @@ Opens a file with cat clone [bat](https://github.com/sharkdp/bat).
 <details>
   <summary>df</summary>
 <br>
-Gives an overview of the filesystem disk space usage using [Disk Usage/Free utility](https://github.com/muesli/duf) duf instead of df.
+Gives an overview of the filesystem disk space usage using Disk Usage/Free utility (duf) instead of df.
 
   </details>
 
@@ -257,7 +257,7 @@ Gives an overview of the filesystem disk space usage using [Disk Usage/Free util
 <details>
   <summary>man</summary>
 <br>
-Replaces man with the simplified and community-driven [tldr](https://tldr.sh/).
+Replaces man with the simplified and community-driven tldr.
 
 </details>
 
@@ -265,7 +265,7 @@ Replaces man with the simplified and community-driven [tldr](https://tldr.sh/).
 <details>
   <summary>open</summary>
 <br>
-Opens file for editing in the text editor [micro](https://github.com/zyedidia/micro).  
+Opens file for editing in the text editor micro.  
 
   </details>
 
@@ -279,9 +279,9 @@ Copies ¯\_(ツ)_/¯ to the clipboard
 
 
 <details>
-  <summary>syncup</summary>
+  <summary>syncall</summary>
 <br>
-I maintain two copies of `.aliases` and `Brewfile`. This syncs both versions & pushes them to Github.
+I maintain two copies of .aliases and Brewfile and edit them regularly. This syncs both versions & pushes them to Github. (synca will sync just the .aliases files and syncb will sync just the Brewfiles)
 
   </details>
 
