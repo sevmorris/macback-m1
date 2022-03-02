@@ -140,15 +140,6 @@ You can create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [
 _If_ you have a Github repo (called "homebrew-brewfile") with your Brewfile and you decide to run Strap then Strap should use that repo to install apps.
 
 ---
-To install via the Brewfile:
-
-> This will install everything listed in the Brewfile. You should probably have a look and remove anything you don't want to install now, or move my curated Brewfile to ~/ instead.
-
-```
-cd ~
-brew bundle install
-```
-
 To create a "master list" Brewfile:
 
 ```
@@ -159,6 +150,16 @@ brew bundle dump --force --describe
 > `--describe` adds a brief description for each entry.
 
 Again, this is a *complete* list of apps installed via Homebrew and the Mac App Store. For practical purposes I maintain a curated Brewfile that lives in a Github repo. I would rather manage mas apps manually, and I definitely do not want to install every cask I have every time I start fresh. Strap will use this list to install my selected apps.
+
+---
+To install via the Brewfile:
+
+> This will install everything listed in the Brewfile. You should probably have a look and remove anything you don't want to install now, or move my curated Brewfile to ~/ instead.
+
+```
+cd ~
+brew bundle install
+```
 
 <br>
 
