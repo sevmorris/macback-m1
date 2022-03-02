@@ -137,7 +137,7 @@ You can create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [
 
 <br>
 
-_If_ you have a Github repo with your Brewfile and you run Strap then Strap should use that repo to install apps.
+_If_ you have a Github repo with your Brewfile (called "homebrew-brewfile") and you decide to run Strap then Strap should use that repo to install apps.
 
 ---
 To install via the Brewfile:
