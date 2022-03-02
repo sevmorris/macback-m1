@@ -159,7 +159,7 @@ cd ~
 brew bundle install
 ```
 
-For a ton of Brewfile info, see [Brew Bundle Brewfile Tips](https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f)
+For a ton of Brewfile info and tips, see [Brew Bundle Brewfile Tips](https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f). Eventually my setup will change (evolve) based on this guide.
 
 <br>
 
