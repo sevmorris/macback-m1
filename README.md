@@ -292,6 +292,7 @@ Gets macOS Software Updates (using mas <sup>6</sup>), and updates installed Ruby
 
   </details>
 
+<br>
 
 <sup>1</sup> [lynis](https://formulae.brew.sh/formula/lynis#default)<br>
 <sup>2</sup> [bat](https://formulae.brew.sh/formula/bat#default)<br>
