@@ -240,7 +240,7 @@ Updates, upgrades & cleans up Homebrew.
 <details>
   <summary>cat</summary>
 <br>
-Opens a file with cat clone bat.
+Opens a file with cat clone bat<super>1</super>.
 
 </details>
 
@@ -292,7 +292,10 @@ Gets macOS Software Updates, and updates installed Ruby gems, npm, and their ins
 
   </details>
 
-<super>[bat](https://formulae.brew.sh/formula/bat#default)</super>
+[bat](https://formulae.brew.sh/formula/bat#default)
+
+
+
 ---
 ### Notes
 
