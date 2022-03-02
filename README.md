@@ -217,7 +217,7 @@ rm -r $HOME/macback
 <details>
   <summary>audit</summary>
 
-Run a system audit using security and system auditing tool [Lynis](https://cisofy.com/lynis/).
+Runs a system audit using security and system auditing tool [Lynis](https://cisofy.com/lynis/).
 
 </details>
 
@@ -225,7 +225,7 @@ Run a system audit using security and system auditing tool [Lynis](https://cisof
 <details>
   <summary>backup</summary>
 
-Backup dotfiles and ~/Library/Preferences, (not including files listed in `.excludes-file.txt`) to Dropbox.
+Backs up dotfiles and ~/Library/Preferences, (not including files listed in `.excludes-file.txt`) to Dropbox.
 
   </details>
 
@@ -241,7 +241,7 @@ Updates, upgrades & cleans up Homebrew.
 <details>
   <summary>cat</summary>
 
-Open a file with cat clone [bat](https://github.com/sharkdp/bat).
+Opens a file with cat clone [bat](https://github.com/sharkdp/bat).
 
 </details>
 
@@ -257,7 +257,7 @@ Gives an overview of the filesystem disk space usage using [Disk Usage/Free util
 <details>
   <summary>man</summary>
 
-Replace man with the simplified and community-driven [tldr](https://tldr.sh/).
+Replaces man with the simplified and community-driven [tldr](https://tldr.sh/).
 
 </details>
 
@@ -265,7 +265,7 @@ Replace man with the simplified and community-driven [tldr](https://tldr.sh/).
 <details>
   <summary>open</summary>
 
-Open file for editing in the [text editor micro](https://github.com/zyedidia/micro).  
+Opens a file for editing in the text editor [micro](https://github.com/zyedidia/micro).  
 
   </details>
 
@@ -273,7 +273,7 @@ Open file for editing in the [text editor micro](https://github.com/zyedidia/mic
 <details>
   <summary>shrug</summary>
 
-Copy ¯\_(ツ)_/¯ to the clipboard
+Copies ¯\_(ツ)_/¯ to the clipboard
 
   </details>
 
@@ -281,7 +281,7 @@ Copy ¯\_(ツ)_/¯ to the clipboard
 <details>
   <summary>syncup</summary>
 
-I maintain two copies of `.aliases` and `Brewfile`. Sync both versions & push to Github. These are the two files I modify most often.
+I maintain two copies of `.aliases` and `Brewfile`. This syncs both versions & pushes to Github.
 
   </details>
 
