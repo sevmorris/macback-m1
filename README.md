@@ -211,11 +211,95 @@ rm -r $HOME/macback
 ```
 
 ---
+#### Select aliases
+
+
+<details>
+  <summary>audit</summary>
+
+Run a system audit using security and system auditing tool [Lynis](https://cisofy.com/lynis/).
+
+</details>
+
+
+<details>
+  <summary>backup</summary>
+
+Backup dotfiles and ~/Library/Preferences, (not including files listed in `.excludes-file.txt`) to Dropbox.
+
+  </details>
+
+
+<details>
+  <summary>brewup</summary>
+
+Updates, upgrades & cleans up Homebrew.
+
+  </details>
+
+
+<details>
+  <summary>cat</summary>
+
+Open a file with cat clone [bat](https://github.com/sharkdp/bat).
+
+</details>
+
+
+<details>
+  <summary>df</summary>
+
+Gives an overview of the filesystem disk space usage using [Disk Usage/Free utility](https://github.com/muesli/duf) duf instead of df.
+
+  </details>
+
+
+<details>
+  <summary>man</summary>
+
+Replace man with the simplified and community-driven [tldr](https://tldr.sh/).
+
+</details>
+
+
+<details>
+  <summary>open</summary>
+
+Open file for editing in the [text editor micro](https://github.com/zyedidia/micro).  
+
+  </details>
+
+
+<details>
+  <summary>shrug</summary>
+
+Copy ¯\_(ツ)_/¯ to the clipboard
+
+  </details>
+
+
+<details>
+  <summary>syncup</summary>
+
+I maintain two copies of `.aliases` and `Brewfile`. Sync both versions & push to Github. These are the two files I modify most often.
+
+  </details>
+
+
+<details>
+  <summary>update</summary>
+
+Gets macOS Software Updates, and updates installed Ruby gems, npm, and their installed packages.
+
+  </details>
+
+
+---
 #### Notes
 
 - Some of my dotfiles (.aliases, .bashrc, etc) live in ~/dotfiles and a Github repo. Locally they're symlinked in ~/.<br>
 - My Brewfile lives in ~/homebrew-brewfile  and a Guthub repo.<br>
-- If you run Strap it should pull from both the dotfiles and Brewfile repos.
+- If you run Strap and have these repos it should pull from both.
 - There's an alias (`backup`) for backing up user preferences and some dotfiles (excluding the ones in ~/dotfiles. It rsyncs to a Dropbox folder, which you would need to create before running. Refer to the alias for dir names.<br>
 - There's a file (~/excludes-file.txt) that lists anything that doesn't need to (or shouldn't) be included in the backup.
 I've barely started figuring that out, so the list will grow.
