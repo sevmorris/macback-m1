@@ -13,8 +13,7 @@ My methods of configuring, deploying and redeploying macOS (on an M1 Mac).
 - Switch to Bash
 - Run [Strap](https://github.com/MikeMcQuaid/strap)
 - Run some scripts
-- Create a Brewfile
-- Use a Brewfile
+- Brewfile
 - Switch to new Bash
 
 ---
@@ -132,23 +131,11 @@ chmod 755 tweaks.sh
 <br>
 
 ---
-#### Create a Brewfile
+#### Brewfile
 
 You can create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) to index everything installed with Homebrew and the Mac App Store.
 
 <br>
-
-To create a "master list" Brewfile:
-
-```
-brew bundle dump --force --describe
-```
-
-> `--force` overwrites an existing Brewfile.<br>
-> `--describe` adds a brief description for each entry.
-
----
-#### Use a Brewfile
 
 _If_ you have a Github repo with your Brewfile and you run Strap then Strap should use that repo to install apps.
 
@@ -162,12 +149,23 @@ cd ~
 brew bundle install
 ```
 
+To create a "master list" Brewfile:
+
+```
+brew bundle dump --force --describe
+```
+
+> `--force` overwrites an existing Brewfile.<br>
+> `--describe` adds a brief description for each entry.
+
+Again, this is a *complete* list of apps installed via Homebrew and the Mac App Store. For practical purposes I maintain a curated Brewfile that lives in a Github repo. I would rather manage mas apps manually, and I definitely do not want to install every cask I have every time I start fresh. Strap will use this list to install my selected apps.
+
 <br>
 
 Clean up (using one of the new aliases):
 
 ```
-cleanbrew
+brewup
 ```
 
 ---
