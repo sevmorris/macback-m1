@@ -149,7 +149,7 @@ brew bundle dump --force --describe
 
 Again, this is a *complete* list of apps installed via Homebrew and the Mac App Store.<br>
 
-For practical purposes I maintain a curated Brewfile that lives in a Github repo. I would rather manage mas apps manually, and I definitely do not want to install every cask I have installed every time I start fresh. Strap will use this list to install my selected apps. If you're installing locally with Homebrew then you should have a look at your Brewfile and remove anything you don't want to install now, or replace it with my curated Brewfile instead.
+> For practical purposes I maintain a curated Brewfile that lives in a Github repo. I would rather manage mas apps manually, and I definitely do not want to install every cask I have installed every time I start fresh. Strap will use this list to install my selected apps. If you're installing locally with Homebrew then you should have a look at your Brewfile and remove anything you don't want to install now, or replace it with my curated Brewfile instead.
 
 ---
 To install via the local Brewfile:
