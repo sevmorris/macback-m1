@@ -17,7 +17,7 @@ My methods of configuring, deploying and redeploying macOS (on an M1 Mac).
 - Switch to new Bash
 
 ---
-#### Switch to Bash
+### Switch to Bash
 
   macOS comes with [zsh](https://support.apple.com/en-us/HT208050) as the default shell, but I use Bash:
 
@@ -109,7 +109,7 @@ Alternatively, you can run [Strap in a browser](https://macos-strap.herokuapp.co
 <br>
 
 ---
-#### Run some scripts
+### Run some scripts
 
 Tweak some Mac defaults, add some dotfiles, and (optionally) remove Dock icons (useful for a new OS install).
 
@@ -131,11 +131,9 @@ chmod 755 tweaks.sh
 <br>
 
 ---
-#### Brewfile
+### Brewfile
 
 You can create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) to index everything installed with Homebrew and the Mac App Store.
-
-<br>
 
 _If_ you have a Github repo (called "homebrew-brewfile") with your Brewfile and you decide to run Strap then Strap should use that repo to install apps.
 
@@ -149,12 +147,12 @@ brew bundle dump --force --describe
 > `--force` overwrites an existing Brewfile.<br>
 > `--describe` adds a brief description for each entry.
 
-Again, this is a *complete* list of apps installed via Homebrew and the Mac App Store. For practical purposes I maintain a curated Brewfile that lives in a Github repo. I would rather manage mas apps manually, and I definitely do not want to install every cask I have every time I start fresh. Strap will use this list to install my selected apps.
+Again, this is a *complete* list of apps installed via Homebrew and the Mac App Store.<br>
+
+For practical purposes I maintain a curated Brewfile that lives in a Github repo. I would rather manage mas apps manually, and I definitely do not want to install every cask I have installed every time I start fresh. Strap will use this list to install my selected apps. If you're installing locally with Homebrew then you should have a look at your Brewfile and remove anything you don't want to install now, or replace it with my curated Brewfile instead.
 
 ---
-To install via the Brewfile:
-
-> This will install everything listed in the Brewfile. You should probably have a look and remove anything you don't want to install now, or move my curated Brewfile to ~/ instead.
+To install via the local Brewfile:
 
 ```
 cd ~
@@ -170,12 +168,12 @@ brewup
 ```
 
 ---
-#### Switch to new Bash
+### Switch to new Bash
 
 > A newer version of Bash is installed via Homebrew. Time to switch to that.
 
 
-##### Intel Macs
+#### Intel Macs
 
 ```
 sudo -i
@@ -184,7 +182,7 @@ exit
 chsh -s /usr/local/bin/bash
 ```
 
-##### M1 Macs
+#### M1 Macs
 
 ```
 sudo -i
@@ -199,7 +197,7 @@ chsh -s /opt/homebrew/bin/bash
 
 
 ---
-#### Cleanup
+### Cleanup
 
 <br>
 
@@ -211,7 +209,7 @@ rm -r $HOME/macback
 
 
 ---
-#### Select aliases
+### Notes on select aliases
 
 <details>
   <summary>audit</summary>
@@ -294,7 +292,7 @@ Gets macOS Software Updates, and updates installed Ruby gems, npm, and their ins
 
 
 ---
-#### Notes
+### Notes
 
 - Some of my dotfiles (.aliases, .bashrc, etc) live in ~/dotfiles and a Github repo. Locally they're symlinked in ~/.<br>
 - My Brewfile lives in ~/homebrew-brewfile  and a Guthub repo.<br>
@@ -304,7 +302,7 @@ Gets macOS Software Updates, and updates installed Ruby gems, npm, and their ins
 I've barely started figuring that out, so the list will grow.
 
 ---
-#### Finished
+### Finished
 
 It wouldn't hurt to reboot soon.
 
