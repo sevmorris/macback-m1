@@ -3,12 +3,13 @@
 # LIST VARIATIONS
 ################################################################################
 
-# lm                                List all & sort by modification date with most recent first and directories first
+# lm                                List all & sorts by modification date with most recent first and directories first
 # ll, ld                            List only visible files & folders
 # la                                List all files and folders
 # lf                                List only (and all) files
 # trees                             List in tree form using exa (calls a function located in .bashrc)
 # path                              Print each PATH entry on a separate line
+# df                                Give an overview of the filesystem disk space usage using duf instead of df
 
 ################################################################################
 # NAVIGATION
@@ -35,18 +36,18 @@
 # EVERYTHING ELSE
 ################################################################################
 
-# open                              Open file to edit in micro
+# open                              Open file for editing in micro
 # bashrc, aliases, ex               Open .bashrc/.aliases/.excludes-file.txt in micro
 # reload                            Reload the shell (i.e. invoke as a login shell)
 # mon                               Run gtop system monitor
 # findit                            Use fd instead of find
 # size <target file or dir>         Find size of file or directory (calls a function located in .bashrc)
-# shrug                             Copy a shrug to the clipboard
+# shrug                             Copy ¯\_(ツ)_/¯ to the clipboard
 # c                                 Clear & source .bashrc
 # s                                 Turn off the screen
 # please                            sudo
 # scan, audit                       Run a system audit using Lynis
-# cat                               Use bat instead of cat
+# cat                               Open a file with cat clone bat
 # man                               Replace man with tldr
 # ifactive                          Show active network interfaces
 # mount                             Make mount command output easier to read
@@ -100,4 +101,4 @@ alias audit="lynis audit system"
 alias cat="clear && bat "
 alias man="tldr "
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
-alias mount='mount |column -t'
+alias mount='mount | column -t'

@@ -211,21 +211,16 @@ rm -r $HOME/macback
 ```
 
 ---
-#### Aliases
+#### Select aliases
+
 
 <details>
-  <summary>update</summary>
+  <summary>audit</summary>
 
-Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages.
+Run a system audit using security and system auditing tool [Lynis](https://cisofy.com/lynis/).
 
-  </details>
+</details>
 
-<details>
-  <summary>syncup</summary>
-
-  Sync (because they exist in two places) & push both `.aliases` & `Brewfile` to Github. These are the two files I modify most often.
-
-  </details>
 
 <details>
   <summary>backup</summary>
@@ -234,24 +229,68 @@ Backup dotfiles and ~/Library/Preferences, (not including files listed in `.excl
 
   </details>
 
-<details>
-  <summary>alias</summary>
-  </details>
 
 <details>
-  <summary>alias</summary>
+  <summary>brewup</summary>
+
+Updates, upgrades & cleans up Homebrew.
+
   </details>
 
-<details>
-  <summary>alias</summary>
-  </details>
 
 <details>
-  <summary>alias</summary>
-  </details>
+  <summary>cat</summary>
+
+Open a file with cat clone [bat](https://github.com/sharkdp/bat).
+
+</details>
+
 
 <details>
-  <summary>alias</summary>
+  <summary>df</summary>
+
+Gives an overview of the filesystem disk space usage using [Disk Usage/Free utility](https://github.com/muesli/duf) duf instead of df.
+
+  </details>
+
+
+<details>
+  <summary>man</summary>
+
+Replace man with the simplified and community-driven [tldr](https://tldr.sh/).
+
+</details>
+
+
+<details>
+  <summary>open</summary>
+
+Open file for editing in the [text editor micro](https://github.com/zyedidia/micro).  
+
+  </details>
+
+
+<details>
+  <summary>shrug</summary>
+
+Copy ¯\_(ツ)_/¯ to the clipboard
+
+  </details>
+
+
+<details>
+  <summary>syncup</summary>
+
+I maintain two copies of `.aliases` and `Brewfile`. Sync both versions & push to Github. These are the two files I modify most often.
+
+  </details>
+
+
+<details>
+  <summary>update</summary>
+
+Gets macOS Software Updates, and updates installed Ruby gems, npm, and their installed packages.
+
   </details>
 
 
