@@ -1,6 +1,6 @@
-# macback
+# macback M1 edition
 
-My methods of configuring, deploying and redeploying macOS (on an M1 Mac).
+My methods of configuring, deploying and redeploying macOS on an M1 Mac.
 
 
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
@@ -173,18 +173,6 @@ brewup
 ### Switch to new Bash
 
 > A newer version of Bash is installed via Homebrew. Time to switch to that.
-
-
-#### Intel Macs
-
-```
-sudo -i
-echo /usr/local/bin/bash >> /etc/shells
-exit
-chsh -s /usr/local/bin/bash
-```
-
-#### M1 Macs
 
 ```
 sudo -i
