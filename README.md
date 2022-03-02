@@ -172,7 +172,7 @@ brewup
 ---
 ### Switch to new Bash
 
-> A newer version of Bash is installed via Homebrew. Time to switch to that.
+A newer version of Bash is installed via Homebrew. Time to switch to that.
 
 > :exclamation: This is specific to M1 Macs.
 
