@@ -293,11 +293,11 @@ Gets macOS Software Updates (using mas <sup>6</sup>), and updates installed Ruby
   </details>
 
 
-<sup>1</sup> [lynis](https://formulae.brew.sh/formula/lynis#default)
-<sup>2</sup> [bat](https://formulae.brew.sh/formula/bat#default)
-<sup>3</sup> [duf](https://formulae.brew.sh/formula/duf#default)
-<sup>4</sup> [tldr](https://formulae.brew.sh/formula/tldr#default)
-<sup>5</sup> [micro](https://formulae.brew.sh/formula/micro#default)
+<sup>1</sup> [lynis](https://formulae.brew.sh/formula/lynis#default)<br>
+<sup>2</sup> [bat](https://formulae.brew.sh/formula/bat#default)<br>
+<sup>3</sup> [duf](https://formulae.brew.sh/formula/duf#default)<br>
+<sup>4</sup> [tldr](https://formulae.brew.sh/formula/tldr#default)<br>
+<sup>5</sup> [micro](https://formulae.brew.sh/formula/micro#default)<br>
 <sup>6</sup> [mas](https://formulae.brew.sh/formula/mas#default)
 
 
