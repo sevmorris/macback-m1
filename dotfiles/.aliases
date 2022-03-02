@@ -81,9 +81,9 @@ alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
 alias rm='trash '
-alias synca="rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~/"
-alias syncb="rsync -rtuv --progress ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv --progress ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && cd ~/homebrew-brewfile && pushit && cd ~/"
-alias syncall="rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && rsync -rtuv --progress ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv --progress ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && cd ~/homebrew-brewfile && pushit && rsync -rtuv --progress ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/dotfiles && pushit && cd ~/"
+alias synca="rsync -rtuv ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~/"
+alias syncb="rsync -rtuv ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && cd ~/homebrew-brewfile && pushit && cd ~/"
+alias syncall="rsync -rtuv ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && rsync -rtuv ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && cd ~/homebrew-brewfile && pushit && rsync -rtuv ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/dotfiles && pushit && cd ~/"
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
 alias open="micro"
