@@ -29,7 +29,9 @@
 # update                            Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
 # brun, unbrew                      Homebrew | uninstall
 # rm                                Replace rm with trash to send files to Trash
-# syncup                            Sync & push both .aliases & Brewfile
+# synca                             Sync & push .aliases
+# syncb                             Sync & push Brewfile
+# syncall                           Sync & push both .aliases & Brewfile
 # backup                            Backup dotfiles and ~/Library/Preferences to Dropbox
 
 ################################################################################
@@ -81,7 +83,6 @@ alias unbrew="brew uninstall -v "
 alias rm='trash '
 alias synca="rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~/"
 alias syncb="rsync -rtuv --progress ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv --progress ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && cd ~/homebrew-brewfile && pushit && cd ~/"
-alias syncd="rsync -rtuv --progress ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/dotfiles && pushit && cd ~/"
 alias syncall="rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && rsync -rtuv --progress ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv --progress ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && cd ~/homebrew-brewfile && pushit && rsync -rtuv --progress ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/dotfiles && pushit && cd ~/"
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
