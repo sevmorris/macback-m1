@@ -216,7 +216,7 @@ rm -r $HOME/macback
 <details>
   <summary>audit</summary>
 <br>
-Runs a system audit using security and system auditing tool Lynis.
+Runs a system audit using security and system auditing tool Lynis <sup>1</sup>.
 
 </details>
 
@@ -240,7 +240,7 @@ Updates, upgrades & cleans up Homebrew.
 <details>
   <summary>cat</summary>
 <br>
-Opens a file with cat clone bat <sup>1</sup>.
+Opens a file with cat clone bat <sup>2</sup>.
 
 </details>
 
@@ -248,7 +248,7 @@ Opens a file with cat clone bat <sup>1</sup>.
 <details>
   <summary>df</summary>
 <br>
-Gives an overview of the filesystem disk space usage using Disk Usage/Free utility (duf) instead of df.
+Gives an overview of the filesystem disk space usage using Disk Usage/Free utility (duf) <sup>3</sup> instead of df.
 
   </details>
 
@@ -256,7 +256,7 @@ Gives an overview of the filesystem disk space usage using Disk Usage/Free utili
 <details>
   <summary>man</summary>
 <br>
-Replaces man with the simplified and community-driven tldr.
+Replaces man with the simplified and community-driven tldr <sup>4</sup>.
 
 </details>
 
@@ -264,7 +264,7 @@ Replaces man with the simplified and community-driven tldr.
 <details>
   <summary>open</summary>
 <br>
-Opens file for editing in the text editor micro.  
+Opens file for editing in the text editor micro <sup>5</sup> .  
 
   </details>
 
@@ -288,12 +288,17 @@ I maintain two copies of .aliases and Brewfile and edit them regularly. This syn
 <details>
   <summary>update</summary>
 <br>
-Gets macOS Software Updates, and updates installed Ruby gems, npm, and their installed packages.
+Gets macOS Software Updates (using mas <sup>6</sup>), and updates installed Ruby gems, npm, and their installed packages.
 
   </details>
 
-[bat](https://formulae.brew.sh/formula/bat#default)
 
+<sup>1</sup> [lynis](https://formulae.brew.sh/formula/lynis#default)
+<sup>2</sup> [bat](https://formulae.brew.sh/formula/bat#default)
+<sup>3</sup> [duf](https://formulae.brew.sh/formula/duf#default)
+<sup>4</sup> [tldr](https://formulae.brew.sh/formula/tldr#default)
+<sup>5</sup> [micro](https://formulae.brew.sh/formula/micro#default)
+<sup>6</sup> [mas](https://formulae.brew.sh/formula/mas#default)
 
 
 ---
@@ -305,6 +310,7 @@ Gets macOS Software Updates, and updates installed Ruby gems, npm, and their ins
 - There's an alias (`backup`) for backing up user preferences and some dotfiles (excluding the ones in ~/dotfiles. It rsyncs to a Dropbox folder, which you would need to create before running. Refer to the alias for dir names.<br>
 - There's a file (~/excludes-file.txt) that lists anything that doesn't need to (or shouldn't) be included in the backup.
 I've barely started figuring that out, so the list will grow.
+
 
 ---
 ### Finished
