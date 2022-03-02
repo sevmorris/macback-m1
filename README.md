@@ -174,6 +174,8 @@ brewup
 
 > A newer version of Bash is installed via Homebrew. Time to switch to that.
 
+> :exclamation: This is specific to M1 Macs.
+
 ```
 sudo -i
 echo /opt/homebrew/bin/bash >> /etc/shells
