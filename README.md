@@ -135,7 +135,7 @@ chmod 755 tweaks.sh
 
 You can create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) to index everything installed with Homebrew and the Mac App Store.
 
-_If_ you have a Github repo (called "homebrew-brewfile") containing your Brewfile and you decide to run Strap then Strap should use that repo to install apps.
+If you have a Github repo (called "homebrew-brewfile") containing your Brewfile and you decide to run Strap then Strap should use that repo to install apps.
 
 ---
 To create a "master list" Brewfile:
