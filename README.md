@@ -216,22 +216,25 @@ rm -r $HOME/macback
 
 <details>
   <summary>audit</summary>
+<br><br>
 
-Run a system audit using security and system auditing tool [Lynis](https://cisofy.com/lynis/).
+Runs a system audit using security and system auditing tool [Lynis](https://cisofy.com/lynis/).
 
 </details>
 
 
 <details>
   <summary>backup</summary>
+<br><br>
 
-Backup dotfiles and ~/Library/Preferences, (not including files listed in `.excludes-file.txt`) to Dropbox.
+Backs up dotfiles and ~/Library/Preferences, (not including files listed in `.excludes-file.txt`) to a Dropbox folder.
 
   </details>
 
 
 <details>
   <summary>brewup</summary>
+<br><br>
 
 Updates, upgrades & cleans up Homebrew.
 
@@ -240,14 +243,16 @@ Updates, upgrades & cleans up Homebrew.
 
 <details>
   <summary>cat</summary>
+<br><br>
 
-Open a file with cat clone [bat](https://github.com/sharkdp/bat).
+Opens a file with cat clone [bat](https://github.com/sharkdp/bat).
 
 </details>
 
 
 <details>
   <summary>df</summary>
+<br><br>
 
 Gives an overview of the filesystem disk space usage using [Disk Usage/Free utility](https://github.com/muesli/duf) duf instead of df.
 
@@ -256,38 +261,43 @@ Gives an overview of the filesystem disk space usage using [Disk Usage/Free util
 
 <details>
   <summary>man</summary>
+<br><br>
 
-Replace man with the simplified and community-driven [tldr](https://tldr.sh/).
+Replaces man with the simplified and community-driven [tldr](https://tldr.sh/).
 
 </details>
 
 
 <details>
   <summary>open</summary>
+<br><br>
 
-Open file for editing in the [text editor micro](https://github.com/zyedidia/micro).  
+Opens file for editing in the text editor [micro](https://github.com/zyedidia/micro).  
 
   </details>
 
 
 <details>
   <summary>shrug</summary>
+<br><br>
 
-Copy ¯\_(ツ)_/¯ to the clipboard
+Copies ¯\_(ツ)_/¯ to the clipboard
 
   </details>
 
 
 <details>
   <summary>syncup</summary>
+<br><br>
 
-I maintain two copies of `.aliases` and `Brewfile`. Sync both versions & push to Github. These are the two files I modify most often.
+I maintain two copies of `.aliases` and `Brewfile`. This syncs both versions & pushes them to Github.
 
   </details>
 
 
 <details>
   <summary>update</summary>
+<br><br>
 
 Gets macOS Software Updates, and updates installed Ruby gems, npm, and their installed packages.
 
