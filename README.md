@@ -1,4 +1,4 @@
-# macback M1 edition
+# macback [M1 edition]
 
 My methods of configuring, deploying and redeploying macOS on an M1 Mac.
 
