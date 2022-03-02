@@ -159,6 +159,8 @@ cd ~
 brew bundle install
 ```
 
+For a ton of Brewfile info, see [Brew Bundle Brewfile Tips](https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f)
+
 <br>
 
 Clean up (using one of the new aliases):

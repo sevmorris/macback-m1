@@ -85,7 +85,7 @@ brew "nghttp2"                            # HTTP/2 C Library
 brew "nmap"                               # Port scanning utility for large networks
 brew "node"                               # Platform built on V8 to build network applications
 
-brew "openssl@3"                          # Cryptography and SSL/TLS Toolkit
+brew "openssl@3"                          # Also known as: openssl. Cryptography and SSL/TLS Toolkit
 
 brew "pango"                              # Framework for layout and rendering of i18n text
 brew "pcre2"                              # Perl compatible regular expressions library with a new API
