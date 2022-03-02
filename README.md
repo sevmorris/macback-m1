@@ -217,6 +217,7 @@ rm -r $HOME/macback
 <details>
   <summary>audit</summary>
 <br>
+
 Runs a system audit using security and system auditing tool [Lynis](https://cisofy.com/lynis/).
 
 </details>
@@ -225,6 +226,7 @@ Runs a system audit using security and system auditing tool [Lynis](https://ciso
 <details>
   <summary>backup</summary>
 <br>
+
 Backs up dotfiles and ~/Library/Preferences, (not including files listed in `.excludes-file.txt`) to a Dropbox folder.
 
   </details>
@@ -233,6 +235,7 @@ Backs up dotfiles and ~/Library/Preferences, (not including files listed in `.ex
 <details>
   <summary>brewup</summary>
 <br>
+
 Updates, upgrades & cleans up Homebrew.
 
   </details>
@@ -241,6 +244,7 @@ Updates, upgrades & cleans up Homebrew.
 <details>
   <summary>cat</summary>
 <br>
+
 Opens a file with cat clone [bat](https://github.com/sharkdp/bat).
 
 </details>
@@ -249,6 +253,7 @@ Opens a file with cat clone [bat](https://github.com/sharkdp/bat).
 <details>
   <summary>df</summary>
 <br>
+
 Gives an overview of the filesystem disk space usage using [Disk Usage/Free utility](https://github.com/muesli/duf) duf instead of df.
 
   </details>
@@ -257,6 +262,7 @@ Gives an overview of the filesystem disk space usage using [Disk Usage/Free util
 <details>
   <summary>man</summary>
 <br>
+
 Replaces man with the simplified and community-driven [tldr](https://tldr.sh/).
 
 </details>
@@ -265,6 +271,7 @@ Replaces man with the simplified and community-driven [tldr](https://tldr.sh/).
 <details>
   <summary>open</summary>
 <br>
+
 Opens file for editing in the text editor [micro](https://github.com/zyedidia/micro).  
 
   </details>
@@ -273,6 +280,7 @@ Opens file for editing in the text editor [micro](https://github.com/zyedidia/mi
 <details>
   <summary>shrug</summary>
 <br>
+
 Copies ¯\_(ツ)_/¯ to the clipboard
 
   </details>
@@ -281,6 +289,7 @@ Copies ¯\_(ツ)_/¯ to the clipboard
 <details>
   <summary>syncup</summary>
 <br>
+
 I maintain two copies of `.aliases` and `Brewfile`. This syncs both versions & pushes them to Github.
 
   </details>
@@ -289,6 +298,7 @@ I maintain two copies of `.aliases` and `Brewfile`. This syncs both versions & p
 <details>
   <summary>update</summary>
 <br>
+
 Gets macOS Software Updates, and updates installed Ruby gems, npm, and their installed packages.
 
   </details>
