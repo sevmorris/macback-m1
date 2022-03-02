@@ -292,7 +292,7 @@ Gets macOS Software Updates, and updates installed Ruby gems, npm, and their ins
 
   </details>
 
-<sup>[bat](https://formulae.brew.sh/formula/bat#default)</sup>
+<super>[bat](https://formulae.brew.sh/formula/bat#default)</super>
 ---
 ### Notes
 
