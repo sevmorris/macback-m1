@@ -18,8 +18,8 @@
 # ..                                cd back/up a directory
 # ~                                 cd to ~
 # dt, dl                            cd to Desktop/Downloads
-# dots                              cd into ~/dotfiles
-# mb                                cd into macback
+# dots                              Open ~/dotfiles in atom
+# mb                                Open ~/macback in atom
 
 ################################################################################
 # CLEANUP/UPDATE
@@ -71,15 +71,21 @@ alias ..='cd ..'
 alias ~='cd ~'
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias dots="cd ~/dotfiles"
-alias mb="cd ~/macback"
+alias dots="cd ~/dotfiles && at && cd ~/"
+alias mb="cd ~/macback && at && cd ~/"
 
 alias brewup="brew -v update && brew -v upgrade &&  brew cu --all --yes --cleanup --force && brew -v cleanup --prune=0 && brew doctor && brew -v upgrade --greedy"
 alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
 alias rm='trash '
-alias syncup="rsync -rtuv --progress ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv --progress ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && cd ~/macback && pushit && cd ~/homebrew-brewfile && pushit && rsync -rtuv --progress ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~/"
+alias synca="rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~/"
+alias syncb="rsynb -rtuv --progress ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv --progress ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && pushit && cd ~/"
+alias syncd="rsync -rtuv --progress ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv --progress ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/"
+
+
+
+
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 
 alias open="micro"
