@@ -13,6 +13,7 @@ MACBACK=$HOME/macback
 DOTS=$MACBACK/dotfiles
 aliases=$DOTS/.aliases
 prompt=$DOTS/.bash_prompt
+profile=$DOTS/.bash_profile
 bashrc=$DOTS/.bashrc
 excludes=$DOTS/.excludes-file.txt
 brew=$MACBACK/Brewfile
@@ -24,4 +25,4 @@ brew=$MACBACK/Brewfile
 . docknuke.sh
 
 # Move dotfiles to ~/
-mv -f $aliases $prompt $bashrc $excludes $brew $HOME
+mv -f $aliases $prompt $profile $bashrc $excludes $brew $HOME
