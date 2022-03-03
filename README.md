@@ -266,15 +266,6 @@ Copies ¯\_(ツ)_/¯ to the clipboard
 
   </details>
 
-
-<details>
-  <summary>syncall</summary>
-<br>
-I maintain two copies of .aliases and Brewfile and edit them regularly. This syncs both versions & pushes them to Github. (synca will sync just the .aliases files and syncb will sync just the Brewfiles)
-
-  </details>
-
-
 <details>
   <summary>update</summary>
 <br>
@@ -300,6 +291,7 @@ Gets macOS Software Updates (using mas <sup>6</sup>), and updates installed Ruby
 - If you run Strap and have these repos it should pull from both.
 - There's an alias (`backup`) for backing up user preferences and some dotfiles (excluding the ones in ~/dotfiles. It rsyncs to a Dropbox folder, which you would need to create before running. Refer to the alias for dir names.<br>
 - There's a file (~/excludes-file.txt) that lists anything that doesn't need to (or shouldn't) be included in the backup.
+- Some aliases are useful only to me (synca, syncb...) since I use them to make sure my macback files and local files stay in sync.
 I've barely started figuring that out, so the list will grow.
 
 
