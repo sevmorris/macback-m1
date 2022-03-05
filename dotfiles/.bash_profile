@@ -3,9 +3,6 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
-# Make vim the default editor.
-export EDITOR='vim';
-
 export PAGER="most"
 export CLICOLOR=1
 
