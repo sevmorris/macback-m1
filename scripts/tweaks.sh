@@ -18,6 +18,14 @@ bashrc=$DOTS/.bashrc
 excludes=$DOTS/.excludes-file.txt
 brew=$MACBACK/Brewfile
 
+
+arch_name="$(uname -m)"
+
+if [ "${arch_name}" = "x86_64" ]; then
+  echo "This is intended for an M1 Mac."
+  exit
+fi
+
 # Customize macOS defaults
 . macdefaults.sh
 
