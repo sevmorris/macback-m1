@@ -18,7 +18,7 @@ bashrc=$DOTS/.bashrc
 excludes=$DOTS/.excludes-file.txt
 brew=$MACBACK/Brewfile
 
-
+# Check that we're running on Apple Silicon and exit if not
 arch_name="$(uname -m)"
 
 if [ "${arch_name}" = "x86_64" ]; then
