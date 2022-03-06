@@ -31,7 +31,6 @@
 # synca                             Sync & push .aliases to Github
 # syncb                             Sync & push Brewfile to Github
 # synce                             Sync & push .excludes-file.txt to Github
-# syncall                           Execute synca, syncb & synce
 # backup                            Backup dotfiles & ~/Library/Preferences to Dropbox
 # local                             Backup ~/Library to external drive
 
@@ -84,7 +83,6 @@ alias unbrew="brew uninstall -v "
 alias synca="rsync -rtuv ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && cd ~/ && echo "synca complete!""
 alias syncb="rsync -rtuv ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && cd ~/homebrew-brewfile && pushit && cd ~/"
 alias synce="rsync -rtuv ~/.excludes-file.txt ~/macback/dotfiles/.excludes-file.txt && rsync -rtuv ~/macback/dotfiles/.excludes-file.txt ~/.excludes-file.txt && cd ~/macback && pushit && cd ~/"
-alias syncall="rsync -rtuv ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && rsync -rtuv ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && cd ~/homebrew-brewfile && pushit && rsync -rtuv ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/dotfiles && pushit && rsync -rtuv ~/.excludes-file.txt ~/macback/dotfiles/.excludes-file.txt && rsync -rtuv ~/macback/macback/dotfiles/.excludes-file.txt ~/.excludes-file.txt && cd ~/macback && pushit && cd ~/"
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/"
 alias local="rsync -av --delete ~/Library/ /Volumes/BACKUP/Library"
 

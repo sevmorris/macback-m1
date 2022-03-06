@@ -44,6 +44,7 @@ export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/opt/homebrew/bin:${PATH}"
 
 export PATH=$HOME/.local/share/bin:$PATH
+export PATH=$HOME/backup:$PATH
 
 # most programs
 export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
