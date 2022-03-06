@@ -10,7 +10,7 @@ function addToPATH {
   esac
 }
 
-export VISUAL=nano
+export EDITOR=nano
 export PAGER="most"
 export CLICOLOR=1
 
