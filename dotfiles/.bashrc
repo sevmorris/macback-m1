@@ -6,6 +6,8 @@ for file in ~/.{bash_prompt,aliases}; do
 done;
 unset file;
 
+PATH=$(printf "%s" "$PATH" | awk -v RS=':' '!a[$1]++ { if (NR > 1) printf RS; printf $1 }')
+
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
 

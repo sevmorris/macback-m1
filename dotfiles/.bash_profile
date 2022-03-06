@@ -3,10 +3,12 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
-case ":$PATH:" in
-  *":$new_entry:"*) :;; # already there
-  *) PATH="$new_entry:$PATH";; # or PATH="$PATH:$new_entry"
-esac
+function addToPATH {
+  case ":$PATH:" in
+    *":$1:"*) :;; # already there
+    *) PATH="$1:$PATH";; # or PATH="$PATH:$1"
+  esac
+}
 
 export PAGER="most"
 export CLICOLOR=1
@@ -45,39 +47,38 @@ export GPG_TTY=$(tty);
 # Hide the “default interactive shell is now zsh” warning on macOS.
 export BASH_SILENCE_DEPRECATION_WARNING=1;
 
-export PATH="/opt/homebrew/sbin:$PATH"
-export PATH="/opt/homebrew/bin:${PATH}"
-export PATH=$HOME/.local/share/bin:$PATH
-export PATH=$HOME/backup:$PATH
+addToPATH /opt/homebrew/sbin
+addToPATH /opt/homebrew/bin
+addToPATH ~/.local/share/bin
+addToPATH ~/backup
 
 # most programs
-export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
+export INFOPATH=/opt/homebrew/share/info:$INFOPATH
 
 # coreutils
-export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
-export MANPATH="$(brew --prefix)/opt/coreutils/libexec/gnuman:$MANPATH"
+addToPATH /opt/homebrew/opt/coreutils/libexec/gnubin:$PATH
+export MANPATH=/opt/homebrew/opt/coreutils/libexec/gnuman:$MANPATH
 
 # make
-export PATH="$(brew --prefix)/opt/make/libexec/gnubin:$PATH"
-export MANPATH="$(brew --prefix)/opt/make/libexec/gnuman:$MANPATH"
+addToPATH /opt/homebrew/opt/make/libexec/gnubin
+export MANPATH=/opt/homebrew/opt/make/libexec/gnuman:$MANPATH
 
 # ed
-export PATH="$(brew --prefix)/opt/ed/libexec/gnubin:$PATH"
+addToPATH /opt/homebrew/opt/ed/libexec/gnubin
 
 # findutils
-export PATH="$(brew --prefix)/opt/findutils/libexec/gnubin:$PATH"
+addToPATH /opt/homebrew/opt/findutils/libexec/gnubin
 
 # gnu-indent
-export PATH="$(brew --prefix)/opt/gnu-indent/libexec/gnubin:$PATH"
+addToPATH /opt/homebrew/opt/gnu-indent/libexec/gnubin
 
 # gnu-sed
-export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+addToPATH /opt/homebrew/opt/gnu-sed/libexec/gnubin
 
 # gnu-tar
-export PATH="$(brew --prefix)/opt/gnu-tar/libexec/gnubin:$PATH"
+addToPATH /opt/homebrew/opt/gnu-tar/libexec/gnubin
 
 # gnu-which
-export PATH="$(brew --prefix)/opt/gnu-which/libexec/gnubin:$PATH"
+addToPATH /opt/homebrew/opt/gnu-which/libexec/gnubin
 
-# grep
-export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
+addToPATH /opt/homebrew/opt/grep/libexec/gnubin
