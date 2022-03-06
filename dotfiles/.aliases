@@ -31,7 +31,8 @@
 # synca                             Sync & push .aliases to Github
 # syncb                             Sync & push Brewfile to Github
 # syncall                           Sync & push both .aliases & Brewfile to Github
-# backup                            Backup dotfiles, ~/Library/Application Support & ~/Library/Preferences to Dropbox
+# backup                            Backup dotfiles & ~/Library/Preferences to Dropbox
+# local                             Backup ~/Library to external drive
 
 ################################################################################
 # EVERYTHING ELSE
@@ -49,7 +50,6 @@
 # please                            sudo
 # scan, audit                       Run a system audit using Lynis
 # cat                               Open a file with cat clone bat
-# man                               Replace man with tldr
 # ifactive                          Show active network interfaces
 # mount                             Make mount command output easier to read
 
@@ -84,6 +84,7 @@ alias synca="rsync -rtuv ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~
 alias syncb="rsync -rtuv ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && cd ~/homebrew-brewfile && pushit && cd ~/"
 alias syncall="rsync -rtuv ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/macback && pushit && cd ~/dotfiles && pushit && rsync -rtuv ~/homebrew-brewfile/Brewfile ~/macback/Brewfile && rsync -rtuv ~/macback/Brewfile ~/homebrew-brewfile/Brewfile && cd ~/homebrew-brewfile && pushit && rsync -rtuv ~/dotfiles/.aliases ~/macback/dotfiles/.aliases && rsync -rtuv ~/macback/dotfiles/.aliases ~/dotfiles/.aliases && cd ~/dotfiles && pushit && cd ~/"
 alias backup="rsync -av --delete --exclude-from='.excludes-file.txt' ~/.??* ~/Dropbox/Backups/dotfiles/ && rsync -av --delete ~/Library/Preferences/ ~/Dropbox/Backups/Preferences/ && rsync -av --delete ~/Library/Application\ Support/ ~/Dropbox/Backups/Application\ Support/"
+alias local="rsync -av --delete ~/Library/Application\ Support/ /Volumes/BACKUP/Library/Application\ Support/ && rsync -av --delete ~/Library/Preferences/ /Volumes/BACKUP/Library/Preferences/"
 
 alias open="micro"
 alias ex="micro ~/.excludes-file.txt"
@@ -102,6 +103,5 @@ alias please="sudo "
 alias scan="lynis audit system"
 alias audit="lynis audit system"
 alias cat="clear && bat "
-alias man="tldr "
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 alias mount='mount | column -t'
