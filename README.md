@@ -211,15 +211,6 @@ Runs a system audit using security and system auditing tool Lynis <sup>1</sup>.
 
 </details>
 
-
-<details>
-  <summary>backup</summary>
-<br>
-Backs up dotfiles and ~/Library/Preferences, (not including files listed in .excludes-file.txt) to a Dropbox folder.
-
-  </details>
-
-
 <details>
   <summary>brewup</summary>
 <br>
@@ -242,14 +233,6 @@ Opens a file with cat clone bat <sup>2</sup>.
 Gives an overview of the filesystem disk space usage using Disk Usage/Free utility (duf) <sup>3</sup> instead of df.
 
   </details>
-
-
-<details>
-  <summary>man</summary>
-<br>
-Replaces man with the simplified and community-driven tldr <sup>4</sup>.
-
-</details>
 
 
 <details>
@@ -279,7 +262,6 @@ Gets macOS Software Updates (using mas <sup>6</sup>), and updates installed Ruby
 <sup>1</sup> [lynis](https://formulae.brew.sh/formula/lynis#default)<br>
 <sup>2</sup> [bat](https://formulae.brew.sh/formula/bat#default)<br>
 <sup>3</sup> [duf](https://formulae.brew.sh/formula/duf#default)<br>
-<sup>4</sup> [tldr](https://formulae.brew.sh/formula/tldr#default)<br>
 <sup>5</sup> [micro](https://formulae.brew.sh/formula/micro#default)<br>
 <sup>6</sup> [mas](https://formulae.brew.sh/formula/mas#default)
 

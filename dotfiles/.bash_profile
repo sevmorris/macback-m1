@@ -11,6 +11,13 @@ esac
 export PAGER="most"
 export CLICOLOR=1
 
+# Increase Bash history size. Allow 32³ entries; the default is 500.
+export HISTSIZE='32768';
+export HISTFILESIZE="${HISTSIZE}";
+
+# Omit duplicates and commands that begin with a space from history.
+export HISTCONTROL='ignoreboth';
+
 # Enable persistent REPL history for `node`.
 export NODE_REPL_HISTORY=~/.node_history;
 # Allow 32³ entries; the default is 1000.
@@ -20,13 +27,6 @@ export NODE_REPL_MODE='sloppy';
 
 # Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
 export PYTHONIOENCODING='UTF-8';
-
-# Increase Bash history size. Allow 32³ entries; the default is 500.
-export HISTSIZE='32768';
-export HISTFILESIZE="${HISTSIZE}";
-
-# Omit duplicates and commands that begin with a space from history.
-export HISTCONTROL='ignoreboth';
 
 # Prefer US English and use UTF-8.
 export LANG='en_US.UTF-8';
@@ -47,7 +47,6 @@ export BASH_SILENCE_DEPRECATION_WARNING=1;
 
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/opt/homebrew/bin:${PATH}"
-
 export PATH=$HOME/.local/share/bin:$PATH
 export PATH=$HOME/backup:$PATH
 
