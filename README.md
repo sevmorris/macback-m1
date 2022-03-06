@@ -269,12 +269,9 @@ Gets macOS Software Updates (using mas <sup>6</sup>), and updates installed Ruby
 ---
 ### Notes
 
-- Some of my dotfiles (.aliases, .bashrc, etc) live in ~/dotfiles and a Github repo. Locally they're symlinked in ~/.<br>
-- My Brewfile lives in ~/homebrew-brewfile  and a Guthub repo.<br>
-- If you run Strap and have these repos it should pull from both.
-- There's an alias (`backup`) for backing up user preferences and some dotfiles (excluding the ones in ~/dotfiles. It rsyncs to a Dropbox folder, which you would need to create before running. Refer to the alias for dir names.<br>
-- There's a file (~/excludes-file.txt) that lists anything that doesn't need to (or shouldn't) be included in the backup. I've barely started digging into what doesn't need to be backed up, so the list will probably grow. (Help?)
-- Some aliases are useful only to me (synca, syncb...) since I use them to make sure my macback files and local files stay in sync.
+Some of my dotfiles (.aliases, .bashrc, etc) live in ~/dotfiles and a Github repo. Locally they're symlinked in ~/.<br>
+My Brewfile lives in ~/homebrew-brewfile  and a Guthub repo.<br>
+If you run Strap and have these repos it should pull from both.
 
 
 ---
