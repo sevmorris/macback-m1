@@ -4,9 +4,15 @@ set -e
 
 ## Colors
 red=$(tput setaf 1)
-green=$(tput setaf 2)
 yellow=$(tput setaf 3)
 blue=$(tput setaf 4)
+reset=$(tput sgr0)
+bold=$(tput bold)
+underline=$(tput smul)
+italic=$(tput sitm)
+info=$(tput setaf 2)
+error=$(tput setaf 160)
+warn=$(tput setaf 214)
 reset=$(tput sgr0)
 
 MACBACK=$HOME/macback
@@ -22,7 +28,7 @@ brew=$MACBACK/Brewfile
 arch_name="$(uname -m)"
 
 if [ "${arch_name}" = "x86_64" ]; then
-  echo "macback [M1 edition] is intended for an M1 Mac."
+  echo "${info}HOLD IT!${reset} macback [M1 edition] is intended for an ${bold}M1 Mac${reset}."
   exit
 fi
 

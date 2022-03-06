@@ -5,7 +5,7 @@ clear
 
 nuke() {
   clear
-  echo "Dropping a ${yellow}nuke${reset} on the ${blue}Dock!${reset}"
+  echo "Dropping a ${warn}nuke${reset} on the ${blue}Dock!${reset}"
   defaults write com.apple.dock persistent-apps -array
   killAll Dock
 }
@@ -13,7 +13,7 @@ nuke() {
 confirm() {
   clear
 while true; do
-    read -p "${yellow}==>${reset} Are you ${red}SURE${reset} you want to ${red}REMOVE ALL${reset} Dock icons? ${yellow}<==${reset} " yn
+    read -p "${warn}==>${reset} Are you ${error}SURE${reset} you want to ${bold}REMOVE ALL${reset} Dock icons? ${warn}<==${reset} " yn
     case $yn in
         [Yy]* ) nuke; break;;
         [Nn]* ) break;;
