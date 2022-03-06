@@ -3,6 +3,11 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
+case ":$PATH:" in
+  *":$new_entry:"*) :;; # already there
+  *) PATH="$new_entry:$PATH";; # or PATH="$PATH:$new_entry"
+esac
+
 export PAGER="most"
 export CLICOLOR=1
 
