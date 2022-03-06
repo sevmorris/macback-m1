@@ -50,7 +50,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1;
 addToPATH /opt/homebrew/sbin
 addToPATH /opt/homebrew/bin
 addToPATH ~/.local/share/bin
-addToPATH ~/backup
+addToPATH ~/backup_scripts
 
 # most programs
 export INFOPATH=/opt/homebrew/share/info:$INFOPATH
