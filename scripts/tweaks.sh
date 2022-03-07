@@ -2,17 +2,8 @@
 
 set -e
 
-## Colors
-red=$(tput setaf 1)
-yellow=$(tput setaf 3)
-blue=$(tput setaf 4)
-reset=$(tput sgr0)
 bold=$(tput bold)
-underline=$(tput smul)
-italic=$(tput sitm)
 info=$(tput setaf 2)
-error=$(tput setaf 160)
-warn=$(tput setaf 214)
 reset=$(tput sgr0)
 
 MACBACK=$HOME/macback
