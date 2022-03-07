@@ -32,7 +32,6 @@ brew "diffutils"                          # File comparison utilities
 brew "docutils"                           # Text processing system for reStructuredText
 brew "duf"                                # Disk Usage/Free Utility - a better 'df' alternative
 
-brew "emacs", restart_service: true, link: false
 brew "exa"                                # Modern replacement for 'ls'
 
 brew "fd"                                 # Simple, fast and user-friendly alternative to find
