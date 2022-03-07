@@ -19,7 +19,8 @@
 # ~                                 cd to ~
 # dt, dl                            cd to Desktop/Downloads
 # dots                              Open ~/dotfiles in atom
-# mb                                Open ~/macback in atom
+# m1                                Open ~/macback-m1 in atom
+# m2                                Open ~/macback-intel in atom
 
 ################################################################################
 # CLEANUP/UPDATE
@@ -68,7 +69,8 @@ alias ~='cd ~'
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dots="cd ~/dotfiles && at && cd ~/"
-alias mb="cd ~/macback && at && cd ~/"
+alias m1="cd ~/macback-m1 && at && cd ~/"
+alias m2="cd ~/macback-intel && at && cd ~/"
 
 alias brewup="brew -v update && brew -v upgrade &&  brew cu --all --yes --cleanup --force && brew -v cleanup --prune=0 && brew doctor && brew -v upgrade --greedy"
 alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
