@@ -21,7 +21,6 @@ dotphiles
 Downloads
 Dropbox
 Library
-macback
 Movies
 Music
 Parallels
@@ -30,3 +29,15 @@ Public
 strap
 TeX
 Classified
+Dropbox*
+dotfiles
+dotphiles
+homebrew-brewfile
+macback-m1
+macback-intel
+strap
+Caches*
+*Caches*
+*BraveSoftware*
+.Trashes
+.Spotlight-V10
