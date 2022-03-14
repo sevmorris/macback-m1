@@ -114,6 +114,7 @@ brew "wdiff"                              # Display word differences between tex
 brew "wget"                               # Internet file retriever
 
 cask "bitwarden"
+cask "dozer"
 cask "firefox"
 cask "iterm2"
 cask "macfuse"
