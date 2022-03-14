@@ -1,4 +1,4 @@
-## My Public Brewfile. No casks, no mas apps.
+## My Public Brewfile. Minimal casks, no mas apps.
 
 tap "bramstein/webfonttools"
 tap "buo/cask-upgrade"
@@ -112,3 +112,11 @@ brew "bramstein/webfonttools/sfnt2woff"
 brew "bramstein/webfonttools/sfnt2woff-zopfli"
 brew "wdiff"                              # Display word differences between text files
 brew "wget"                               # Internet file retriever
+
+cask "bitwarden"
+cask "firefox"
+cask "iterm2"
+cask "macfuse"
+cask "timemachineeditor"
+cask "veracrypt"
+cask "zoom"
