@@ -134,22 +134,6 @@ chmod 755 tweaks.sh
 ---
 ### Brewfile
 
-You can create a [Brewfile](https://github.com/Homebrew/homebrew-bundle) using [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) to index everything installed with Homebrew and the Mac App Store.
-
-> :point_right: If you have a Github repo (called "homebrew-brewfile") containing your Brewfile and you decide to run Strap then Strap should use that repo to install apps.
-
----
-To create a "master list" Brewfile:
-
-```
-brew bundle dump --force --describe
-```
-
-> `--force` overwrites an existing Brewfile.<br>
-> `--describe` adds a brief description for each entry.
-
-Again, this is a *complete* list of apps installed via Homebrew and the Mac App Store.<br>
-
 > For practical purposes I maintain a curated Brewfile that lives in a Github repo. I would rather manage mas apps manually, and I definitely do not want to install every cask I have installed every time I start fresh. Strap will use this list to install my selected apps. If you're installing locally with Homebrew then you should have a look at your Brewfile and remove anything you don't want to install now, or replace it with my curated Brewfile instead.
 
 ---
@@ -206,56 +190,58 @@ rm -r $HOME/macback
 
 <details>
   <summary>audit</summary>
-<br>
-Runs a system audit using security and system auditing tool Lynis <sup>1</sup>.
+  <br>
+  Runs a system audit using security and system auditing tool Lynis <sup>1</sup>.
 
 </details>
 
+
 <details>
   <summary>brewup</summary>
-<br>
-Updates, upgrades & cleans up Homebrew.
+  <br>
+  Updates, upgrades & cleans up Homebrew.
 
-  </details>
+</details>
 
 
 <details>
   <summary>cat</summary>
-<br>
-Opens a file with cat clone bat <sup>2</sup>.
+  <br>
+  Opens a file with cat clone bat <sup>2</sup>.
 
 </details>
 
 
 <details>
   <summary>df</summary>
-<br>
-Gives an overview of the filesystem disk space usage using Disk Usage/Free utility (duf) <sup>3</sup> instead of df.
+  <br>
+  Gives an overview of the filesystem disk space usage using Disk Usage/Free utility (duf) <sup>3</sup> instead of df.
 
-  </details>
+</details>
 
 
 <details>
   <summary>open</summary>
-<br>
-Opens file for editing in the text editor micro <sup>5</sup> .  
+  <br>
+  Opens file for editing in the text editor micro <sup>5</sup> .  
 
-  </details>
+</details>
+
+
+<details>
+  <summary>update</summary>
+  <br>
+  Gets macOS Software Updates (using mas <sup>6</sup>), and updates installed Ruby gems, npm, and their installed packages.
+
+</details>
 
 
 <details>
   <summary>shrug</summary>
-<br>
-Copies ¯\_(ツ)_/¯ to the clipboard
+  <br>
+  Copies ¯\_(ツ)_/¯ to the clipboard
 
-  </details>
-
-<details>
-  <summary>update</summary>
-<br>
-Gets macOS Software Updates (using mas <sup>6</sup>), and updates installed Ruby gems, npm, and their installed packages.
-
-  </details>
+</details>
 
 <br>
 

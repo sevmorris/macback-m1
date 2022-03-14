@@ -72,7 +72,7 @@ alias dots="cd ~/dotfiles && at && cd ~/"
 alias m1="cd ~/macback-m1 && at && cd ~/"
 alias m2="cd ~/macback-intel && at && cd ~/"
 
-alias brewup="brew -v update && brew -v upgrade &&  brew cu --all --yes --cleanup && brew -v cleanup --prune=0 && brew doctor && brew -v upgrade --greedy"
+alias brewup="brew -v update && brew -v upgrade && brew -v cleanup --prune=0 && brew doctor"
 alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 alias sysup='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 alias brun="brew uninstall -v "
