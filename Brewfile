@@ -90,7 +90,6 @@ brew "pango"                              # Framework for layout and rendering o
 brew "pcre2"                              # Perl compatible regular expressions library with a new API
 brew "php", restart_service: true         # General-purpose scripting language
 brew "pinentry-mac"                       # Pinentry for GPG on Mac
-brew "pipes-sh"                           # Animated pipes terminal screensaver
 brew "postgresql", restart_service: true  # Object-relational database system
 
 brew "redis", restart_service: true       # Persistent key-value database, with built-in net interface
@@ -103,9 +102,6 @@ brew "smartmontools"                      # SMART hard drive monitoring
 brew "speedtest-cli"                      # Command-line interface for https://speedtest.net bandwidth tests
 
 brew "tldr"                               # Simplified and community-driven man pages
-brew "tmux"                               # Terminal multiplexer
-brew "tmux-xpanes"                        # Ultimate terminal divider powered by tmux
-brew "trash"                              # CLI tool that moves files or folder to the trash
 brew "tree"                               # Display directories as trees (with optional color/HTML output)
 
 brew "vim"                                # Vi 'workalike' with many additional features
