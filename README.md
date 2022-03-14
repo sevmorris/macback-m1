@@ -124,7 +124,7 @@ Tweak some Mac defaults, add some dotfiles, and (optionally) remove Dock icons (
 Clone the repo and run the scripts:
 
 ```
-git clone https://github.com/sevmorris/macback.git && cd macback/scripts
+git clone https://github.com/sevmorris/macback-m1.git && cd macback/scripts
 chmod 755 tweaks.sh
 ./tweaks.sh && cd ~
 ```
