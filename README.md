@@ -134,7 +134,7 @@ chmod 755 tweaks.sh
 ---
 ### Brewfile
 
-> For practical purposes I maintain a curated Brewfile that lives in a Github repo. I would rather manage mas apps manually, and I definitely do not want to install every cask I have installed every time I start fresh. Strap will use this list to install my selected apps. If you're installing locally with Homebrew then you should have a look at your Brewfile and remove anything you don't want to install now, or replace it with my curated Brewfile instead.
+> For practical purposes I maintain a [curated Brewfile](https://github.com/sevmorris/homebrew-brewfile.git) that lives in a Github repo. I would rather manage mas apps manually, and I definitely do not want to install every cask I have installed every time I start fresh. Strap will use this list to install my selected apps. If you're installing locally with Homebrew then you should have a look at your Brewfile and remove anything you don't want to install now, or replace it with my curated Brewfile instead.
 
 ---
 To install via the local Brewfile:
@@ -255,8 +255,8 @@ rm -r $HOME/macback
 ---
 ### Notes
 
-Some of my dotfiles (.aliases, .bashrc, etc) live in ~/dotfiles and a Github repo. Locally they're symlinked in ~/.<br>
-My Brewfile lives in ~/homebrew-brewfile  and a Guthub repo.<br>
+Some of my dotfiles (.aliases, .bashrc, etc) live in ~/dotfiles and a [Github repo](https://github.com/sevmorris/dotfiles.git). Locally they're symlinked in ~/.<br>
+My Brewfile lives in ~/homebrew-brewfile  and a [Guthub repo](https://github.com/sevmorris/homebrew-brewfile.git).<br>
 If you run Strap and have these repos it should pull from both.
 
 
