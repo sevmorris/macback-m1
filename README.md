@@ -256,7 +256,7 @@ rm -r $HOME/macback
 ### Notes
 
 Some of my dotfiles (.aliases, .bashrc, etc) live in ~/dotfiles and a [Github repo](https://github.com/sevmorris/dotfiles.git). Locally they're symlinked in ~/.<br>
-My Brewfile lives in ~/homebrew-brewfile  and a [Guthub repo](https://github.com/sevmorris/homebrew-brewfile.git).<br>
+My Brewfile lives in ~/homebrew-brewfile  and a [Github repo](https://github.com/sevmorris/homebrew-brewfile.git).<br>
 If you run Strap and have these repos it should pull from both.
 
 
