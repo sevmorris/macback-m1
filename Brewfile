@@ -113,11 +113,18 @@ brew "bramstein/webfonttools/sfnt2woff-zopfli"
 brew "wdiff"                              # Display word differences between text files
 brew "wget"                               # Internet file retriever
 
+cask "adapter"
+cask "atom"
 cask "bitwarden"
 cask "dozer"
+cask "dropbox"
 cask "firefox"
+cask "handbrake"
 cask "iterm2"
 cask "macfuse"
+cask "mactex"
+cask "raspberry-pi-imager"
 cask "timemachineeditor"
 cask "veracrypt"
+cask "vlc"
 cask "zoom"
