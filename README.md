@@ -13,7 +13,7 @@ My methods of configuring, deploying and redeploying macOS on an M1 Mac.<br>
 
 - Switch to Bash
 - Run [Strap](https://github.com/MikeMcQuaid/strap)
-- Run some scripts
+- Run a script to tweak some Mac preferences
 - Brewfile
 - Switch to new Bash
 
@@ -112,7 +112,7 @@ Alternatively, you can run [Strap in a browser](https://macos-strap.herokuapp.co
 ---
 ### Run some scripts
 
-Tweak some Mac defaults, add some dotfiles, and (optionally) remove Dock icons (useful for a new OS install).
+Tweak some Mac defaults, add some dotfiles, and (optionally) remove all Dock icons (useful for a new OS install).
 
 <br>
 
