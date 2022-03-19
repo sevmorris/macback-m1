@@ -111,7 +111,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-# Set a blazingly fast keyboard repeat rate
+# Set a fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
@@ -155,21 +155,17 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
-# Disable:
-# smart dashes, smart quotes, automatic capitalization,
-# automatic period substitution, and auto-correct
+# Disable: smart dashes, smart quotes, automatic capitalization, automatic period substitution, and auto-correct
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-# Enable:
-# full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+# Enable: full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Show Desktop icons for:
-# hard drives, servers, and removable media
+# Show Desktop icons for: hard drives, servers, and removable media
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
@@ -183,7 +179,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Flash clock time separators
 defaults write com.apple.menuextra.clock "FlashDateSeparators" -bool "true"
 
-#Set clock to Day / Month / Time (no seconds)
+#Set clock to Day/Month/Time (no seconds)
 defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE d MMM hh:mm\""
 
 # Disable Automatically adjust brightness
@@ -215,8 +211,9 @@ defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 # TextEdit
 # //////////////////////////////////////////////////////////////////////////////
 
-# Use Plain Text Mode as Default for TextEdit
+# Use Plain Text Mode as Default for TextEdit & Stickies (need to confirm this works for Stickies)
 defaults write com.apple.TextEdit RichText -int 0
+defaults write com.apple.Stickies RichText -int 0
 
 # //////////////////////////////////////////////////////////////////////////////
 # Terminal & iTerm
@@ -224,27 +221,6 @@ defaults write com.apple.TextEdit RichText -int 0
 
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
-
-# Enable “focus follows mouse” for Terminal.app and all X11 apps
-# i.e. hover over a window and start typing in it without clicking first
-#defaults write com.apple.terminal FocusFollowsMouse -bool true
-#defaults write org.x.X11 wm_ffm -bool true
-
-start_if_needed() {
-  local grep_name="[${1:0:1}]${1:1}"
-
-  if [[ -z $(ps aux | grep -e "${grep_name}") ]]; then
-    if [ -e ~/Applications/$1.app ]; then
-      open ~/Applications/$1.app
-    else
-      if [ -e /Applications/$1.app ]; then
-        open /Applications/$1.app
-      fi
-    fi
-  fi
-
-  true
-}
 
 # Enable Secure Keyboard Entry in Terminal.app
 # See: https://security.stackexchange.com/a/47786/8918
@@ -255,9 +231,6 @@ defaults write com.apple.Terminal ShowLineMarks -int 0
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
-
-# Tell iTerm2 to use the custom preferences in the directory
-defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 
 # //////////////////////////////////////////////////////////////////////////////
 # Time Machine
@@ -270,24 +243,24 @@ defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 # Prevent Time Machine from prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
-#setting up the computer label & name
-read -p "What is this machine's label (Example: Junior's MacBook Pro ) ? " mac_os_label
-if [[ -z "$mac_os_label" ]]; then
-  echo "ERROR: Invalid MacOS label."
-  exit 1
-fi
+# Set up the computer label & name
+# read -p "What is this machine's label (Example: Junior's MacBook Pro ) ? " mac_os_label
+# if [[ -z "$mac_os_label" ]]; then
+#   echo "ERROR: Invalid MacOS label."
+#   exit 1
+# fi
 
-read -p "What is this machine's name (Example: junior-macbook-pro ) ? " mac_os_name
-if [[ -z "$mac_os_name" ]]; then
-  echo "ERROR: Invalid MacOS name."
-  exit 1
-fi
+# read -p "What is this machine's name (Example: junior-macbook-pro ) ? " mac_os_name
+# if [[ -z "$mac_os_name" ]]; then
+#   echo "ERROR: Invalid MacOS name."
+#   exit 1
+# fi
 
-echo "Setting system Label and Name..."
-sudo scutil --set ComputerName "$mac_os_label"
-sudo scutil --set HostName "$mac_os_name"
-sudo scutil --set LocalHostName "$mac_os_name"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$mac_os_name"
+# echo "Setting system Label and Name..."
+# sudo scutil --set ComputerName "$mac_os_label"
+# sudo scutil --set HostName "$mac_os_name"
+# sudo scutil --set LocalHostName "$mac_os_name"
+# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$mac_os_name"
 
 # //////////////////////////////////////////////////////////////////////////////
 # Restart Applications
