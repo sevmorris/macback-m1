@@ -33,7 +33,7 @@ My methods of configuring, deploying and redeploying macOS on an M1 Mac.<br>
 ---
 Run Strap *(maybe)*.
 
->A script to bootstrap a minimal macOS development system. This does not assume you're doing Ruby/Rails
+> A script to bootstrap a minimal macOS development system. This does not assume you're doing Ruby/Rails
 > web development but installs the minimal set of software every macOS developer will want.
 
 <br>
