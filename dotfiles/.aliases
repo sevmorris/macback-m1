@@ -6,10 +6,8 @@
 # lm                                List all & sorts by modification date with most recent first and directories first
 # ll, ld                            List only visible files & folders
 # la                                List all files and folders
-# lf                                List only (and all) files
 # trees                             List in tree form using exa (calls a function located in .bashrc)
 # path                              Print each PATH entry on a separate line
-# df                                Give an overview of the filesystem disk space usage using duf instead of df
 
 ################################################################################
 # NAVIGATION
@@ -27,7 +25,7 @@
 ################################################################################
 
 # brewup                            Homebrew | Update, upgrade, cleanup...
-# update, sysup                     Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
+# update                            Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
 # brun, unbrew                      Homebrew | uninstall
 
 ################################################################################
@@ -35,7 +33,7 @@
 ################################################################################
 
 # open                              Open file for editing in micro
-# bashrc, aliases, ex               Open .bashrc/.aliases/.excludes-file.txt in micro
+# bashrc, aliases, ex, brewfile     Open .bashrc/.aliases/.excludes-file.txt/Brewfile in micro
 # reload                            Reload the shell (i.e. invoke as a login shell)
 # mon                               Run gtop system monitor
 # findit                            Use fd instead of find
@@ -59,8 +57,6 @@ alias lm="exa -a --header --group --long --git --sort=mod --reverse --group-dire
 alias ll="exa --header --group --long --git --group-directories-first"
 alias ld="exa --header --group --long --git --group-directories-first"
 alias la="exa -a --header --group --long --git --group-directories-first"
-alias lf="fls f -a1 --color=always"
-alias files="fls f -a1 --color=always"
 alias trees="exa --tree --level=2 --header --group --long --git --icons ."
 alias path='echo -e ${PATH//:/\\n}'
 
@@ -74,7 +70,6 @@ alias m2="cd ~/macback-intel && at && cd ~/"
 
 alias brewup="brew -v update && brew -v upgrade && brew -v cleanup --prune=0 && brew doctor"
 alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
-alias sysup='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
 
