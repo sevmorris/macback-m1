@@ -6,7 +6,7 @@ bold=$(tput bold)
 info=$(tput setaf 2)
 reset=$(tput sgr0)
 
-MACBACK=$HOME/macback
+MACBACK=$HOME/macback-m1
 DOTS=$MACBACK/dotfiles
 aliases=$DOTS/.aliases
 prompt=$DOTS/.bash_prompt
