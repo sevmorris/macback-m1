@@ -6,8 +6,6 @@ See [macback - Intel edition](https://github.com/sevmorris/macback-intel) for In
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)<br>
 :ukraine:
 
-:exclamation: This is all _very much_ a WIP. My door is always open if anyone has any feedback, tips or suggestions.
-
 ## Tasks
 
 - Switch to Bash
