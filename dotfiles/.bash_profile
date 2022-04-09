@@ -14,6 +14,8 @@ export EDITOR=nano
 export PAGER="most"
 export CLICOLOR=1
 
+eval "$(rbenv init - bash)"
+
 # Increase Bash history size. Allow 32³ entries; the default is 500.
 export HISTSIZE='32768';
 export HISTFILESIZE="${HISTSIZE}";
