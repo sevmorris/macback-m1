@@ -125,8 +125,6 @@ chmod 755 tweaks.sh
 ./tweaks.sh && cd ~
 ```
 
-<br>
-
 ---
 ### Brewfile
 
