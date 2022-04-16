@@ -26,15 +26,14 @@ See [macback - Intel edition](https://github.com/sevmorris/macback-intel) for In
 
 
 ---
-### Run Strap *(maybe)*.
+### Run Strap
 
 > A script to bootstrap a minimal macOS development system. This does not assume you're doing Ruby/Rails
 > web development but installs the minimal set of software every macOS developer will want.
 
 <br>
 
-<details>
-  <summary>What Strap does</summary>
+What Strap does</summary>
 
 <br>
 
@@ -54,8 +53,6 @@ See [macback - Intel edition](https://github.com/sevmorris/macback-intel) for In
 - Installs software from a user's Brewfile in their https://github.com/username/homebrew-brewfile repository or .Brewfile in their home directory.
 - A simple web application to set Git's name, email and GitHub token (needs authorised on any organisations you wish to access)
 - Idempotent
-
-</details>
 
 <br>
 
