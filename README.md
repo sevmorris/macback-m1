@@ -33,9 +33,7 @@ See [macback - Intel edition](https://github.com/sevmorris/macback-intel) for In
 
 <br>
 
-What Strap does</summary>
-
-<br>
+What Strap does:
 
 - Disables Java in Safari (for better security)
 - Enables the macOS screensaver password immediately (for better security)
