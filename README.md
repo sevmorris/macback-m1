@@ -103,14 +103,11 @@ Alternatively, you can run [Strap in a browser](https://macos-strap.herokuapp.co
 
 </details>
 
-<br>
-
 ---
 ### Run some scripts
 
 Tweak some Mac defaults, add some dotfiles, and (optionally) remove all Dock icons (useful for a new OS install).
 
-<br>
 
 > :point_right: This will overwrite .aliases, .bashrc & .bash_prompt if they already exist.<br>
 > :point_right: Review [macdefaults.sh](scripts/macdefaults.sh) and remove what you don't want.
