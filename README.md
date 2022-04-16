@@ -24,10 +24,9 @@ See [macback - Intel edition](https://github.com/sevmorris/macback-intel) for In
   chsh -s /bin/bash && reset
   ```
 
-<br>
 
 ---
-Run Strap *(maybe)*.
+### Run Strap *(maybe)*.
 
 > A script to bootstrap a minimal macOS development system. This does not assume you're doing Ruby/Rails
 > web development but installs the minimal set of software every macOS developer will want.
@@ -102,6 +101,7 @@ bash bin/strap.sh
 Alternatively, you can run [Strap in a browser](https://macos-strap.herokuapp.com/).
 
 </details>
+
 
 ---
 ### Run some scripts
