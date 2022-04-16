@@ -5,9 +5,6 @@ Configure macOS on a Mac with Apple silicon.
 See [macback - Intel edition](https://github.com/sevmorris/macback-intel) for Intel Macs.
 
 
-[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)<br>
-:ukraine:
-
 ## Tasks
 
 - Switch to Bash
@@ -265,6 +262,5 @@ If you run Strap and have these repos it should pull from both.
 It wouldn't hurt to reboot soon.
 
 ---
-[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 
 :ukraine:
