@@ -46,7 +46,7 @@
 # cat                               Open a file with cat clone bat
 # ifactive                          Show active network interfaces
 # mount                             Make mount command output easier to read
-# n 								Run neofetch to display system info
+# n 							                 	Run neofetch to display system info
 
 
 ################################################################################
