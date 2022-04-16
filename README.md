@@ -1,6 +1,6 @@
 # macback [M1 edition]
 
-Configure macOS on a Mac with Apple silicon.
+How I configure macOS on a Mac with Apple silicon.
 
 See [macback - Intel edition](https://github.com/sevmorris/macback-intel) for Intel Macs.
 
