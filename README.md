@@ -143,6 +143,9 @@ brewup
 ---
 ### Configure Homebrew to automatically update
 
+> [This command](https://github.com/Homebrew/homebrew-autoupdate) will enable Homebrew to automatically update every 24 hours.
+
+
 ```
 brew autoupdate start
 ```
