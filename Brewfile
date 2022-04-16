@@ -92,7 +92,6 @@ brew "pango"                              # Framework for layout and rendering o
 brew "pcre2"                              # Perl compatible regular expressions library with a new API
 brew "php", restart_service: true         # General-purpose scripting language
 brew "pinentry-mac"                       # Pinentry for GPG on Mac
-brew "postgresql", restart_service: true  # Object-relational database system
 
 brew "rsync"                              # Utility that provides fast incremental file transfer
 
