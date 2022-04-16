@@ -151,6 +151,13 @@ brewup
 ```
 
 ---
+### Configure Homebrew to automatically update
+
+```
+brew autoupdate start
+```
+
+---
 ### Switch to modern Bash
 
 macOS comes with an older version of Bash. A newer version is installed via Homebrew. Time to switch to that.
@@ -171,8 +178,6 @@ chsh -s /opt/homebrew/bin/bash
 
 ---
 ### Cleanup
-
-<br>
 
 Delete the repo folder:
 
