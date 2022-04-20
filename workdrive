@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+## Text formatting
+bold=$(tput bold)
+yellow=$(tput setaf 3)
+reset=$(tput sgr0)
+
+#rsync -a -v --delete --force --exclude 'ARCHIVE SOURCE' --exclude '.fseventsd' --exclude '.Trashes' --exclude '.DS_Store' --exclude '.Spotlight-V100' /Volumes/Working/ /Volumes/Working_backup/
+
+# Sync my working drive with the identical backup, excluding some unnecessary files
+rsync -av --delete --exclude 'ARCHIVE SOURCE' --exclude '.fseventsd' --exclude '.Trashes' --exclude '.DS_Store' --exclude '.Spotlight-V100' --exclude '.TemporaryItems' /Volumes/Working/ /Volumes/Working_backup/
+
+echo "---"
+echo "${bold}${yellow}Work drive backup complete!${reset}"
+echo "Work drive backup completed: " `date "+%F %T"` >> ~/scripts/backup/backups.log
+echo "---"

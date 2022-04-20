@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+## Text formatting
+bold=$(tput bold)
+yellow=$(tput setaf 3)
+reset=$(tput sgr0)
+
+rsync -av --delete /Users/sev/Desktop/ /Users/sev/Dropbox/Backups/Desktop &&
+rsync -av --delete /Users/sev/Downloads/ /Users/sev/Dropbox/Backups/Downloads &&
+rsync -av /Users/sev/Documents/ /Users/sev/Dropbox/Backups/Documents
+
+echo "---"
+echo "${bold}${yellow}Desktop, Downloads & Documents backup complete!${reset}"
+echo "Desktop, Downloads & Documents backup completed: " `date "+%F %T"` >> ~/scripts/backup/backups.log
+echo "---"
