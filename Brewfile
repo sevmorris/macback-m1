@@ -72,7 +72,6 @@ brew "lsd"                                # Clone of ls with colorful output, fi
 brew "lua"                                # Powerful, lightweight programming language
 brew "lynis"                              # Security and system auditing tool to harden systems
 
-brew "mackup"                             # Keep your Mac's application settings in sync
 brew "make"                               # Utility for directing compilation
 brew "mas"                                # Mac App Store command-line interface
 brew "micro"                              # Modern and intuitive terminal-based text editor

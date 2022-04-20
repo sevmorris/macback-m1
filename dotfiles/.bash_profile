@@ -82,7 +82,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1;
 add_to_path_start /opt/homebrew/sbin
 add_to_path_start /opt/homebrew/bin
 add_to_path_start ~/.local/share/bin
-add_to_path_start ~/backup
+add_to_path_start ~/scripts
 
 # most programs
 export INFOPATH=/opt/homebrew/share/info:$INFOPATH
