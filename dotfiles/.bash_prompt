@@ -1,0 +1,39 @@
+
+## Colors
+MAGENTA="\033[0;31m"
+ORANGE="\033[0;33m"
+GREEN="\033[0;32m"
+YELLOW="\033[0;33m"
+BLUE="\033[0;34m"
+PURPLE="\033[0;35m"
+CYAN="\033[0;36m"
+WHITE="\033[0;37m"
+BOLD=""
+RESET="\033[m"
+
+export MAGENTA
+export ORANGE
+export GREEN
+export YELLOW
+export BLUE
+export PURPLE
+export CYAN
+export WHITE
+export BOLD
+export RESET
+
+# Git branch details
+function parse_git_dirty() {
+        [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
+}
+function parse_git_branch() {
+        git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+}
+
+# My custom prompt
+export PS1="\[\033]0;\w\007\]┌─[\[${YELLOW}\]\u\[\e[0m\]] in \[${ORANGE}\]\W\[$RESET\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$CYAN\]\$(parse_git_branch)\[$RESET\] \n└─▪"
+
+export PS2="\[$ORANGE\]→ \[$RESET\]"
+
+# Only show the current directory's name in the tab
+export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
