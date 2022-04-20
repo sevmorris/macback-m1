@@ -32,8 +32,7 @@
 # EVERYTHING ELSE
 ################################################################################
 
-# open                              Open file for editing in micro
-# bashrc, aliases, ex, brewfile     Open .bashrc/.aliases/.excludes-file.txt/Brewfile in micro
+# bashrc, aliases, brewfile         Open .bashrc/.aliases/Brewfile in nano
 # reload                            Reload the shell (i.e. invoke as a login shell)
 # mon                               Run gtop system monitor
 # findit                            Use fd instead of find
@@ -73,12 +72,9 @@ alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
 
-alias open="micro"
-alias ex="micro ~/.excludes-file.txt"
-alias bashrc="micro ~/dotfiles/.bashrc && c && . ~/.bashrc"
-alias aliases="micro ~/dotfiles/.aliases && c && . ~/.aliases"
-alias ex="micro ~/.excludes-file.txt"
-alias brewfile="micro ~/homebrew-brewfile/Brewfile"
+alias bashrc="nano ~/dotfiles/.bashrc && c && . ~/.bashrc"
+alias aliases="nano ~/dotfiles/.aliases && c && . ~/.aliases"
+alias brewfile="nano ~/homebrew-brewfile/Brewfile"
 alias reload="exec $SHELL -l"
 alias mon="gtop"
 alias findit="fd "
