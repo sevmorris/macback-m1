@@ -4,10 +4,32 @@ for file in ~/.{bash_prompt,aliases}; do
 done;
 unset file;
 
+# check if this is a login shell
+[ "$0" = "-bash" ] && export LOGIN_BASH=1
+
 PATH=$(printf "%s" "$PATH" | awk -v RS=':' '!a[$1]++ { if (NR > 1) printf RS; printf $1 }')
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
+
+# enable direnv (if installed)
+which direnv &>/dev/null && eval "$(direnv hook bash)"
+
+# enable mcfly (if installed)
+which mcfly &>/dev/null && eval "$(mcfly init bash)"
+
+# to avoid non-zero exit code
+true
+
+# History
+export HISTFILE="$HOME/.bash_history"
+export HISTCONTROL="ignoredups"
+export PROMPT_COMMAND="history -a"
+export HISTIGNORE="&:ls:[bf]g:exit"
+
+################################################################################
+# BEGIN FUNCTIONS
+################################################################################
 
 # pushit :: Push to Github from current directory
 function pushit() {
@@ -48,6 +70,32 @@ function fs() {
         du $arg .[^.]* *;
     fi;
 }
+
+# Move files to the Trash folder
+trash() {
+  mv "$@" "$HOME/.Trash/"
+}
+
+# make no-argument find Just Work.
+find() {
+  local arg
+  local path_arg
+  local dot_arg
+
+  for arg
+  do
+    [[ $arg =~ "^-" ]] && break
+    path_arg="$arg"
+  done
+
+  [ -z "$path_arg" ] && dot_arg="."
+
+  command find $dot_arg "$@"
+}
+
+################################################################################
+# END FUNCTIONS
+################################################################################
 
 # for non-interactive sessions stop execution here -- https://serverfault.com/a/805532/67528
 [[ $- != *i* ]] && return
