@@ -71,28 +71,6 @@ function fs() {
     fi;
 }
 
-# Move files to the Trash folder
-trash() {
-  mv "$@" "$HOME/.Trash/"
-}
-
-# make no-argument find Just Work.
-find() {
-  local arg
-  local path_arg
-  local dot_arg
-
-  for arg
-  do
-    [[ $arg =~ "^-" ]] && break
-    path_arg="$arg"
-  done
-
-  [ -z "$path_arg" ] && dot_arg="."
-
-  command find $dot_arg "$@"
-}
-
 ################################################################################
 # END FUNCTIONS
 ################################################################################
