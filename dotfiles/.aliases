@@ -45,7 +45,7 @@
 # cat                               Open a file with cat clone bat
 # ifactive                          Show active network interfaces
 # mount                             Make mount command output easier to read
-# n 							                 	Run neofetch to display system info
+# n 							    Run neofetch to display system info
 # blog                              Display backup log
 
 
@@ -90,4 +90,4 @@ alias cat="clear && bat "
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 alias mount='mount | column -t'
 alias n='neofetch'
-alias blog='cat ~//scripts/backup/backups.log'
+alias blog='cat ~/scripts/backup/backups.log'
