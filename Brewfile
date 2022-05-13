@@ -112,19 +112,21 @@ brew "bramstein/webfonttools/sfnt2woff-zopfli"
 brew "wdiff"                              # Display word differences between text files
 brew "wget"                               # Internet file retriever
 
-cask "adapter"
-cask "atom"
-cask "bitwarden"
-cask "dozer"
-cask "dropbox"
-cask "firefox"
-cask "handbrake"
-cask "iterm2"
-cask "keyboard-cleaner"
-cask "macfuse"
-cask "mactex"
-cask "raspberry-pi-imager"
-cask "timemachineeditor"
-cask "veracrypt"
-cask "vlc"
-cask "zoom"
+cask "adapter"                            # Converts Video, Audio and Images
+cask "atom"                               # "A hackable text editor for the 21st Century"
+cask "bitwarden"                          # Desktop password and login vault
+cask "dozer"                              # Tool to hide status bar icons
+cask "dropbox"                            # Client for the Dropbox cloud storage service
+cask "eloston-chromium"                   # Google Chromium, sans integration with Google
+cask "firefox"                            # Web browser
+cask "handbrake"                          # Open-source video transcoder
+cask "hyper"                              # Terminal built on web technologies
+cask "iterm2"                             # Terminal emulator as alternative to Apple's Terminal app
+cask "keyboard-cleaner"                   # Desktop shield and keystroke interceptor
+cask "macfuse"                            # File system integration: allows you to extend macOS's native file handling capabilities via third-party file systems
+cask "mactex"                             # Full TeX Live distribution with GUI applications
+cask "raspberry-pi-imager"                # Imaging utility to install operating systems to a microSD card
+cask "timemachineeditor"                  # Utility to change the default backup interval of Time Machine
+cask "veracrypt"                          # Disk encryption software focusing on security based on TrueCrypt
+cask "vlc"                                # Multimedia player
+cask "zoom"                               # Video communication and virtual meeting platform
