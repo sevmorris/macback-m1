@@ -40,7 +40,6 @@ brew "fd"                                 # Simple, fast and user-friendly alter
 brew "figlet"                             # Banner-like program prints strings as ASCII art
 brew "findutils"                          # Collection of GNU find, xargs, and locate
 brew "fortune"                            # Infamous electronic fortune-cookie generator
-brew "futhark"                            # Data-parallel functional programming language
 
 brew "gawk"                               # GNU awk utility
 brew "gh"                                 # GitHub command-line tool
@@ -117,10 +116,8 @@ cask "atom"                               # "A hackable text editor for the 21st
 cask "bitwarden"                          # Desktop password and login vault
 cask "dozer"                              # Tool to hide status bar icons
 cask "dropbox"                            # Client for the Dropbox cloud storage service
-cask "eloston-chromium"                   # Google Chromium, sans integration with Google
 cask "firefox"                            # Web browser
 cask "handbrake"                          # Open-source video transcoder
-cask "hyper"                              # Terminal built on web technologies
 cask "iterm2"                             # Terminal emulator as alternative to Apple's Terminal app
 cask "keyboard-cleaner"                   # Desktop shield and keystroke interceptor
 cask "macfuse"                            # File system integration: allows you to extend macOS's native file handling capabilities via third-party file systems
