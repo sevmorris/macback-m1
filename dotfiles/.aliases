@@ -27,6 +27,7 @@
 # brewup                            Homebrew | Update, upgrade, cleanup...
 # update                            Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
 # brun, unbrew                      Homebrew | uninstall
+# backup                            Run backup scripts
 
 ################################################################################
 # EVERYTHING ELSE
@@ -42,10 +43,9 @@
 # s                                 Turn off the screen
 # please                            sudo
 # scan, audit                       Run a system audit using Lynis
-# cat                               Open a file with cat clone bat
 # ifactive                          Show active network interfaces
 # mount                             Make mount command output easier to read
-# n 							    Run neofetch to display system info
+# n 							                  Run neofetch to display system info
 # blog                              Display backup log
 
 
@@ -72,7 +72,7 @@ alias brewup="brew -v update && brew -v upgrade && brew -v cleanup --prune=0 && 
 alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
-
+alias backup="workdrive && deskdown"
 alias bashrc="nano ~/dotfiles/.bashrc && c && . ~/.bashrc"
 alias aliases="nano ~/dotfiles/.aliases && c && . ~/.aliases"
 alias brewfile="nano ~/homebrew-brewfile/Brewfile"
@@ -86,8 +86,7 @@ alias s="pmset displaysleepnow"
 alias please="sudo "
 alias scan="lynis audit system"
 alias audit="lynis audit system"
-alias cat="clear && bat "
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 alias mount='mount | column -t'
 alias n='neofetch'
-alias blog='cat ~/scripts/backup/backups.log'
+alias blog='bat ~/scripts/backup/backups.log'
