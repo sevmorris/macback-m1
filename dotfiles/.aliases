@@ -79,6 +79,7 @@ alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
 alias backup="workdrive && deskdown"
+
 alias bashrc="nano ~/dotfiles/.bashrc && c && . ~/.bashrc"
 alias aliases="nano ~/dotfiles/.aliases && c && . ~/.aliases"
 alias brewfile="nano ~/homebrew-brewfile/Brewfile"
