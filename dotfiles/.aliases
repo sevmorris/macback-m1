@@ -39,6 +39,7 @@
 
 # bashrc, aliases, brewfile         Open .bashrc/.aliases/Brewfile in nano
 # reload                            Reload the shell (i.e. invoke as a login shell)
+# cat                               Replace cat with Rich CLI
 # mon                               Run gtop system monitor
 # findit                            Use fd instead of find
 # size <target file or dir>         Find size of file or directory (calls a function located in .bashrc)
@@ -49,8 +50,6 @@
 # scan, audit                       Run a system audit using Lynis
 # ifactive                          Show active network interfaces
 # mount                             Make mount command output easier to read
-# n 							                  Run neofetch to display system info
-# backlog                           Display backup log
 
 
 ################################################################################
@@ -71,7 +70,7 @@ alias dt="cd ~/Desktop"
 alias dots="cd ~/dotfiles && at && cd ~/"
 alias m1="cd ~/macback-m1 && at && cd ~/"
 alias m2="cd ~/macback-intel && at && cd ~/"
-alias zoom="cd ~/prep-zoom-files-for-edit" && at && cd ~/""
+alias zoom="cd ~/prep-zoom-files-for-edit && at && cd ~/"
 alias pi="ssh pi"
 alias mint="ssh mint"
 alias pop="ssh pop"
@@ -86,6 +85,7 @@ alias bashrc="nano ~/dotfiles/.bashrc && c && . ~/.bashrc"
 alias aliases="nano ~/dotfiles/.aliases && c && . ~/.aliases"
 alias brewfile="nano ~/homebrew-brewfile/Brewfile"
 alias reload="exec $SHELL -l"
+alias cat="rich "
 alias mon="gtop"
 alias findit="fd "
 alias size="fs "
@@ -96,6 +96,4 @@ alias please="sudo "
 alias scan="lynis audit system"
 alias audit="lynis audit system"
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
-alias mount='mount | column -t'
-alias n='neofetch'
-alias backlog='bat ~/scripts/backup/backups.log'
+alias mount="mount | column -t"

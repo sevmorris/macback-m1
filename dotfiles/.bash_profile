@@ -146,3 +146,6 @@ addToPATH /opt/homebrew/opt/gnu-tar/libexec/gnubin
 addToPATH /opt/homebrew/opt/gnu-which/libexec/gnubin
 
 addToPATH /opt/homebrew/opt/grep/libexec/gnubin
+
+# Created by `pipx` on 2022-05-27 01:38:00
+export PATH="$PATH:/Users/sev/.local/bin"
