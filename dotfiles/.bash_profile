@@ -35,7 +35,11 @@ if type brew &>/dev/null; then
   fi
 fi
 
-# Setup PATH
+
+## Setup PATH ##
+
+# Created by `pipx`
+export PATH="$PATH:/Users/sev/.local/bin"
 
 # Remove from anywhere in PATH
 remove_from_path() {
@@ -146,6 +150,3 @@ addToPATH /opt/homebrew/opt/gnu-tar/libexec/gnubin
 addToPATH /opt/homebrew/opt/gnu-which/libexec/gnubin
 
 addToPATH /opt/homebrew/opt/grep/libexec/gnubin
-
-# Created by `pipx` on 2022-05-27 01:38:00
-export PATH="$PATH:/Users/sev/.local/bin"
