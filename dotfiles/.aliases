@@ -19,6 +19,7 @@
 # dots                              Open ~/dotfiles in atom
 # m1                                Open ~/macback-m1 in atom
 # m2                                Open ~/macback-intel in atom
+# zoom                              Open ~/prep-zoom-files-for-edit in atom
 # pi                                ssh into my RasPi
 # mint                              ssh into my Mint box
 # pop                               ssh into my Pop! OS box
@@ -70,6 +71,7 @@ alias dt="cd ~/Desktop"
 alias dots="cd ~/dotfiles && at && cd ~/"
 alias m1="cd ~/macback-m1 && at && cd ~/"
 alias m2="cd ~/macback-intel && at && cd ~/"
+alias zoom="cd ~/prep-zoom-files-for-edit" && at && cd ~/""
 alias pi="ssh pi"
 alias mint="ssh mint"
 alias pop="ssh pop"
