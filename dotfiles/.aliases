@@ -3,10 +3,11 @@
 # LIST VARIATIONS
 ################################################################################
 
+# ls                                Replace ls with lsd (LSDeluxe) adding -al (long format and hidden files shown)
 # lm                                List all & sorts by modification date with most recent first and directories first
 # ll, ld                            List only visible files & folders
 # la                                List all files and folders
-# trees                             List in tree form using exa (calls a function located in .bashrc)
+# lt                                List in tree form using exa (calls a function located in .bashrc)
 # path                              Print each PATH entry on a separate line
 
 ################################################################################
@@ -36,7 +37,7 @@
 # brewup                            Homebrew | Update, upgrade, cleanup...
 # update                            Get macOS Software Updates, and update installed Ruby gems, npm, and their installed packages
 # brun, unbrew                      Homebrew | uninstall
-# backup                            Run backup scripts
+# wd                                Run work drive backup script
 
 ################################################################################
 # EVERYTHING ELSE
@@ -46,7 +47,8 @@
 # reload                            Reload the shell (i.e. invoke as a login shell)
 # cat                               Replace cat with Rich CLI
 # mon                               Run gtop system monitor
-# findit                            Use fd instead of find
+# df                                Replaces df with duf to show disk file usage
+# find                              Use fd instead of find
 # size <target file or dir>         Find size of file or directory (calls a function located in .bashrc)
 # shrug                             Copy ¯\_(ツ)_/¯ to the clipboard
 # c                                 Clear & source .bashrc
@@ -55,17 +57,18 @@
 # scan, audit                       Run a system audit using Lynis
 # ifactive                          Show active network interfaces
 # mount                             Make mount command output easier to read
-# zit                               Push prep-zoom-files-for-edit to github 
+# zit                               Push prep-zoom-files-for-edit to github
 
 ################################################################################
 # ALIASES
 ################################################################################
 
+alias ls='lsd -al'
 alias lm="exa -a --header --group --long --git --sort=mod --reverse --group-directories-first"
 alias ll="exa --header --group --long --git --group-directories-first"
 alias ld="exa --header --group --long --git --group-directories-first"
 alias la="exa -a --header --group --long --git --group-directories-first"
-alias trees="exa --tree --level=2 --header --group --long --git --icons ."
+alias lt="exa --tree --level=2 --header --group --long --git --icons ."
 alias path='echo -e ${PATH//:/\\n}'
 
 alias ..='cd ..'
@@ -84,7 +87,7 @@ alias brewup="brew -v update && brew -v upgrade && brew -v cleanup --prune=0 && 
 alias update='sudo softwareupdate -i -a; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 alias brun="brew uninstall -v "
 alias unbrew="brew uninstall -v "
-alias backup="workdrive && deskdown"
+alias wd="workdrive"
 
 alias bashrc="nano ~/dotfiles/.bashrc && c && . ~/.bashrc"
 alias aliases="nano ~/dotfiles/.aliases && c && . ~/.aliases"
@@ -92,7 +95,8 @@ alias brewfile="nano ~/homebrew-brewfile/Brewfile"
 alias reload="exec $SHELL -l"
 alias cat="rich "
 alias mon="gtop"
-alias findit="fd "
+alias df="duf"
+alias find="fd "
 alias size="fs "
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear && source ~/.bashrc"
