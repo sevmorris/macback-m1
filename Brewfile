@@ -1,4 +1,4 @@
-## My Public Brewfile. Minimal casks, no mas apps.
+## My Public Brewfile
 
 tap "bramstein/webfonttools"
 tap "buo/cask-upgrade"
