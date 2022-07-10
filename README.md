@@ -1,8 +1,8 @@
 # macback [M1 edition]
 
-## Archived
-# This project has been rewritten to work on both Intel & M1 Macs.
-# Please see [macback](https://github.com/sevmorris/macback).
+# Archived
+### This project has been rewritten to work on both Intel & M1 Macs.
+### Please see [macback](https://github.com/sevmorris/macback).
 
 ## Tasks
 
