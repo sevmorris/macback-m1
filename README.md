@@ -2,8 +2,8 @@
 
 How I configure a Mac with Apple silicon.
 
-See [macback - Intel edition](https://github.com/sevmorris/macback-intel) for Intel Macs.
-
+## NOTE: I've overhauled this to work on bot Intel & M1 Macs.
+## Please see [macback](https://github.com/sevmorris/macback) now.
 
 ## Tasks
 
