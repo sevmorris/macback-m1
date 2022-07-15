@@ -2,7 +2,7 @@
 
 # Archived
 ### This project has been rewritten to work on both Intel & M1 Macs.
-### Please see [macback](https://github.com/sevmorris/macback).
+### See [macstrap](https://github.com/sevmorris/macstrap) for my current setup.
 
 ## Tasks
 
