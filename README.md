@@ -1,6 +1,5 @@
 # macback [M1 edition]
 
-# Archived
 ### This project has been rewritten to work on both Intel & M1 Macs.
 ### See [macstrap](https://github.com/sevmorris/macstrap) for my current setup.
 
