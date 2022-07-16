@@ -1,7 +1,7 @@
 # macback [M1 edition]
 
-### This project has been rewritten to work on both Intel & M1 Macs.
-### See [macstrap](https://github.com/sevmorris/macstrap) for my current setup.
+### This project has been completely rewritten to work on both Intel & M1 Macs.
+### See [zmac](https://github.com/sevmorris/zmac.git) for my current setup.
 
 ## Tasks
 
